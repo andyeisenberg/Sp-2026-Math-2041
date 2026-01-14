@@ -16,7 +16,106 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 1",
-  "body": " Week 1   This is an outline of the topics we covered in the first week of class.     Monday 8\/22      Wednesday 8\/24      Friday 8\/26     "
+  "body": " Week 1   This is an outline of the topics we covered in the first week of class.     Tuesday 1\/13   Ch 0: Introduction    A population changes over time. Let be the population at time . Each year, some proportion ( ) produce offspring and some proportion ( ) dies. So: where .    The equation is called a differential equation (DE) , an equation which relates a function to one or more of its own derivatives.    A solution to a DE is a function that satisfies the DE.      Given , let . Then , so this is a solution to the DE.  Are there others? Can we find another solution? Can we find all solutions? Consider the following calculation: So is the general solution to the DE.  Notice the sloppiness with the constant of integration above. This sort of thing will be typical.    So solutions to a DE are not unique. However, if we specify initial conditions (IC) , we can identify a particular solution of interest. The IC takes the form of a single point of our unknown function.    Suppose and . We know that is the general solution to the DE. Plugging in the IC: so is the particular population function we're interested in.    A DE together with an IC is called an initial value problem (IVP) .    Sec 1.2: Slope Fields  A 1st order DE has the form , where is some expression in terms of and . In this case, gives the slope of the tangent line to the graph of at any point in the -plane.    Suppose an object falls subject to gravity and air resistance (which we'll assume is proportional to velocity). Then: where is the gravitational constant, is the drag coefficient, and is the mass. For a more specific example, suppose . Then, at various points in the -plane, we know that a solution function passing through that point must do so with slope . We can draw many sample slopes to get a slope field , which gives a sense of the shape of solution curves (aka integral curves ):   Slope field for a first order DE.    Slope field for showing several approximate solution curves.         Picard's Theorem   Given an IVP , if is continuous and exists and is continuous near , then a solution to the IVP exists and is unique in an interval.    The symbol is called a partial derivative . Since Calc III is not prerequisite to this course, I'll just say that, for our purposes, the idea of partial derivatives is: when a function has multiple variables, partial derivatives treat all but one variable as constant. For example, if , then:      Thursday 1\/15     "
+},
+{
+  "id": "subsubsec-Introduction-2",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-Introduction-2",
+  "type": "Example",
+  "number": "1",
+  "title": "",
+  "body": "  A population changes over time. Let be the population at time . Each year, some proportion ( ) produce offspring and some proportion ( ) dies. So: where .   "
+},
+{
+  "id": "subsubsec-Introduction-3",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-Introduction-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "differential equation (DE) "
+},
+{
+  "id": "def-DE-solution",
+  "level": "2",
+  "url": "notes-week-01.html#def-DE-solution",
+  "type": "Definition",
+  "number": "2",
+  "title": "",
+  "body": "  A solution to a DE is a function that satisfies the DE.   "
+},
+{
+  "id": "subsubsec-Introduction-5",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-Introduction-5",
+  "type": "Example",
+  "number": "3",
+  "title": "",
+  "body": "  Given , let . Then , so this is a solution to the DE.  Are there others? Can we find another solution? Can we find all solutions? Consider the following calculation: So is the general solution to the DE.  Notice the sloppiness with the constant of integration above. This sort of thing will be typical.   "
+},
+{
+  "id": "subsubsec-Introduction-6",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-Introduction-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "initial conditions (IC) "
+},
+{
+  "id": "subsubsec-Introduction-7",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-Introduction-7",
+  "type": "Example",
+  "number": "4",
+  "title": "",
+  "body": "  Suppose and . We know that is the general solution to the DE. Plugging in the IC: so is the particular population function we're interested in.   "
+},
+{
+  "id": "subsubsec-Introduction-8",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-Introduction-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "initial value problem (IVP) "
+},
+{
+  "id": "subsubsec-Slope-Fields-2",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-Slope-Fields-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "1st order DE "
+},
+{
+  "id": "subsubsec-Slope-Fields-3",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-Slope-Fields-3",
+  "type": "Example",
+  "number": "5",
+  "title": "",
+  "body": "  Suppose an object falls subject to gravity and air resistance (which we'll assume is proportional to velocity). Then: where is the gravitational constant, is the drag coefficient, and is the mass. For a more specific example, suppose . Then, at various points in the -plane, we know that a solution function passing through that point must do so with slope . We can draw many sample slopes to get a slope field , which gives a sense of the shape of solution curves (aka integral curves ):   Slope field for a first order DE.    Slope field for showing several approximate solution curves.       "
+},
+{
+  "id": "thm-Picard",
+  "level": "2",
+  "url": "notes-week-01.html#thm-Picard",
+  "type": "Theorem",
+  "number": "7",
+  "title": "Picard’s Theorem.",
+  "body": " Picard's Theorem   Given an IVP , if is continuous and exists and is continuous near , then a solution to the IVP exists and is unique in an interval.   "
+},
+{
+  "id": "subsubsec-Slope-Fields-5",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-Slope-Fields-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "partial derivative "
 },
 {
   "id": "recitation-calculus-review",
