@@ -12,75 +12,442 @@
     <title>Course Information</title>
 
     <p>
-      This is the syllabus for <term>course name (MATH xxx, section xxx)</term> for [term] 20xx.
-      It is a [n] credit course.
-      <!-- use a description list (dl) for short items -->
       <dl>
-        <li>
-          <title>Instructor</title>
+      <li>
+        <title>Day and Time</title>
 
-          <p>
-            Prof. Lastname, Office Location, <url href="mailto:prof.lastname@example.edu">prof.lastname@example.edu</url>.
-          </p>
-        </li>
+        <p>
+          Lectures: TR 3:30 pm - 4:50 pm Gladfelter L013
+        </p>
+      </li>
 
-        <li>
-          <title>Student Hours</title>
+      <li>
+        <title>Recitation</title>
 
-          <p>
-            TBD
-          </p>
-        </li>
+        <p>
+          Section 1: M 12:00 pm - 12:50 pm Wachman 15
+        </p>
 
-        <li>
-          <title>Class meets</title>
+        <p>
+          Section 2: W 12:00 pm - 12:50 pm Wachman 9
+        </p>
 
-          <p>
-            course times and location.
-          </p>
-        </li>
+        <p>
+          Section 3: F 12:00 pm - 12:50 pm Wachman 9
+        </p>
+      </li>
 
-        <li>
-          <title>Course Description</title>
+      <li>
+        <title>Office Hours</title>
 
-          <p>
-            course description from catalog
-          </p>
-        </li>
+        <p>
+          tbd
+        </p>
+      </li>
 
-        <li>
-          <title>Prerequisite</title>
+      <li>
+        <title>Course Goals</title>
 
-          <p>
-            list of prerequisites
-          </p>
-        </li>
+        <p>
+          To help prepare students learn basic concepts, techniques, and applications of ordinary differential equations.
+        </p>
+      </li>
 
-        <li>
-          <title>Textbook and course materials</title>
+      <li>
+        <title>Topics Covered</title>
 
-          <p>
-            <pubtitle>textbook name</pubtitle>
-            by textbook author.
-          </p>
-        </li>
+        <p>
+          First order ordinary differential equations, linear second order ordinary differential equations, the Laplace transform, and possibly more as time permits.
+        </p>
+      </li>
+
+      <li>
+        <title>Prerequisite</title>
+
+        <p>
+          Math 1042 with a grade of C or better, or equivalent transfer credit.
+        </p>
+      </li>
+
+      <li>
+        <title>Course Mode</title>
+
+        <p>
+          In-person
+        </p>
+      </li>
+
+      <li>
+        <title>Credits</title>
+
+        <p>
+          3
+        </p>
+      </li>
       </dl>
     </p>
+  </subsection>
 
-  <!-- Use paragraphs to break apart subsections -->
+
+  <subsection xml:id="sec-materials">
+    <title>Textbook and Other Required Materials</title>
+
+    <p>
+      <dl>
+      <li>
+        <title>Textbook</title>
+
+        <p>
+          We will use <url href="https://www.jirka.org/diffyqs/">Notes on Diffy Qs</url>, by Jiri Lebl, which is freely available.
+        </p>
+      </li>
+
+      <li>
+        <title>Phone</title>
+
+        <p>
+          You will need a device (phone or tablet) to take pictures of your quizzes/tests and upload your work.
+        </p>
+      </li>
+      </dl>
+    </p>
+  </subsection>
+
+
+  <subsection xml:id="sec-assessments">
+    <title>Assessments</title>
+
     <paragraphs>
-      <title>Course Overview</title>
+      <title>Homework</title>
 
       <p>
+        There will be homework assignments throughout the course.
+        The homework will be graded for completion.
+        Doing homework problems is the primary way that you will learn and internalize the material seen in class.
+        Plan to spend a substantial amount of time throughout the semester doing homework problems.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Quizzes</title>
+
+      <p>
+        There will be in-class quizzes every other week (on Jan 20, Feb 3, Mar 10, Mar 24, and Apr 21).
+        Quizzes give you some practice in a test-like environment without the same grade pressure as a test.
+        The quizzes should be a signal to you about whether you're keeping up with the pace of the course.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Exams</title>
+
+      <p>
+        This course will have two midterm exams and a Final Exam.
+        Exams are the main opportunity for you to demonstrate your understanding of course material.
+      </p>
+
+      <p>
+        <dl>
+        <li>
+          <title>Test 1</title>
+
+          <p>
+            Tuesday, February 17 (in class)
+          </p>
+        </li>
+
+        <li>
+          <title>Test 2</title>
+
+          <p>
+            Tuesday, April 7 (in class)
+          </p>
+        </li>
+
+        <li>
+          <title>Final Exam</title>
+
+          <p>
+            Tuesday, May 5, 1:00 pm - 3:00 pm
+          </p>
+        </li>
+        </dl>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Makeup Policy</title>
+
+      <p>
+        There are no quiz or exam makeups.
+        The lowest quiz will be dropped and replaced with the recitation score.
       </p>
     </paragraphs>
   </subsection>
 
-  <!-- Other subsections for larger dividers -->
-  <subsection xml:id="sec-assessments">
-    <title>Assessments and Grades</title>
+
+  <subsection xml:id="sec-grading">
+    <title>Grading</title>
 
     <p>
+      The grade components and their weights are:
     </p>
+
+    <tabular>
+      <row header="yes" bottom="minor">
+        <cell>Component</cell>
+        <cell>Weight</cell>
+      </row>
+
+      <row>
+        <cell>Homework</cell>
+        <cell>5%</cell>
+      </row>
+
+      <row>
+        <cell>Quizzes</cell>
+        <cell>15%</cell>
+      </row>
+
+      <row>
+        <cell>Exam 1</cell>
+        <cell>24%</cell>
+      </row>
+
+      <row>
+        <cell>Exam 2</cell>
+        <cell>24%</cell>
+      </row>
+
+      <row>
+        <cell>Final Exam</cell>
+        <cell>32%</cell>
+      </row>
+    </tabular>
+
+    <p>
+      The lower cutoff for each letter grade is given in the table below.
+    </p>
+
+    <tabular>
+      <col halign="center"/><col />
+      <row header="yes" bottom="minor">
+        <cell>Letter Grade</cell>
+        <cell>Lower Cutoff</cell>
+      </row>
+
+      <row>
+        <cell>A</cell>
+        <cell>93%</cell>
+      </row>
+
+      <row>
+        <cell>A-</cell>
+        <cell>90%</cell>
+      </row>
+
+      <row>
+        <cell>B+</cell>
+        <cell>87%</cell>
+      </row>
+
+      <row>
+        <cell>B</cell>
+        <cell>83%</cell>
+      </row>
+
+      <row>
+        <cell>B-</cell>
+        <cell>80%</cell>
+      </row>
+
+      <row>
+        <cell>C+</cell>
+        <cell>77%</cell>
+      </row>
+
+      <row>
+        <cell>C</cell>
+        <cell>73%</cell>
+      </row>
+
+      <row>
+        <cell>C-</cell>
+        <cell>70%</cell>
+      </row>
+
+      <row>
+        <cell>D+</cell>
+        <cell>65%</cell>
+      </row>
+
+      <row>
+        <cell>D</cell>
+        <cell>55%</cell>
+      </row>
+
+      <row>
+        <cell>F</cell>
+        <cell>0%</cell>
+      </row>
+    </tabular>
+
+
+    <paragraphs>
+      <title>Attendance Policy</title>
+
+      <p>
+        Attendance is expected and will be recorded.
+        If you need to miss a class for some reason, it is your responsibility to get notes from another student for any material you've missed, and to arrange to turn in/make up any in-class or collected work.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Attendance and Your Health</title>
+
+      <p>
+        To achieve course learning goals, students must attend and participate in classes, according to the course requirements.
+        However, if you have tested positive for or are experiencing symptoms of a contagious illness, you should not come to campus or attend in-person  classes or activities.
+        It is the student’s responsibility to contact me to create a plan for participation and engagement in the course as soon as you are able to do so, and to make a plan to complete all assignments in a timely fashion.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Expectations for Class Conduct</title>
+
+      <p>
+        It is important to foster a respectful and productive learning environment that includes all students in our diverse community of learners.
+        Our differences, some of which are outlined in the University's nondiscrimination statement, will add richness to this learning experience.
+        Therefore, all opinions and experiences, no matter how different or controversial they may be perceived, must be respected in the tolerant spirit of academic discourse.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Disability Statement</title>
+
+      <p>
+        Any student who has a need for accommodations based on the impact of a documented disability or medical condition should contact Disability Resources and Services (DRS) in Howard Gittis Student Center South, Rm 420 (<url href="mailto:drs@temple.edu">drs@temple.edu</url>; 215-204-1280) to request accommodations and learn more about the resources available to you.
+        If you have a DRS accommodation letter to share with me, or you would like to discuss your accommodations, please contact me as soon as practical.
+        I will work with you and with DRS to coordinate reasonable accommodations for all students with documented disabilities.
+        All discussions related to your accommodations will be confidential.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Academic Freedom</title>
+
+      <p>
+        Freedom to teach and freedom to learn are inseparable facets of academic freedom.
+        The University has adopted a policy on Student and Faculty Academic Rights and Responsibilities (Policy # 03.70.02) which can be accessed <url href="https://secretary.temple.edu/policies">here</url>.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Add/Drop Policy</title>
+
+      <p>
+        Students will be charged for a course unless dropped by the Drop/Add deadline date.
+        Check the <url href="https://registrar.temple.edu/academic-calendar">University calendar</url> for exact dates.
+      </p>
+
+      <p>
+        During the Drop/Add period, students may drop a course with no record of the class appearing on their transcript.
+        Students are not financially responsible for any courses dropped during this period.
+        In the following weeks prior to or on the withdrawal date students may withdraw from a course with the grade of "W" appearing on their transcript.
+        After the withdrawal date students may not withdraw from courses.
+        Check the <url href="https://registrar.temple.edu/academic-calendar">University calendar</url> for exact dates.
+        <url href="https://bulletin.temple.edu/undergraduate/academic-policies/withdrawal-policies/">See the full policy by clicking here</url>.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>AI Policy</title>
+
+      <p>
+        The use of generative AI tools (such as ChatGPT, DALL-E, etc.) is not permitted in this class unless specifically announced for a particular assignment; therefore, any use of AI tools for work in this class may be considered a violation of Temple University's Academic Honesty policy and Student Conduct Code, since the work is not your own.
+        The use of unauthorized AI tools will result in a grade of zero on the assignment; a second offense will be reported to the Student Conduct Board.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Incomplete Grades</title>
+
+      <p>
+        The grade "I" (an "incomplete") is only given if students cannot complete the course work due to circumstances beyond their control.
+        It is necessary for the student to have completed the majority of the course work with a passing average and to sign an incomplete contract which clearly states what is left for the student to do and the deadline by which the work must be completed.
+        The incomplete contract must also include a default grade that will be used in case the "I" grade is not resolved by the agreed deadline.
+        <url href="https://bulletin.temple.edu/undergraduate/academic-policies/incomplete-coursework/">See the full policy by clicking here</url>.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Student Support Services</title>
+
+      <p>
+        The following academic support services are available to students:
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              <url href="https://cst.temple.edu/department-mathematics/undergraduate/getting-help/mcc-tutoring">The Math Consulting Center</url>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <url href="https://studentsuccess.temple.edu/">Student Success Center</url>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <url href="https://library.temple.edu/webpages/remote-learner-support">University Libraries</url>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <url href="https://undergraduate.temple.edu/research">Undergraduate Research Support</url>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <url href="https://careercenter.temple.edu/">Career Center</url>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <url href="https://counseling.temple.edu/getting-started">Tuttleman Counseling Services</url>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <url href="https://studentaffairs.temple.edu/who-we-are/departments/disability-resources-services">Disability Resources and Services</url>
+            </p>
+          </li>
+        </ul>
+      </p>
+
+      <p>
+        If you are experiencing food insecurity or financial struggles, Temple provides resources and support.
+        Notably, the Temple University Cherry Pantry and the Temple University Emergency Student Aid Program are in operation as well as a variety of resources from the Division of Student Affairs.
+      </p>
+    </paragraphs>
   </subsection>
 </section>

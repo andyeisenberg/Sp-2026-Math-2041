@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="recitation-calculus-review">
+  <title>Calculus Review</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Differential equations is a heavily computational topic.
+      It will be very beneficial to review background Calculus material early to prepare for the demands of this course.
+      You will especially want to be comfortable with common differentiation and integration techniques.
+    </p>
+  </introduction>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Practice your differentiation rules:
+        </p>
+      </introduction>
+
+
+      <task workspace="2cm">
+        <p>
+          <m>\displaystyle \frac{d}{dx}\left( 2x^2 + x^{-3} + 4\sqrt{x} + \frac{x^2 + 1}{x} \right) = </m>
+        </p>
+      </task>
+
+
+      <task workspace="2cm">
+        <p>
+          <m>\displaystyle \frac{d}{dx}\left( \sin(2x) e^{3x} + \ln(4x)\arctan(5x) \right) = </m>
+        </p>
+      </task>
+
+
+      <task workspace="2cm">
+        <p>
+          <m>\displaystyle \frac{d}{dx}\left( \frac{\sec(x)}{\tan(x)} \right) = </m>
+        </p>
+      </task>
+
+
+      <task workspace="2cm">
+        <p>
+          <m>\displaystyle \frac{d}{dx}\left( \sin(\ln(\sqrt{x})) \right) = </m>
+        </p>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Practice integration by parts (IBP) with the following integrals:
+        </p>
+      </introduction>
+
+
+      <task workspace="2cm">
+        <p>
+          <m> \displaystyle \int x^2 e^x \ dx = </m>
+        </p>
+      </task>
+
+
+      <task workspace="2cm">
+        <p>
+          <m> \displaystyle \int_0^1 \arctan(x) \ dx = </m>
+        </p>
+      </task>
+    </exercise>
+
+    <exercise workspace="2cm">
+      <statement>
+        <p>
+          Practice partial fraction decomposition (PFD) with the following integral:
+        </p>
+
+        <p>
+          <m> \displaystyle \int \frac{18}{(x+3)(x^2 + 9)} \ dx = </m>
+        </p>
+      </statement>
+    </exercise>
+  </page>
+</worksheet>
