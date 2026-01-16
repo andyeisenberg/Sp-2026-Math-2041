@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Week 1",
-  "body": " Week 1   This is an outline of the topics we covered in the first week of class.     Tuesday 1\/13   Ch 0: Introduction    A population changes over time. Let be the population at time . Each year, some proportion ( ) produce offspring and some proportion ( ) dies. So: where .    The equation is called a differential equation (DE) , an equation which relates a function to one or more of its own derivatives.    A solution to a DE is a function that satisfies the DE.      Given , let . Then , so this is a solution to the DE.  Are there others? Can we find another solution? Can we find all solutions? Consider the following calculation: So is the general solution to the DE.  Notice the sloppiness with the constant of integration above. This sort of thing will be typical.    So solutions to a DE are not unique. However, if we specify initial conditions (IC) , we can identify a particular solution of interest. The IC takes the form of a single point of our unknown function.    Suppose and . We know that is the general solution to the DE. Plugging in the IC: so is the particular population function we're interested in.    A DE together with an IC is called an initial value problem (IVP) .    Sec 1.2: Slope Fields  A 1st order DE has the form , where is some expression in terms of and . In this case, gives the slope of the tangent line to the graph of at any point in the -plane.    Suppose an object falls subject to gravity and air resistance (which we'll assume is proportional to velocity). Then: where is the gravitational constant, is the drag coefficient, and is the mass. For a more specific example, suppose . Then, at various points in the -plane, we know that a solution function passing through that point must do so with slope . We can draw many sample slopes to get a slope field , which gives a sense of the shape of solution curves (aka integral curves ):   Slope field for a first order DE.    Slope field for showing several approximate solution curves.         Picard's Theorem   Given an IVP , if is continuous and exists and is continuous near , then a solution to the IVP exists and is unique in an interval.    The symbol is called a partial derivative . Since Calc III is not prerequisite to this course, I'll just say that, for our purposes, the idea of partial derivatives is: when a function has multiple variables, partial derivatives treat all but one variable as constant. For example, if , then:      Thursday 1\/15     "
+  "body": " Week 1   This is an outline of the topics we covered in the first week of class.    Tuesday 1\/13   Ch 0: Introduction    A population changes over time. Let be the population at time . Each year, some proportion ( ) produce offspring and some proportion ( ) dies. So: where .    The equation is called a differential equation (DE) , an equation which relates a function to one or more of its own derivatives.    A solution to a DE is a function that satisfies the DE.      Given , let . Then , so this is a solution to the DE.  Are there others? Can we find another solution? Can we find all solutions? Consider the following calculation: So is the general solution to the DE.  Notice the sloppiness with the constant of integration above. This sort of thing will be typical.    So solutions to a DE are not unique. However, if we specify initial conditions (IC) , we can identify a particular solution of interest. The IC takes the form of a single point of our unknown function.    Suppose and . We know that is the general solution to the DE. Plugging in the IC: so is the particular population function we're interested in.    A DE together with an IC is called an initial value problem (IVP) .    Sec 1.2: Slope Fields  A 1st order DE has the form , where is some expression in terms of and . In this case, gives the slope of the tangent line to the graph of at any point in the -plane.    Suppose an object falls subject to gravity and air resistance (which we'll assume is proportional to velocity). Then: where is the gravitational constant, is the drag coefficient, and is the mass. For a more specific example, suppose . Then, at various points in the -plane, we know that a solution function passing through that point must do so with slope . We can draw many sample slopes to get a slope field , which gives a sense of the shape of solution curves (aka integral curves ):   Slope field for a first order DE.    Slope field for showing several approximate solution curves.         Picard's Theorem   Given an IVP , if is continuous and exists and is continuous near , then a solution to the IVP exists and is unique in an interval.    The symbol is called a partial derivative . Since Calc III is not prerequisite to this course, I'll just say that, for our purposes, the idea of partial derivatives is: when a function has multiple variables, partial derivatives treat all but one variable as constant. For example, if , then:      Thursday 1\/15   Existence and Uniqueness  Recall from last time. Let's see an example.    Consider . Then . Both are continuous when .   Three possible initial condition points.    In the -plane, the upper half plane is shaded. A point labeled is in the upper half plane, with strictly positive -value. A point labeled lies on the -axis. A point labeled is in the unshaded region below the -axis.      The theorem clearly does not apply at the initial condition point . At this point, , so the functions are not defined.  At , , so both exist. More importantly, we can draw a small circle around that point, and are continuous in the entire circle (aka, \"near\" ). So the theorem applies at .  At , both exist. However, any circle around includes points where don't exist. So the theorem doesn't apply at .    Notation: for brevity, we can write .    Separable Equations    A DE is separable if it can be written in the form:     In this case: Question: Is it okay to separate the differentials like this? To integrate each side?  Justification: (Note the -substitution moving from line 3 to line 4.)  We don't need to reshow this justification every time we separate variables. But now we see that it's not shenanigans or a magic trick, it's just the Chain Rule.    Solve . This is an implicit solution to the DE.      Solve . However, moving from line 2 to line 3, we divided by . This assumed that . Looking back at the DE, it seems that  is a solution. So we must remember to include it when we write the general solution.      First Order Linear    A DE which can be put in the form is called a first order linear equation .    Idea: to solve these DEs, we notice that the LHS almost looks like a derivative taken via the Product Rule. Can we find a factor function to multiply both sides of the DE to get: If so, then: This function is called an integrating factor .           Solve . Applying the IC :       "
 },
 {
   "id": "subsubsec-Introduction-2",
@@ -116,6 +116,78 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "partial derivative "
+},
+{
+  "id": "subsubsec-EU-3",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-EU-3",
+  "type": "Example",
+  "number": "8",
+  "title": "",
+  "body": "  Consider . Then . Both are continuous when .   Three possible initial condition points.    In the -plane, the upper half plane is shaded. A point labeled is in the upper half plane, with strictly positive -value. A point labeled lies on the -axis. A point labeled is in the unshaded region below the -axis.      The theorem clearly does not apply at the initial condition point . At this point, , so the functions are not defined.  At , , so both exist. More importantly, we can draw a small circle around that point, and are continuous in the entire circle (aka, \"near\" ). So the theorem applies at .  At , both exist. However, any circle around includes points where don't exist. So the theorem doesn't apply at .   "
+},
+{
+  "id": "def-separable",
+  "level": "2",
+  "url": "notes-week-01.html#def-separable",
+  "type": "Definition",
+  "number": "10",
+  "title": "",
+  "body": "  A DE is separable if it can be written in the form:    "
+},
+{
+  "id": "subsubsec-Separable-Equations-6",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-Separable-Equations-6",
+  "type": "Example",
+  "number": "11",
+  "title": "",
+  "body": "  Solve . This is an implicit solution to the DE.   "
+},
+{
+  "id": "subsubsec-Separable-Equations-7",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-Separable-Equations-7",
+  "type": "Example",
+  "number": "12",
+  "title": "",
+  "body": "  Solve . However, moving from line 2 to line 3, we divided by . This assumed that . Looking back at the DE, it seems that  is a solution. So we must remember to include it when we write the general solution.   "
+},
+{
+  "id": "def-First-Order-Linear",
+  "level": "2",
+  "url": "notes-week-01.html#def-First-Order-Linear",
+  "type": "Definition",
+  "number": "13",
+  "title": "",
+  "body": "  A DE which can be put in the form is called a first order linear equation .   "
+},
+{
+  "id": "subsubsec-First-Order-Linear-3",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-First-Order-Linear-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "integrating factor "
+},
+{
+  "id": "subsubsec-First-Order-Linear-4",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-First-Order-Linear-4",
+  "type": "Example",
+  "number": "14",
+  "title": "",
+  "body": "      "
+},
+{
+  "id": "subsubsec-First-Order-Linear-5",
+  "level": "2",
+  "url": "notes-week-01.html#subsubsec-First-Order-Linear-5",
+  "type": "Example",
+  "number": "15",
+  "title": "",
+  "body": "  Solve . Applying the IC :    "
 },
 {
   "id": "recitation-calculus-review",

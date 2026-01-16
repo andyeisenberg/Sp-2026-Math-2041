@@ -173,7 +173,14 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#subsubsec-Slope-Fields" class="internal"><span class="title">Sec 1.2: Slope Fields</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Thursday 1/15</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="notes-week-01.html#notes-week-01-4" class="internal"><span class="title">Thursday 1/15</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#subsubsec-EU" class="internal"><span class="title">Existence and Uniqueness</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#subsubsec-Separable-Equations" class="internal"><span class="title">Separable Equations</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="notes-week-01.html#subsubsec-First-Order-Linear" class="internal"><span class="title">First Order Linear</span></a></div></li>
+</ul>
+</li>
 </ul>
 </li></ul>
 </li>
@@ -300,8 +307,182 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Subsubsection: Sec 1.2: Slope Fields"><a href="#subsubsec-Slope-Fields" title="Copy heading and permalink for Subsubsection: Sec 1.2: Slope Fields" aria-label="Copy heading and permalink for Subsubsection: Sec 1.2: Slope Fields">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Tuesday 1/13"><a href="#notes-week-01-3" title="Copy heading and permalink for Subsection: Tuesday 1/13" aria-label="Copy heading and permalink for Subsection: Tuesday 1/13">🔗</a></div></section><section class="subsection" id="notes-week-01-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thursday 1/15</span>
 </h3>
-<div class="para" id="notes-week-01-4-2"><div class="autopermalink" data-description="Paragraph"><a href="#notes-week-01-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="autopermalink" data-description="Subsection: Thursday 1/15"><a href="#notes-week-01-4" title="Copy heading and permalink for Subsection: Thursday 1/15" aria-label="Copy heading and permalink for Subsection: Thursday 1/15">🔗</a></div></section><div class="autopermalink" data-description="Section: Week 1"><a href="#notes-week-01" title="Copy heading and permalink for Section: Week 1" aria-label="Copy heading and permalink for Section: Week 1">🔗</a></div></section></div>
+<section class="subsubsection" id="subsubsec-EU"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Existence and Uniqueness</span>
+</h4>
+<div class="para" id="subsubsec-EU-2">Recall <a href="notes-week-01.html#thm-Picard" class="xref" data-knowl="./knowl/xref/thm-Picard.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 7: Picard’s Theorem">Theorem 7</a> from last time. Let’s see an example.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-EU-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsubsec-EU-3"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para" id="subsubsec-EU-3-1-1">Consider <span class="process-math">\(y' = xy^{3/2} = f(x, y)\text{.}\)</span> Then <span class="process-math">\(\frac{\partial f}{\partial y} = \frac{3}{2} xy^{1/2}\text{.}\)</span> Both <span class="process-math">\(f, \frac{\partial f}{\partial y}\)</span> are continuous when <span class="process-math">\(y \geq 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-EU-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <figure class="figure figure-like" id="fig-Picard"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;">
+<img src="generated/latex-image/fig-Picard-2.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="fig-Picard-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="fig-Picard-2-description"><div class="para" id="fig-Picard-2-1-1">In the <span class="process-math">\(xy\)</span>-plane, the upper half plane is shaded. A point labeled <span class="process-math">\(a\)</span> is in the upper half plane, with strictly positive <span class="process-math">\(y\)</span>-value. A point labeled <span class="process-math">\(b\)</span> lies on the <span class="process-math">\(x\)</span>-axis. A point labeled <span class="process-math">\(c\)</span> is in the unshaded region below the <span class="process-math">\(x\)</span>-axis.<div class="autopermalink" data-description="Paragraph"><a href="#fig-Picard-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Three possible initial condition points.<div class="autopermalink" data-description="Figure 9"><a href="#fig-Picard" title="Copy heading and permalink for Figure 9" aria-label="Copy heading and permalink for Figure 9">🔗</a></div></figcaption></figure> <div class="para" id="subsubsec-EU-3-1-3">The theorem clearly does not apply at the initial condition point <span class="process-math">\(c\text{.}\)</span> At this point, <span class="process-math">\(y \\lt 0\text{,}\)</span> so the functions <span class="process-math">\(f, \frac{\partial f}{\partial y}\)</span> are not defined.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-EU-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="subsubsec-EU-3-1-4">At <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(y &gt; 0\text{,}\)</span> so both <span class="process-math">\(f, \frac{\partial f}{\partial y}\)</span> exist. More importantly, we can draw a small circle around that point, and <span class="process-math">\(f, \frac{\partial f}{\partial y}\)</span> are continuous in the entire circle (aka, "near" <span class="process-math">\(a\)</span>). So the theorem applies at <span class="process-math">\(a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-EU-3-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="subsubsec-EU-3-1-5">At <span class="process-math">\(b\text{,}\)</span> both <span class="process-math">\(f, \frac{\partial f}{\partial y}\)</span> exist. However, <em class="emphasis">any</em> circle around <span class="process-math">\(b\)</span> includes points where <span class="process-math">\(f, \frac{\partial f}{\partial y}\)</span> don’t exist. So the theorem doesn’t apply at <span class="process-math">\(b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-EU-3-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 8"><a href="#subsubsec-EU-3" title="Copy heading and permalink for Example 8" aria-label="Copy heading and permalink for Example 8">🔗</a></div></article><div class="para" id="subsubsec-EU-4">Notation: for brevity, we can write <span class="process-math">\(f_y = \frac{\partial f}{\partial y}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-EU-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Existence and Uniqueness"><a href="#subsubsec-EU" title="Copy heading and permalink for Subsubsection: Existence and Uniqueness" aria-label="Copy heading and permalink for Subsubsection: Existence and Uniqueness">🔗</a></div></section><section class="subsubsection" id="subsubsec-Separable-Equations"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Separable Equations</span>
+</h4>
+<article class="definition definition-like" id="def-separable"><h5 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para logical" id="def-separable-1-1">
+<div class="para">A DE is <dfn class="terminology">separable</dfn> if it can be written in the form:</div>
+<div class="displaymath process-math" id="def-separable-1-1-2">
+\begin{gather*}
+\frac{dy}{dx} = y' = f(x)g(y) 
+\end{gather*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-separable-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 10"><a href="#def-separable" title="Copy heading and permalink for Definition 10" aria-label="Copy heading and permalink for Definition 10">🔗</a></div></article><div class="para logical" id="subsubsec-Separable-Equations-3">
+<div class="para">In this case:</div>
+<div class="displaymath process-math" id="subsubsec-Separable-Equations-3-1">
+\begin{align*}
+h(y)\ dy = \frac{1}{g(y)}\ dy \amp = f(x)\ dx \\
+\Rightarrow \quad \int h(y)\ dy \amp = \int f(x)\ dx 
+\end{align*}
+</div>
+<div class="para">Question: Is it okay to separate the differentials like this? To integrate each side?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Separable-Equations-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-Separable-Equations-4">
+<div class="para">Justification:</div>
+<div class="displaymath process-math" id="subsubsec-Separable-Equations-4-1">
+\begin{align*}
+\frac{dy}{dx} \amp = f(x) \frac{1}{h(y)} \\
+h(y) \frac{dy}{dx} \amp = f(x) \\
+\int h(y) \frac{dy}{dx}\ dx \amp = \int f(x)\ dx  \\
+\int h(u)\ du \amp = \int f(x)\ dx \\
+\int h(y)\ dy \amp = \int f(x)\ dx 
+\end{align*}
+</div>
+<div class="para">(Note the <span class="process-math">\(u\)</span>-substitution <span class="process-math">\(u = y\)</span> moving from line 3 to line 4.)</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Separable-Equations-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsubsec-Separable-Equations-5">We don’t need to reshow this justification every time we separate variables. But now we see that it’s not shenanigans or a magic trick, it’s just the Chain Rule.<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Separable-Equations-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsubsec-Separable-Equations-6"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para logical" id="subsubsec-Separable-Equations-6-1-1">
+<div class="para">Solve <span class="process-math">\(y' = \frac{x}{y}\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="subsubsec-Separable-Equations-6-1-1-2">
+\begin{align*}
+\int y\ dy \amp = \int x\ dx \\
+\frac{y^2}{2} \amp \frac{x^2}{2} + C \\
+y^2 \amp = x^2 + C. 
+\end{align*}
+</div>
+<div class="para">This is an <dfn class="terminology">implicit solution</dfn> to the DE.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Separable-Equations-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 11"><a href="#subsubsec-Separable-Equations-6" title="Copy heading and permalink for Example 11" aria-label="Copy heading and permalink for Example 11">🔗</a></div></article><article class="example example-like" id="subsubsec-Separable-Equations-7"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para logical" id="subsubsec-Separable-Equations-7-1-1">
+<div class="para">Solve <span class="process-math">\(\frac{dy}{dx} = y^2 - 2xy^2 = f(x, y)\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="subsubsec-Separable-Equations-7-1-1-2">
+\begin{align*}
+\frac{dy}{dx} \amp (1 - 2x)y^2 \\
+\int y^{-2}\ dy \amp = \int 1 - 2x\ dx \\
+\frac{-1}{y} \amp = x - x^2 + C \\
+y \amp = \frac{1}{x^2 - x + C} 
+\end{align*}
+</div>
+<div class="para">However, moving from line 2 to line 3, we divided by <span class="process-math">\(y^2\text{.}\)</span> This assumed that <span class="process-math">\(y \neq 0\text{.}\)</span> Looking back at the DE, it seems that <span class="process-math">\(y = 0\)</span> <em class="emphasis">is</em> a solution. So we must remember to include it when we write the general solution.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-Separable-Equations-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 12"><a href="#subsubsec-Separable-Equations-7" title="Copy heading and permalink for Example 12" aria-label="Copy heading and permalink for Example 12">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: Separable Equations"><a href="#subsubsec-Separable-Equations" title="Copy heading and permalink for Subsubsection: Separable Equations" aria-label="Copy heading and permalink for Subsubsection: Separable Equations">🔗</a></div></section><section class="subsubsection" id="subsubsec-First-Order-Linear"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">First Order Linear</span>
+</h4>
+<article class="definition definition-like" id="def-First-Order-Linear"><h5 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para logical" id="def-First-Order-Linear-1-1">
+<div class="para">A DE which can be put in the form</div>
+<div class="displaymath process-math" id="def-First-Order-Linear-1-1-1">
+\begin{align*}
+y' + p(x) y \amp f(x) 
+\end{align*}
+</div>
+<div class="para">is called a <dfn class="terminology">first order linear equation</dfn>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-First-Order-Linear-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 13"><a href="#def-First-Order-Linear" title="Copy heading and permalink for Definition 13" aria-label="Copy heading and permalink for Definition 13">🔗</a></div></article><div class="para logical" id="subsubsec-First-Order-Linear-3">
+<div class="para">Idea: to solve these DEs, we notice that the LHS almost looks like a derivative taken via the Product Rule. Can we find a factor function <span class="process-math">\(r(x)\)</span> to multiply both sides of the DE to get:</div>
+<div class="displaymath process-math" id="subsubsec-First-Order-Linear-3-2">
+\begin{align*}
+ry' + rpy \amp = ry' + r' y? 
+\end{align*}
+</div>
+<div class="para">If so, then:</div>
+<div class="displaymath process-math" id="subsubsec-First-Order-Linear-3-3">
+\begin{align*}
+ry' + rpy \amp = ry' + r' y \\
+rpy \amp = r' y \\
+rp \amp = r' \\
+\int \frac{r'(x)}{r(x)}\ dx \amp = \int p(x)\ dx \\
+\ln|r(x)| \amp = \int p(x)\ dx \\
+r(x) \amp = e^{\int p(x)\ dx} 
+\end{align*}
+</div>
+<div class="para">This function is called an <dfn class="terminology">integrating factor</dfn>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-First-Order-Linear-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsubsec-First-Order-Linear-4"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para logical" id="subsubsec-First-Order-Linear-4-1-1">
+<div class="displaymath process-math" id="subsubsec-First-Order-Linear-4-1-1-1">
+\begin{align*}
+v' \amp = 9.8 - \frac{v}{5} \\
+v' + \frac{v}{5} \amp = 9.8 \\
+r(t) \amp = e^{\int \frac{1}{5}\ dt} = e^{t/5} \\
+\Rightarrow e^{t/5} v' + \frac{e^{t/5}}{5} v \amp = 9.8 e^{t/5} \\
+\int \left(e^{t/5} v\right)'\ dt \amp = \int 9.8 e^{t/5}\ dt \\
+e^{t/5} v  \amp = 49 e^{t/5} + C \\
+v  \amp = 49 + C e^{-t/5} 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-First-Order-Linear-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 14"><a href="#subsubsec-First-Order-Linear-4" title="Copy heading and permalink for Example 14" aria-label="Copy heading and permalink for Example 14">🔗</a></div></article><article class="example example-like" id="subsubsec-First-Order-Linear-5"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para logical" id="subsubsec-First-Order-Linear-5-1-1">
+<div class="para">Solve <span class="process-math">\(y' = 2x(2 - y), y(0) = 5\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="subsubsec-First-Order-Linear-5-1-1-2">
+\begin{align*}
+y' \amp 4x - 2xy \\
+y' + 2xy  \amp = 4x \\
+r(x) \amp = e^{\int p(x)\ dx} = e^{\int 2x\ dx} = e^{x^2} \\
+\int \left(e^{x^2} y\right)'\ dx \amp = \int 4xe^{x^2}\ dx \\
+e^{x^2} y \amp = 2e^{x^2} + C \\
+y \amp = 2 + Ce^{-x^2} 
+\end{align*}
+</div>
+<div class="para">Applying the IC <span class="process-math">\(y(0) = 5\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="subsubsec-First-Order-Linear-5-1-1-4">
+\begin{align*}
+5 \amp = 2 + Ce^0 \\
+C \amp = 3 \\
+\Rightarrow y \amp = 2 + 3e^{-x^2} 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-First-Order-Linear-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 15"><a href="#subsubsec-First-Order-Linear-5" title="Copy heading and permalink for Example 15" aria-label="Copy heading and permalink for Example 15">🔗</a></div></article><div class="autopermalink" data-description="Subsubsection: First Order Linear"><a href="#subsubsec-First-Order-Linear" title="Copy heading and permalink for Subsubsection: First Order Linear" aria-label="Copy heading and permalink for Subsubsection: First Order Linear">🔗</a></div></section><div class="autopermalink" data-description="Subsection: Thursday 1/15"><a href="#notes-week-01-4" title="Copy heading and permalink for Subsection: Thursday 1/15" aria-label="Copy heading and permalink for Subsection: Thursday 1/15">🔗</a></div></section><div class="autopermalink" data-description="Section: Week 1"><a href="#notes-week-01" title="Copy heading and permalink for Section: Week 1" aria-label="Copy heading and permalink for Section: Week 1">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="course-notes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="recitations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
