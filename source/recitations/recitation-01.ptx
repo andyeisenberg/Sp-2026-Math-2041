@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="recitation-finance">
+  <title>Modeling Investment Return</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Suppose you put an initial amount of money, <m>P_0</m>, in a bank account.
+      The account returns interest at a rate of <m>r</m> per year.
+      (E.g., if the interest is 5%, then <m>r = 0.05</m>.) Suppose we decide to withdraw <m>w</m> dollars per year.
+      Then the account balance <m>P(t)</m> is modeled by the differential equation:
+      <md>
+        <mrow> \frac{dP}{dt} = r P - w. </mrow>
+      </md>
+    </p>
+  </introduction>
+
+
+  <page>
+    <exercise workspace="2in">
+      <statement>
+        <p>
+          Treating <m>r, w</m> as positive constants, write a solution to the differential equation in terms of <m>r, w</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <introduction>
+        <p>
+          Suppose an account gives 10% interest.
+        </p>
+      </introduction>
+
+
+      <task workspace="2in">
+        <statement>
+          <p>
+            If we make no withdrawals, how long will it take an initial investment of $1,000 to double?
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="2in">
+        <statement>
+          <p>
+            If we make no withdrawals, how long will it take an initial investment of $10,000 to double?
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="2in">
+        <statement>
+          <p>
+            If we withdraw $500 per year, how long will it take for an initial investment of $10,000 to double?
+          </p>
+        </statement>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise workspace="2in">
+      <introduction>
+        <p>
+          Suppose instead of a withdrawal each year, we make a deposit <m>d</m> each year.
+        </p>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            Adjust the differential equation appropriately, and solve the new equation in terms of <m>r</m> and <m>d</m>.
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="3in">
+        <p>
+          Suppose that expecting parents want to start a college fund for their child with an initial deposit of $10,000.
+          The account gives 10% interest.
+          What amount <m>d</m> will they have to deposit yearly in order to have $100,000 in the account by the time their child turns 18?
+        </p>
+      </task>
+    </exercise>
+  </page>
+</worksheet>
