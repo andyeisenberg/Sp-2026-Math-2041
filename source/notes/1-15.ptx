@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>Thursday, Jan 1/15</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered.
+      You should not rely only on my notes.
+      Make sure to take your own notes, and, if you miss a class, get notes from another student in class.      
+    </p>
+  </introduction>
+
+  <subsection xml:id="subsec-EU">
+    <title>Existence and Uniqueness</title>
+
+    <p>
+      Recall <xref ref="thm-Picard"/> from last time.
+      Let's see an example.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Consider <m>y' = xy^{3/2} = f(x, y)</m>.
+          Then <m>\frac{\partial f}{\partial y} = \frac{3}{2} xy^{1/2}</m>.
+          Both <m>f, \frac{\partial f}{\partial y}</m> are continuous when <m>y \geq 0</m>.
+        </p>
+
+        <figure xml:id="fig-Picard">
+          <caption>Three possible initial condition points.</caption>
+          <image width="50%">
+            <description>
+              <p>
+                In the <m>xy</m>-plane, the upper half plane is shaded.
+                A point labeled <m>a</m> is in the upper half plane, with strictly positive <m>y</m>-value.
+                A point labeled <m>b</m> lies on the <m>x</m>-axis.
+                A point labeled <m>c</m> is in the unshaded region below the <m>x</m>-axis.
+              </p>
+            </description>
+            <latex-image>
+                \begin{tikzpicture}
+                \fill [pattern=dots] (-3, 0) rectangle (3, 3);
+                \draw [->] (-3, 0) to (3, 0) node [right] {$x$};
+                \draw [->] (0, -1) to (0, 3) node [above] {$y$};
+                \node [circle, fill, inner sep=2pt, label=below:$a$] at (2, 2) {};
+                \node [circle, fill, inner sep=2pt, label=below:$b$] at (1, 0) {};
+                \node [circle, fill, inner sep=2pt, label=below:$c$] at (-1, -0.5) {};
+                \draw [dashed] (2, 2) circle (0.5);
+                \draw [dashed] (1, 0) circle (0.5);
+                \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+
+        <p>
+          The theorem clearly does not apply at the initial condition point <m>c</m>.
+          At this point, <m>y \\lt 0</m>, so the functions <m>f, \frac{\partial f}{\partial y}</m> are not defined.
+        </p>
+
+        <p>
+          At <m>a</m>, <m>y > 0</m>, so both <m>f, \frac{\partial f}{\partial y}</m> exist.
+          More importantly, we can draw a small circle around that point, and <m>f, \frac{\partial f}{\partial y}</m> are continuous in the entire circle (aka, "near" <m>a</m>).
+          So the theorem applies at <m>a</m>.
+        </p>
+
+        <p>
+          At <m>b</m>, both <m>f, \frac{\partial f}{\partial y}</m> exist.
+          However, <em>any</em> circle around <m>b</m> includes points where <m>f, \frac{\partial f}{\partial y}</m> don't exist.
+          So the theorem doesn't apply at <m>b</m>.
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      Notation: for brevity, we can write <m>f_y = \frac{\partial f}{\partial y}</m>.
+    </p>
+  </subsection>
+
+
+  <subsection xml:id="subsec-Separable-Equations">
+    <title>Separable Equations</title>
+
+    <definition xml:id="def-separable">
+      <statement>
+        <p>
+          A DE is <term>separable</term> if it can be written in the form:
+          <md>
+            <mrow>\frac{dy}{dx} = y' = f(x)g(y) </mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      In this case:
+      <md>
+        <mrow> h(y)\ dy = \frac{1}{g(y)}\ dy \amp = f(x)\ dx </mrow>
+        <mrow> \Rightarrow \quad \int h(y)\ dy \amp = \int f(x)\ dx </mrow>
+      </md>
+      Question: Is it okay to separate the differentials like this? To integrate each side?
+    </p>
+
+    <p>
+      Justification:
+      <md>
+        <mrow> \frac{dy}{dx} \amp = f(x) \frac{1}{h(y)} </mrow>
+        <mrow> h(y) \frac{dy}{dx} \amp = f(x) </mrow>
+        <mrow> \int h(y) \frac{dy}{dx}\ dx \amp = \int f(x)\ dx  </mrow>
+        <mrow> \int h(u)\ du \amp = \int f(x)\ dx </mrow>
+        <mrow> \int h(y)\ dy \amp = \int f(x)\ dx </mrow>
+      </md>
+      (Note the <m>u</m>-substitution <m>u = y</m> moving from line 3 to line 4.)
+    </p>
+
+    <p>
+      We don't need to reshow this justification every time we separate variables.
+      But now we see that it's not shenanigans or a magic trick, it's just the Chain Rule.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Solve <m>y' = \frac{x}{y}</m>.
+          <md>
+            <mrow>  \int y\ dy \amp = \int x\ dx </mrow>
+            <mrow> \frac{y^2}{2} \amp \frac{x^2}{2} + C </mrow>
+            <mrow> y^2 \amp = x^2 + C. </mrow>
+          </md>
+          This is an <term>implicit solution</term> to the DE.
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Solve <m>\frac{dy}{dx} = y^2 - 2xy^2 = f(x, y)</m>.
+          <md>
+            <mrow> \frac{dy}{dx} \amp (1 - 2x)y^2 </mrow>
+            <mrow> \int y^{-2}\ dy \amp = \int 1 - 2x\ dx </mrow>
+            <mrow> \frac{-1}{y} \amp = x - x^2 + C </mrow>
+            <mrow> y \amp = \frac{1}{x^2 - x + C} </mrow>
+          </md>
+          However, moving from line 2 to line 3, we divided by <m>y^2</m>.
+          This assumed that <m>y \neq 0</m>.
+          Looking back at the DE, it seems that <m>y = 0</m> <em>is</em> a solution.
+          So we must remember to include it when we write the general solution.
+        </p>
+      </statement>
+    </example>
+  </subsection>
+
+
+  <subsection xml:id="subsec-First-Order-Linear">
+    <title>First Order Linear</title>
+
+    <definition xml:id="def-First-Order-Linear">
+      <statement>
+        <p>
+          A DE which can be put in the form
+          <md>
+            <mrow> y' + p(x) y \amp f(x) </mrow>
+          </md>
+          is called a <term>first order linear equation</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Idea: to solve these DEs, we notice that the LHS almost looks like a derivative taken via the Product Rule.
+      Can we find a factor function <m>r(x)</m> to multiply both sides of the DE to get:
+      <md>
+        <mrow> ry' + rpy \amp = ry' + r' y? </mrow>
+      </md>
+      If so, then:
+      <md>
+        <mrow> ry' + rpy \amp = ry' + r' y </mrow>
+        <mrow> rpy \amp = r' y </mrow>
+        <mrow> rp \amp = r' </mrow>
+        <mrow> \int \frac{r'(x)}{r(x)}\ dx \amp = \int p(x)\ dx </mrow>
+        <mrow> \ln|r(x)| \amp = \int p(x)\ dx </mrow>
+        <mrow> r(x) \amp = e^{\int p(x)\ dx} </mrow>
+      </md>
+      This function is called an <term>integrating factor</term>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          <md>
+            <mrow> v' \amp = 9.8 - \frac{v}{5} </mrow>
+            <mrow> v' + \frac{v}{5} \amp = 9.8 </mrow>
+            <mrow> r(t) \amp = e^{\int \frac{1}{5}\ dt} = e^{t/5} </mrow>
+            <mrow> \Rightarrow e^{t/5} v' + \frac{e^{t/5}}{5} v \amp = 9.8 e^{t/5} </mrow>
+            <mrow> \int \left(e^{t/5} v\right)'\ dt \amp = \int 9.8 e^{t/5}\ dt </mrow>
+            <mrow> e^{t/5} v  \amp = 49 e^{t/5} + C </mrow>
+            <mrow> v  \amp = 49 + C e^{-t/5} </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Solve <m>y' = 2x(2 - y), y(0) = 5</m>.
+          <md>
+            <mrow> y' \amp 4x - 2xy </mrow>
+            <mrow> y' + 2xy  \amp = 4x </mrow>
+            <mrow> r(x) \amp = e^{\int p(x)\ dx} = e^{\int 2x\ dx} = e^{x^2} </mrow>
+            <mrow> \int \left(e^{x^2} y\right)'\ dx \amp = \int 4xe^{x^2}\ dx </mrow>
+            <mrow> e^{x^2} y \amp = 2e^{x^2} + C </mrow>
+            <mrow> y \amp = 2 + Ce^{-x^2} </mrow>
+          </md>
+          Applying the IC <m>y(0) = 5</m>:
+          <md>
+            <mrow> 5 \amp = 2 + Ce^0 </mrow>
+            <mrow> C \amp = 3 </mrow>
+            <mrow> \Rightarrow y \amp = 2 + 3e^{-x^2} </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>

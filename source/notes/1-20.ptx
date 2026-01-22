@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>Tuesday, Jan 1/20</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered.
+      You should not rely only on my notes.
+      Make sure to take your own notes, and, if you miss a class, get notes from another student in class.
+    </p>
+  </introduction>
+
+
+  <subsection xml:id="subsec-Mixing">
+    <title>Mixing</title>
+
+    <p>
+      Suppose a tank contains a solution of some substance dissolved in liquid.
+      There an in-pipe bringing a solution into the tank and an out-pipe draining solution from the tank.
+      We can model the quantity <m>Q(t)</m> of substance in the tank at time <m>t</m> with the differential equation setup:
+      <md>
+        <mrow> \frac{dQ}{dt} = \left( \text{rate of substance in} \right) - \left( \text{rate of substance out} \right)  </mrow>
+      </md>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          A tank starts with 200 L of fresh water.
+          Brine with 1.5 g/L salt flows in at 10 L/min.
+          The mixture flows out of the tank at the same rate.
+          Find <m>Q(t)</m>, the amount of salt in the tank at time <m>t</m>.
+          Then:
+          <md>
+            <mrow> \frac{dQ}{dt} \amp = \left(1.5 \frac{\text{g}}{\text{L}}\right)\left( 10  \frac{\text{L}}{\text{min}}\right) - \left(\frac{Q}{200}  \frac{\text{g}}{\text{L}}\right) - \left(10  \frac{\text{L}}{\text{min}}\right) </mrow>
+            <mrow> \frac{dQ}{dt} \amp = 15 - \frac{Q}{20} </mrow>
+          </md>
+          This is a linear equation so we can solve it with an integrating factor:
+          <md>
+            <mrow> Q' + \frac{1}{20} Q \amp = 15 </mrow>
+            <mrow> r(t) \amp = e^{\int \frac{1}{20}\ dt} = e^{t/20} </mrow>
+            <mrow> \left(e^{t/20} Q\right)' \amp = 15e^{t/20} </mrow>
+            <mrow> e^{t/20} Q \amp = 300e^{t/20} + C  </mrow>
+            <mrow> Q \amp = 300 + Ce^{-t/20}  </mrow>
+          </md>
+          Since the tank starts with fresh water, we have the initial condition <m>Q(0) = 0</m>:
+          <md>
+            <mrow> 0 \amp = 300 + Ce^0 \quad \Rightarrow \quad C = -300 </mrow>
+            <mrow> Q(t) \amp = 300 - 300 e^{-t/20} </mrow>
+          </md>
+          Observe that <m>Q(t) \to 300</m> as <m>t \to \infty</m>, and 300 g in a 200 L tank would be a concentration of 1.5 g/L, which is reasonable.
+        </p>
+        <!-- TODO figure -->
+      </statement>
+    </example>
+  </subsection>
+
+
+  <subsection xml:id="subsec-Autonomous-Equations">
+    <title>Autonomous Equations</title>
+
+    <definition xml:id="def-autonomous">
+      <statement>
+        <p>
+          An <term>autonomous equation</term> has the form <m>y' = f(y)</m>.
+          A solution of the form <m>y(x) = k</m> is called an <term>equilibrium</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          Consider <m>Q' = 15 - \frac{Q}{20}</m>.
+          To find an equlibrium solution, set <m>Q' = 0</m>:
+          <md>
+            <mrow> 0 \amp = 15 - \frac{Q}{20} \quad \Rightarrow \quad Q = 300. </mrow>
+          </md>
+          Note that, for any <m>C</m>:
+          <md>
+            <mrow> \lim_{t\to\infty} 300 + Ce^{-t/20} = 300. </mrow>
+          </md>
+          While this is not entirely a coincidence, note that this limit property is not part of the definition of an equilibrium.
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Consider <m>P' = rP\left(1 - \frac{P}{K}\right)</m>.
+          This equation is separable.
+          It has equilibrium solutions when <m>P = 0</m> or <m>P = K</m>.
+          We can sketch a picture called a <term>phase diagram</term> of equilibrium solutions, along with typical non-equilibrium solutions:
+        </p>
+
+        <p>
+          TODO
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>

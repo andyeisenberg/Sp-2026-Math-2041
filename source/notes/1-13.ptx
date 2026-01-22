@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>Tuesday, Jan 1/13</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered.
+      You should not rely only on my notes.
+      Make sure to take your own notes, and, if you miss a class, get notes from another student in class.
+    </p>
+  </introduction>
+
+
+  <subsection xml:id="subsec-Introduction">
+    <title>Ch 0: Introduction</title>
+
+    <example>
+      <statement>
+        <p>
+          A population changes over time.
+          Let <m>P(t)</m> be the population at time <m>t</m>.
+          Each year, some proportion (<m>k_{\text{birth}}</m>) produce offspring and some proportion (<m>k_{\text{death}}</m>) dies.
+          So:
+          <md>
+            <mrow> \frac{dP}{dt} = k_{\text{birth}} P - k_{\text{death}} P = kP, </mrow>
+          </md>
+          where <m>k = k_{\text{birth}} - k_{\text{death}}</m>.
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      The equation <m>P' = kP</m> is called a <term>differential equation (DE)</term>, an equation which relates a function to one or more of its own derivatives.
+    </p>
+
+    <definition xml:id="def-DE-solution">
+      <statement>
+        <p>
+          A <term>solution</term> to a DE is a function that satisfies the DE.
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          Given <m>P' = kP</m>, let <m>P(t) = e^{kt}</m>.
+          Then <m>P'(t) = ke^{kt} = k P(t)</m>, so this <m>P(t)</m> is a solution to the DE.
+        </p>
+
+        <p>
+          Are there others? Can we find another solution? Can we find all solutions? Consider the following calculation:
+          <md>
+            <mrow> \frac{dP}{dt} \amp = kP </mrow>
+            <mrow> \frac{1}{P}\ dP \amp = k\ dt </mrow>
+            <mrow> \int \frac{1}{P}\ dP \amp = \int k\ dt </mrow>
+            <mrow> \ln|P| \amp = kt + C </mrow>
+            <mrow> |P| \amp = e^{kt + C} = e^Ce^{kt} = Ce^{kt}. </mrow>
+          </md>
+          So <m>P = Ce^{kt}</m> is the <term>general solution</term> to the DE.
+        </p>
+
+        <p>
+          Notice the sloppiness with the constant of integration <m>C</m> above.
+          This sort of thing will be typical.
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      So solutions to a DE are not unique.
+      However, if we specify <term>initial conditions (IC)</term>, we can identify a particular solution of interest.
+      The IC takes the form of a single point of our unknown function.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Suppose <m>P' = 1.1 P</m> and <m>P(0) = 100</m>.
+          We know that <m>P(t) = Ce^{1.1 t}</m> is the general solution to the DE.
+          Plugging in the IC:
+          <md>
+            <mrow> 100 = Ce^{1.1(0)} = C, </mrow>
+          </md>
+          so <m>P(t) = 100 e^{1.1t}</m> is the particular population function we're interested in.
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      A DE together with an IC is called an <term>initial value problem (IVP)</term>.
+    </p>
+  </subsection>
+
+
+  <subsection xml:id="subsec-Slope-Fields">
+    <title>Sec 1.2: Slope Fields</title>
+
+    <p>
+      A <term>1st order DE</term> has the form <m>y' = f(x, y)</m>, where <m>f(x, y)</m> is some expression in terms of <m>x</m> and <m>y</m>.
+      In this case, <m>y'</m> gives the slope of the tangent line to the graph of <m>y(x)</m> at any point in the <m>xy</m>-plane.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Suppose an object falls subject to gravity and air resistance (which we'll assume is proportional to velocity).
+          Then:
+          <md>
+            <mrow> \frac{dv}{dt} = g - \frac{\gamma v}{m}, </mrow>
+          </md>
+          where <m>g</m> is the gravitational constant, <m>\gamma</m> is the drag coefficient, and <m>m</m> is the mass.
+          For a more specific example, suppose <m>\frac{dv}{dt} = 9.8 - \frac{v}{5}</m>.
+          Then, at various points in the <m>tv</m>-plane, we know that a solution function <m>v(t)</m> passing through that point must do so with slope <m>9.8 - \frac{v}{5}</m>.
+          We can draw many sample slopes to get a <term>slope field</term>, which gives a sense of the shape of <term>solution curves</term> (aka <term>integral curves</term>):
+        </p>
+
+        <figure xml:id="fig-slope-field">
+          <caption>Slope field for a first order DE.</caption>
+          <image width="40%">
+            <description>
+              <p>
+                Slope field for <m>\frac{dv}{dt} = 9.8 - \frac{v}{5}</m> showing several approximate solution curves.
+              </p>
+            </description>
+            <latex-image>
+                \begin{tikzpicture}[declare function={f(\x,\y) = -0.8*\y +  1.2;},scale=0.7]
+                \def\xmin{-3}
+                \def\xmax{3}
+                \def\ymin{-3}
+                \def\ymax{3}
+                \def\nx{12}
+                \def\ny{12}
+                \draw [->] ({\xmin - 0.5}, 0) to ({\xmax + 0.5}, 0) node [right] {$t$};
+                \draw [->] (0, {\ymin - 0.5}) to (0, {\ymax + 0.5}) node [above] {$y$};
+                \pgfmathsetmacro{\hx}{(\xmax-\xmin)/\nx}
+                \pgfmathsetmacro{\hy}{(\ymax-\ymin)/\ny}
+                \foreach \i in {0,...,\nx}
+                \foreach \j in {0,...,\ny}{
+                  \pgfmathsetmacro{\yprime}{f({\xmin+\i*\hx},{\ymin+\j*\hy})}
+                  \draw[black,shift={({\xmin+\i*\hx},{\ymin+\j*\hy})}] 
+                  (0,0)--($(0,0)!3mm! (.2,.2*\yprime)$);
+                }
+                \draw [very thick,blue,domain=-2:3.5,samples=50] plot (\x, {1.5 - 0.8 * exp(-0.8 * \x)});
+                \draw [very thick,blue,domain=0.3:3.5,samples=50] plot (\x, {1.5 + 2 * exp(-0.8 * \x)});
+                \draw [very thick,blue] (-3, 1.5) to (3.5, 1.5);
+                \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+      </statement>
+    </example>
+
+    <theorem xml:id="thm-Picard">
+      <title>Picard's Theorem</title>
+
+      <statement>
+        <p>
+          Given an IVP <m>y' = f(x, y), y(x_0) = y_0</m>, if <m>f</m> is continuous and <m>\frac{\partial f}{\partial y}</m> exists and is continuous near <m>(x_0, y_0)</m>, then a solution to the IVP exists and is unique in an interval.
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      The symbol <m>\frac{\partial f}{\partial y}</m> is called a <term>partial derivative</term>.
+      Since Calc III is not prerequisite to this course, I'll just say that, for our purposes, the idea of partial derivatives is: when a function has multiple variables, partial derivatives treat all but one variable as constant.
+      For example, if <m>f(x, y) = xy + y^2</m>, then:
+      <md>
+        <mrow> \frac{\partial f}{\partial x} \amp = y \amp \frac{\partial f}{\partial y} \amp = x + 2y </mrow>
+      </md>
+    </p>
+  </subsection>
+</section>
