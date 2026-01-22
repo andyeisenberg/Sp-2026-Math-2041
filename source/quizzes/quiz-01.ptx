@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="quiz-01">
+  <title>Quiz 1</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      The following work should be completed individually.
+      Use of notes, calculators, or textbooks is not allowed.
+    </p>
+
+    <p>
+      Show all work unless instructed otherwise.
+    </p>
+  </introduction>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Match the following slope fields with the differential equation.
+          No justification is necessary.
+        </p>
+
+        <sidebyside widths="30% 30% 30%">
+          <figure xml:id="slope-field-A">
+            <caption>(A)</caption>
+            <image>
+              <latex-image>
+                        \begin{tikzpicture}[declare function={f(\x,\y) = 5 - \y;}]
+                        \draw [->] (-0.2, 0) to (10.2, 0) node [right] {$t$};
+                        \draw [->] (0, -0.2) to (0, 6.7) node [above] {$y$};
+                        \foreach \x in {0, 0.8, ..., 10}
+                        \foreach \y in {0.1, 0.9, ..., 6.6}
+                        {
+                            \pgfmathsetmacro{\vx}{0.2}
+                            \pgfmathsetmacro{\vy}{-.24 + 0.1*\y}
+                            \draw [black] ({\x - 0.1}, {\y - 0.1 * f(\x, \y)}) to ({\x + 0.1}, {\y + 0.1 * f(\x, \y)});
+                        }
+                        \node at (5, -1.5) {(A)};
+                        \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
+
+          <figure xml:id="slope-field-B">
+            <caption>(B)</caption>
+            <image>
+              <latex-image>
+                        \begin{tikzpicture}[declare function={f(\x,\y) = \x * \y / 10;}]
+                        \draw [->] (-0.2, 0) to (10.2, 0) node [right] {$t$};
+                        \draw [->] (0, -0.2) to (0, 6.7) node [above] {$y$};
+                        \foreach \x in {0, 0.8, ..., 10}
+                        \foreach \y in {0.1, 0.9, ..., 6.6}
+                        {
+                            \pgfmathsetmacro{\vx}{0.2}
+                            \pgfmathsetmacro{\vy}{-.24 + 0.1*\y}
+                            \draw [black] ({\x - 0.1}, {\y - 0.1 * f(\x, \y)}) to ({\x + 0.1}, {\y + 0.1 * f(\x, \y)});
+                        }
+                        \node at (5, -1.5) {(B)};
+                        \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
+
+          <figure xml:id="slope-field-C">
+            <caption>(C)</caption>
+            <image>
+              <latex-image>
+                        \begin{tikzpicture}[declare function={f(\x,\y) = \y - 3;}]
+                        \draw [->] (-0.2, 0) to (10.2, 0) node [right] {$t$};
+                        \draw [->] (0, -0.2) to (0, 6.7) node [above] {$y$};
+                        \foreach \x in {0, 0.8, ..., 10}
+                        \foreach \y in {0.1, 0.9, ..., 6.6}
+                        {
+                            \pgfmathsetmacro{\vx}{0.2}
+                            \pgfmathsetmacro{\vy}{-.24 + 0.1*\y}
+                            \draw [black] ({\x - 0.1}, {\y - 0.1 * f(\x, \y)}) to ({\x + 0.1}, {\y + 0.1 * f(\x, \y)});
+                        }
+                        \node at (5, -1.5) {(C)};
+                        \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
+        </sidebyside>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            <m>\frac{dy}{dt} = 5 - y</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            A.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            <m>\frac{dy}{dt} = y - 3</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            C.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            <m>\frac{dy}{dt} = ty</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            B.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <statement>
+        <p>
+          Solve the IVP: <m>\frac{dy}{dx} + y = 2xye^{x^2}</m> with initial condition <m>y(0) = e^3</m>.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+            <md>
+                <mrow> \frac{dy}{dx} \amp = 2xye^{x^2} - y = (2xe^{x^2} - 1)y </mrow>
+                <mrow> \int \frac{dy}{y} \amp = \int (2xe^{x^2} - 1)\ dx </mrow>
+                <mrow> \ln|y| \amp = e^{x^2} - x + C </mrow>
+                <mrow> \ln|e^3| \amp = e^{0} - 0 + C </mrow>
+                <mrow> 3 \amp = 1 + C \quad \Rightarrow \quad C = 2 </mrow>
+                <mrow> \ln|y| \amp = e^{x^2} - x + 2 </mrow>
+                <mrow> y \amp = e^{e^{x^2} - x + 2} </mrow>
+            </md>
+            
+        </p>
+      </solution>
+    </exercise>
+  </page>
+</worksheet>
