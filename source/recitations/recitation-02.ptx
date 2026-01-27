@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="recitation-phase-diagrams">
+  <title>Autonomous Equations</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      A first-order autonomous equation has the form
+      <md>
+        <mrow> \frac{dy}{dt} = f(y). </mrow>
+      </md>
+      In class, we introduced the phase diagram.
+      In this recitation, you should think carefully about the relationship between the graph of <m>f(y)</m>, the phase diagram of the differential equation, and the classification of the equalibrium points as stable, unstable, or semistable.
+    </p>
+  </introduction>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Consider the equation <m>\frac{dy}{dt} = (y - 1)(y - 2)^2(y - 3)</m>.
+        </p>
+      </introduction>
+
+
+      <task workspace="2in">
+        <statement>
+          <p>
+            Sketch the graph of <m>f(y)</m>.
+            Your sketch should have the correct zeros of the function, and should correctly indicate where <m>f(y)</m> is positive and negative.
+            (Note: the horizontal axis should be <m>y</m> here.
+            We don't have a label for the vertical axis.)
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="2in">
+        <statement>
+          <p>
+            Draw the <m>ty</m>-plane, which is where solution functions should be graphed.
+            Draw the equilibrium solutions.
+            Along the <m>y</m>-axis, put appropriate up- and down-arrows, and complete the phase diagram.
+            Classify each equilibrium point as stable, unstable, or semistable.
+          </p>
+        </statement>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Describe how the graph of <m>f(y)</m> could give the up- and down-arrow phase diagram information.
+            What features in the graph of <m>f(y)</m> can you recognize as indications of stable, unstable, or semistable equilibrium solutions?
+          </p>
+        </statement>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          One model of population growth is:
+          <md>
+            <mrow> \frac{dP}{dt} = f(P) = rP\left(\frac{P}{T} - 1\right)\left(1 - \frac{P}{K}\right), </mrow>
+          </md>
+          where <m>r, K, T</m> are positive constants with <m>T \lt K</m>.
+          This model is meant to capture the idea that there is some threshold <m>T</m> below which the population can't sustain itself, and there is a carrying capacity <m>K</m> above which the environment doesn't have sufficient resources for the population.
+        </p>
+      </introduction>
+
+
+      <task workspace="2in">
+        <statement>
+          <p>
+            Sketch a graph of <m>f(P)</m>.
+            Without drawing a phase diagram, identify the equilibrium solutions to the differential equation and classify them as stable, unstable, or semistable.
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="2in">
+        <statement>
+          <p>
+            Draw the phase diagram and compare to your graph of <m>f(P)</m>.
+          </p>
+        </statement>
+      </task>
+    </exercise>
+  </page>
+</worksheet>
