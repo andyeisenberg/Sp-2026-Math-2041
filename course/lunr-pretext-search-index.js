@@ -15,8 +15,8 @@ var ptx_lunr_docs = [
   "url": "course-notes-3.html",
   "type": "Section",
   "number": "",
-  "title": "Tuesday, Jan 1\/13",
-  "body": " Tuesday, Jan 1\/13   This is an outline of the topics we covered. You should not rely only on my notes. Make sure to take your own notes, and, if you miss a class, get notes from another student in class.    Ch 0: Introduction    A population changes over time. Let be the population at time . Each year, some proportion ( ) produce offspring and some proportion ( ) dies. So: where .    The equation is called a differential equation (DE) , an equation which relates a function to one or more of its own derivatives.    A solution to a DE is a function that satisfies the DE.      Given , let . Then , so this is a solution to the DE.  Are there others? Can we find another solution? Can we find all solutions? Consider the following calculation: So is the general solution to the DE.  Notice the sloppiness with the constant of integration above. This sort of thing will be typical.    So solutions to a DE are not unique. However, if we specify initial conditions (IC) , we can identify a particular solution of interest. The IC takes the form of a single point of our unknown function.    Suppose and . We know that is the general solution to the DE. Plugging in the IC: so is the particular population function we're interested in.    A DE together with an IC is called an initial value problem (IVP) .    Sec 1.2: Slope Fields  A 1st order DE has the form , where is some expression in terms of and . In this case, gives the slope of the tangent line to the graph of at any point in the -plane.    Suppose an object falls subject to gravity and air resistance (which we'll assume is proportional to velocity). Then: where is the gravitational constant, is the drag coefficient, and is the mass. For a more specific example, suppose . Then, at various points in the -plane, we know that a solution function passing through that point must do so with slope . We can draw many sample slopes to get a slope field , which gives a sense of the shape of solution curves (aka integral curves ):   Slope field for a first order DE.    Slope field for showing several approximate solution curves.         Picard's Theorem   Given an IVP , if is continuous and exists and is continuous near , then a solution to the IVP exists and is unique in an interval.    The symbol is called a partial derivative . Since Calc III is not prerequisite to this course, I'll just say that, for our purposes, the idea of partial derivatives is: when a function has multiple variables, partial derivatives treat all but one variable as constant. For example, if , then:    "
+  "title": "Tuesday, Jan 13",
+  "body": " Tuesday, Jan 13   This is an outline of the topics we covered. You should not rely only on my notes. Make sure to take your own notes, and, if you miss a class, get notes from another student in class.    Ch 0: Introduction    A population changes over time. Let be the population at time . Each year, some proportion ( ) produce offspring and some proportion ( ) dies. So: where .    The equation is called a differential equation (DE) , an equation which relates a function to one or more of its own derivatives.    A solution to a DE is a function that satisfies the DE.      Given , let . Then , so this is a solution to the DE.  Are there others? Can we find another solution? Can we find all solutions? Consider the following calculation: So is the general solution to the DE.  Notice the sloppiness with the constant of integration above. This sort of thing will be typical.    So solutions to a DE are not unique. However, if we specify initial conditions (IC) , we can identify a particular solution of interest. The IC takes the form of a single point of our unknown function.    Suppose and . We know that is the general solution to the DE. Plugging in the IC: so is the particular population function we're interested in.    A DE together with an IC is called an initial value problem (IVP) .    Sec 1.2: Slope Fields  A 1st order DE has the form , where is some expression in terms of and . In this case, gives the slope of the tangent line to the graph of at any point in the -plane.    Suppose an object falls subject to gravity and air resistance (which we'll assume is proportional to velocity). Then: where is the gravitational constant, is the drag coefficient, and is the mass. For a more specific example, suppose . Then, at various points in the -plane, we know that a solution function passing through that point must do so with slope . We can draw many sample slopes to get a slope field , which gives a sense of the shape of solution curves (aka integral curves ):   Slope field for a first order DE.    Slope field for showing several approximate solution curves.         Picard's Theorem   Given an IVP , if is continuous and exists and is continuous near , then a solution to the IVP exists and is unique in an interval.    The symbol is called a partial derivative . Since Calc III is not prerequisite to this course, I'll just say that, for our purposes, the idea of partial derivatives is: when a function has multiple variables, partial derivatives treat all but one variable as constant. For example, if , then:    "
 },
 {
   "id": "subsec-Introduction-2",
@@ -123,8 +123,8 @@ var ptx_lunr_docs = [
   "url": "course-notes-4.html",
   "type": "Section",
   "number": "",
-  "title": "Thursday, Jan 1\/15",
-  "body": " Thursday, Jan 1\/15   This is an outline of the topics we covered. You should not rely only on my notes. Make sure to take your own notes, and, if you miss a class, get notes from another student in class.    Existence and Uniqueness  Recall from last time. Let's see an example.    Consider . Then . Both are continuous when .   Three possible initial condition points.    In the -plane, the upper half plane is shaded. A point labeled is in the upper half plane, with strictly positive -value. A point labeled lies on the -axis. A point labeled is in the unshaded region below the -axis.      The theorem clearly does not apply at the initial condition point . At this point, , so the functions are not defined.  At , , so both exist. More importantly, we can draw a small circle around that point, and are continuous in the entire circle (aka, \"near\" ). So the theorem applies at .  At , both exist. However, any circle around includes points where don't exist. So the theorem doesn't apply at .    Notation: for brevity, we can write .    Separable Equations    A DE is separable if it can be written in the form:     In this case: Question: Is it okay to separate the differentials like this? To integrate each side?  Justification: (Note the -substitution moving from line 3 to line 4.)  We don't need to reshow this justification every time we separate variables. But now we see that it's not shenanigans or a magic trick, it's just the Chain Rule.    Solve . This is an implicit solution to the DE.      Solve . However, moving from line 2 to line 3, we divided by . This assumed that . Looking back at the DE, it seems that  is a solution. So we must remember to include it when we write the general solution.      First Order Linear    A DE which can be put in the form is called a first order linear equation .    Idea: to solve these DEs, we notice that the LHS almost looks like a derivative taken via the Product Rule. Can we find a factor function to multiply both sides of the DE to get: If so, then: This function is called an integrating factor .           Solve . Applying the IC :      "
+  "title": "Thursday, Jan 15",
+  "body": " Thursday, Jan 15   This is an outline of the topics we covered. You should not rely only on my notes. Make sure to take your own notes, and, if you miss a class, get notes from another student in class.    Existence and Uniqueness  Recall from last time. Let's see an example.    Consider . Then . Both are continuous when .   Three possible initial condition points.    In the -plane, the upper half plane is shaded. A point labeled is in the upper half plane, with strictly positive -value. A point labeled lies on the -axis. A point labeled is in the unshaded region below the -axis.      The theorem clearly does not apply at the initial condition point . At this point, , so the functions are not defined.  At , , so both exist. More importantly, we can draw a small circle around that point, and are continuous in the entire circle (aka, \"near\" ). So the theorem applies at .  At , both exist. However, any circle around includes points where don't exist. So the theorem doesn't apply at .    Notation: for brevity, we can write .    Separable Equations    A DE is separable if it can be written in the form:     In this case: Question: Is it okay to separate the differentials like this? To integrate each side?  Justification: (Note the -substitution moving from line 3 to line 4.)  We don't need to reshow this justification every time we separate variables. But now we see that it's not shenanigans or a magic trick, it's just the Chain Rule.    Solve . This is an implicit solution to the DE.      Solve . However, moving from line 2 to line 3, we divided by . This assumed that . Looking back at the DE, it seems that  is a solution. So we must remember to include it when we write the general solution.      First Order Linear    A DE which can be put in the form is called a first order linear equation .    Idea: to solve these DEs, we notice that the LHS almost looks like a derivative taken via the Product Rule. Can we find a factor function to multiply both sides of the DE to get: If so, then: This function is called an integrating factor .           Solve . Applying the IC :      "
 },
 {
   "id": "subsec-EU-3",
@@ -204,8 +204,8 @@ var ptx_lunr_docs = [
   "url": "course-notes-5.html",
   "type": "Section",
   "number": "",
-  "title": "Tuesday, Jan 1\/20",
-  "body": " Tuesday, Jan 1\/20   This is an outline of the topics we covered. You should not rely only on my notes. Make sure to take your own notes, and, if you miss a class, get notes from another student in class.    Mixing  Suppose a tank contains a solution of some substance dissolved in liquid. There an in-pipe bringing a solution into the tank and an out-pipe draining solution from the tank. We can model the quantity of substance in the tank at time with the differential equation setup:     A tank starts with 200 L of fresh water. Brine with 1.5 g\/L salt flows in at 10 L\/min. The mixture flows out of the tank at the same rate. Find , the amount of salt in the tank at time . Then: This is a linear equation so we can solve it with an integrating factor: Since the tank starts with fresh water, we have the initial condition : Observe that as , and 300 g in a 200 L tank would be a concentration of 1.5 g\/L, which is reasonable.       Autonomous Equations    An autonomous equation has the form . A solution of the form is called an equilibrium .      Consider . To find an equlibrium solution, set : Note that, for any : While this is not entirely a coincidence, note that this limit property is not part of the definition of an equilibrium.      Consider . This equation is separable. It has equilibrium solutions when or . We can sketch a picture called a phase diagram of equilibrium solutions, along with typical non-equilibrium solutions:  TODO     "
+  "title": "Tuesday, Jan 20",
+  "body": " Tuesday, Jan 20   This is an outline of the topics we covered. You should not rely only on my notes. Make sure to take your own notes, and, if you miss a class, get notes from another student in class.    Mixing  Suppose a tank contains a solution of some substance dissolved in liquid. There an in-pipe bringing a solution into the tank and an out-pipe draining solution from the tank. We can model the quantity of substance in the tank at time with the differential equation setup:     A tank starts with 200 L of fresh water. Brine with 1.5 g\/L salt flows in at 10 L\/min. The mixture flows out of the tank at the same rate. Find , the amount of salt in the tank at time . Then: This is a linear equation so we can solve it with an integrating factor: Since the tank starts with fresh water, we have the initial condition : Observe that as , and 300 g in a 200 L tank would be a concentration of 1.5 g\/L, which is reasonable.       Autonomous Equations    An autonomous equation has the form . A solution of the form is called an equilibrium .      Consider . To find an equlibrium solution, set : Note that, for any : While this is not entirely a coincidence, note that this limit property is not part of the definition of an equilibrium.      Consider . This equation is separable. It has equilibrium solutions when or . We can sketch a picture called a phase diagram of equilibrium solutions, along with typical non-equilibrium solutions:  TODO     "
 },
 {
   "id": "subsec-Mixing-3",
@@ -242,6 +242,60 @@ var ptx_lunr_docs = [
   "number": "19",
   "title": "",
   "body": "  Consider . This equation is separable. It has equilibrium solutions when or . We can sketch a picture called a phase diagram of equilibrium solutions, along with typical non-equilibrium solutions:  TODO   "
+},
+{
+  "id": "course-notes-6",
+  "level": "1",
+  "url": "course-notes-6.html",
+  "type": "Section",
+  "number": "",
+  "title": "Thursday, Jan 22",
+  "body": " Thursday, Jan 22   This is an outline of the topics we covered. You should not rely only on my notes. Make sure to take your own notes, and, if you miss a class, get notes from another student in class.    Exact Equations  We'll talk about just enough of the Calc III Chain Rule to motivate our next topic. Suppose . Then there are two partial derivatives . But also, thinking of as a function of , there's a derivative . If we start with an equation like , the Calc III Chain Rule gives:   So, suppose we start with a differential equation of the form: Then:   Can we tell whether there is some such that ? If so, then the differential equation is called exact .    Can find find such an ?    If so, then the (implicit) solution to the differential equation is .       For nice enough , .      Consider . Then:     So, given , the equation is exact if     Consider . Then: So the differential equation is exact. Now, let . Then: So the solution to the differential equation is:     How did we find ? We can play a sort of integral-derivative ping-pong. Once we know there exists such that , then: Now, taking the partial derivative with respect to , we should get : So . (Note: we don't need to keep track of the , since it can be absorbed into the in the equation .)    Solve the initial value problem: First, put the equation in a standard form: So the equation is exact. Then (an alternative to the ping-pong method): Putting these together, . So the implicit solution is: Applying the IC: We can find an explicit solution: The IC decides the sign:      "
+},
+{
+  "id": "subsec-exact-equations-3",
+  "level": "2",
+  "url": "course-notes-6.html#subsec-exact-equations-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "exact "
+},
+{
+  "id": "subsec-exact-equations-4",
+  "level": "2",
+  "url": "course-notes-6.html#subsec-exact-equations-4",
+  "type": "Fact",
+  "number": "20",
+  "title": "",
+  "body": "  For nice enough , .   "
+},
+{
+  "id": "subsec-exact-equations-5",
+  "level": "2",
+  "url": "course-notes-6.html#subsec-exact-equations-5",
+  "type": "Example",
+  "number": "21",
+  "title": "",
+  "body": "  Consider . Then:    "
+},
+{
+  "id": "subsec-exact-equations-7",
+  "level": "2",
+  "url": "course-notes-6.html#subsec-exact-equations-7",
+  "type": "Example",
+  "number": "22",
+  "title": "",
+  "body": "  Consider . Then: So the differential equation is exact. Now, let . Then: So the solution to the differential equation is:    "
+},
+{
+  "id": "subsec-exact-equations-9",
+  "level": "2",
+  "url": "course-notes-6.html#subsec-exact-equations-9",
+  "type": "Example",
+  "number": "23",
+  "title": "",
+  "body": "  Solve the initial value problem: First, put the equation in a standard form: So the equation is exact. Then (an alternative to the ping-pong method): Putting these together, . So the implicit solution is: Applying the IC: We can find an explicit solution: The IC decides the sign:    "
 },
 {
   "id": "quiz-01",
