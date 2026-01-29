@@ -298,6 +298,69 @@ var ptx_lunr_docs = [
   "body": "  Solve the initial value problem: First, put the equation in a standard form: So the equation is exact. Then (an alternative to the ping-pong method): Putting these together, . So the implicit solution is: Applying the IC: We can find an explicit solution: The IC decides the sign:    "
 },
 {
+  "id": "course-notes-7",
+  "level": "1",
+  "url": "course-notes-7.html",
+  "type": "Section",
+  "number": "",
+  "title": "Tuesday, Jan 27",
+  "body": " Tuesday, Jan 27   This is an outline of the topics we covered. You should not rely only on my notes. Make sure to take your own notes, and, if you miss a class, get notes from another student in class.    Integrating Factor  Given with (so the equation is not exact), can we find some to multiply by to get an exact equation? That is, we want such that: is exact, which requires . Hence: which is a partial differential equation, beyond the scope of this course.  What if we assume is a function of only one variable? Then: If is an expression in terms of only , then this is a first order differential equation in terms of .  Similarly, if , then: will be a first order differential equation in terms of if only involves .    Consider the equation: Then , so the equation is not exact. Then: which only involves . So we can set up and solve the differential equation: Multiplying the original equation, we get: So this equation is exact. So the implicit solution to the equation is:       Second Order Linear ODEs    A second order linear ODE can be put in the form: If , the equation is called homogeneous .     Superposition   If are solutions to a homogeneous equation, then so are: for any constants       Functions are linearly independent if the only way to have: is     For , are linearly independent if and only if they are not constant multiples of each other.    If are linearly independent solutions to a second order homogeneous equation, then the general solution is:     Note that this is a different conclusion from the superposition theorem, which says \"these functions are also solutions\" but doesn't guarantee that it's a complete list of all solutions.    Consider Let . Then: We can easily check: So are solutions to the equation. They are also linearly independent, since they're not multiples of each other. Therefore the general solution to the equation is:      "
+},
+{
+  "id": "course-notes-7-3-5",
+  "level": "2",
+  "url": "course-notes-7.html#course-notes-7-3-5",
+  "type": "Example",
+  "number": "24",
+  "title": "",
+  "body": "  Consider the equation: Then , so the equation is not exact. Then: which only involves . So we can set up and solve the differential equation: Multiplying the original equation, we get: So this equation is exact. So the implicit solution to the equation is:    "
+},
+{
+  "id": "subsec-2nd-order-2",
+  "level": "2",
+  "url": "course-notes-7.html#subsec-2nd-order-2",
+  "type": "Definition",
+  "number": "25",
+  "title": "",
+  "body": "  A second order linear ODE can be put in the form: If , the equation is called homogeneous .   "
+},
+{
+  "id": "thm-superposition",
+  "level": "2",
+  "url": "course-notes-7.html#thm-superposition",
+  "type": "Theorem",
+  "number": "26",
+  "title": "Superposition.",
+  "body": " Superposition   If are solutions to a homogeneous equation, then so are: for any constants    "
+},
+{
+  "id": "subsec-2nd-order-4",
+  "level": "2",
+  "url": "course-notes-7.html#subsec-2nd-order-4",
+  "type": "Definition",
+  "number": "27",
+  "title": "",
+  "body": "  Functions are linearly independent if the only way to have: is    "
+},
+{
+  "id": "subsec-2nd-order-6",
+  "level": "2",
+  "url": "course-notes-7.html#subsec-2nd-order-6",
+  "type": "Theorem",
+  "number": "28",
+  "title": "",
+  "body": "  If are linearly independent solutions to a second order homogeneous equation, then the general solution is:    "
+},
+{
+  "id": "subsec-2nd-order-8",
+  "level": "2",
+  "url": "course-notes-7.html#subsec-2nd-order-8",
+  "type": "Example",
+  "number": "29",
+  "title": "",
+  "body": "  Consider Let . Then: We can easily check: So are solutions to the equation. They are also linearly independent, since they're not multiples of each other. Therefore the general solution to the equation is:    "
+},
+{
   "id": "quiz-01",
   "level": "1",
   "url": "quiz-01.html",
@@ -395,6 +458,33 @@ var ptx_lunr_docs = [
   "number": "3",
   "title": "",
   "body": "  Suppose instead of a withdrawal each year, we make a deposit each year.     Adjust the differential equation appropriately, and solve the new equation in terms of and .     Suppose that expecting parents want to start a college fund for their child with an initial deposit of $10,000. The account gives 10% interest. What amount will they have to deposit yearly in order to have $100,000 in the account by the time their child turns 18?   "
+},
+{
+  "id": "recitation-phase-diagrams",
+  "level": "1",
+  "url": "recitation-phase-diagrams.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Autonomous Equations",
+  "body": " Autonomous Equations    A first-order autonomous equation has the form In class, we introduced the phase diagram. In this recitation, you should think carefully about the relationship between the graph of , the phase diagram of the differential equation, and the classification of the equalibrium points as stable, unstable, or semistable.      Consider the equation .     Sketch the graph of . Your sketch should have the correct zeros of the function, and should correctly indicate where is positive and negative. (Note: the horizontal axis should be here. We don't have a label for the vertical axis.)      Draw the -plane, which is where solution functions should be graphed. Draw the equilibrium solutions. Along the -axis, put appropriate up- and down-arrows, and complete the phase diagram. Classify each equilibrium point as stable, unstable, or semistable.      Describe how the graph of could give the up- and down-arrow phase diagram information. What features in the graph of can you recognize as indications of stable, unstable, or semistable equilibrium solutions?         One model of population growth is: where are positive constants with . This model is meant to capture the idea that there is some threshold below which the population can't sustain itself, and there is a carrying capacity above which the environment doesn't have sufficient resources for the population.     Sketch a graph of . Without drawing a phase diagram, identify the equilibrium solutions to the differential equation and classify them as stable, unstable, or semistable.      Draw the phase diagram and compare to your graph of .      "
+},
+{
+  "id": "recitation-phase-diagrams-3-1",
+  "level": "2",
+  "url": "recitation-phase-diagrams.html#recitation-phase-diagrams-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider the equation .     Sketch the graph of . Your sketch should have the correct zeros of the function, and should correctly indicate where is positive and negative. (Note: the horizontal axis should be here. We don't have a label for the vertical axis.)      Draw the -plane, which is where solution functions should be graphed. Draw the equilibrium solutions. Along the -axis, put appropriate up- and down-arrows, and complete the phase diagram. Classify each equilibrium point as stable, unstable, or semistable.      Describe how the graph of could give the up- and down-arrow phase diagram information. What features in the graph of can you recognize as indications of stable, unstable, or semistable equilibrium solutions?    "
+},
+{
+  "id": "recitation-phase-diagrams-4-1",
+  "level": "2",
+  "url": "recitation-phase-diagrams.html#recitation-phase-diagrams-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  One model of population growth is: where are positive constants with . This model is meant to capture the idea that there is some threshold below which the population can't sustain itself, and there is a carrying capacity above which the environment doesn't have sufficient resources for the population.     Sketch a graph of . Without drawing a phase diagram, identify the equilibrium solutions to the differential equation and classify them as stable, unstable, or semistable.      Draw the phase diagram and compare to your graph of .    "
 },
 {
   "id": "homework-list",
