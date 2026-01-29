@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+  <title>Tuesday, Jan 27</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered.
+      You should not rely only on my notes.
+      Make sure to take your own notes, and, if you miss a class, get notes from another student in class.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Integrating Factor</title>
+
+    <p>
+      Given <m>M(x, y) + N(x, y) \frac{dy}{dx} = 0</m> with <m>M_y \neq N_x</m> (so the equation is not exact), can we find some <m>\mu(x, y)</m> to multiply by to get an exact equation? That is, we want <m>\mu(x, y)</m> such that:
+      <md>
+        <mrow> \mu M + \mu N \frac{dy}{dx} = 0 </mrow>
+      </md>
+      is exact, which requires <m>(\mu M)_y = (\mu N)_x</m>.
+      Hence:
+      <md>
+        <mrow> \mu_y M + \mu M_y = \mu_X N + \mu N_x, </mrow>
+      </md>
+      which is a partial differential equation, beyond the scope of this course.
+    </p>
+
+    <p>
+      What if we assume <m>\mu = \mu(x)</m> is a function of only one variable? Then:
+      <md>
+        <mrow> (\mu M)_y \amp = (\mu N)_x </mrow>
+        <mrow> \mu M_y \amp = \frac{d\mu}{dx} N + \mu N_x </mrow>
+        <mrow> \frac{d\mu}{dx} N \amp = \mu M_y - \mu N_x </mrow>
+        <mrow> \frac{d\mu}{dx} \amp = \frac{M_y - N_x}{N} \mu  </mrow>
+      </md>
+      If <m>\frac{M_y - N_x}{N}</m> is an expression in terms of only <m>x</m>, then this is a first order differential equation in terms of <m>\mu</m>.
+    </p>
+
+    <p>
+      Similarly, if <m>\mu = \mu(y)</m>, then:
+      <md>
+        <mrow> \frac{d\mu}{dy} = \frac{N_x - M_y}{M} \mu </mrow>
+      </md>
+      will be a first order differential equation in terms of <m>\mu</m> if  <m>\frac{N_x - M_y}{M}</m> only involves <m>y</m>.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Consider the equation:
+          <md>
+            <mrow> \underbrace{(2y^2 + 3x)}_{M} + \underbrace{(2xy)}_{N} \frac{dy}{dx} = 0. </mrow>
+          </md>
+          Then <m>M_y = 4y \neq 2y = N_x</m>, so the equation is not exact.
+          Then:
+          <md>
+            <mrow> \frac{M_y - N_x}{N} = \frac{4y - 2y}{2xy} = \frac{2y}{2xy} = \frac{1}{x}, </mrow>
+          </md>
+          which only involves <m>x</m>.
+          So we can set up and solve the differential equation:
+          <md>
+            <mrow> \frac{d\mu}{dx} = \frac{1}{x} \mu </mrow>
+            <mrow> \int \frac{d\mu}{\mu} = \int \frac{dx}{x} \mu </mrow>
+            <mrow> \ln|mu| \amp = \ln|x| + C </mrow>
+            <mrow> |mu| \amp = e^{\ln|x| + C} </mrow>
+            <mrow> \mu \amp = x. </mrow>
+          </md>
+          Multiplying the original equation, we get:
+          <md>
+            <mrow> \underbrace{(2xy^2 + 3x^2)}_{A} + \underbrace{(2x^2y)}_{B} \frac{dy}{dx} = 0 </mrow>
+            <mrow> A_y = 4xy = B_x \checkmark </mrow>
+          </md>
+          So this equation is exact.
+          <md>
+            <mrow> F(x, y) \amp = \int A\ dx = x^2y^2 + x^3 + C(y) </mrow>
+            <mrow>\xrightarrow{\partial/\partial y} \quad 2x^2y + 0 + C'(y) \amp = 2x^2y \quad \Rightarrow \quad C(y) = k</mrow>
+          </md>
+          So the implicit solution to the equation is:
+          <md>
+            <mrow> x^2y^2 + x^3 = C. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+
+
+  <subsection xml:id="subsec-2nd-order">
+    <title>Second Order Linear ODEs</title>
+
+    <definition>
+      <statement>
+        <p>
+          A <term>second order linear ODE</term>  can be put in the form:
+          <md>
+            <mrow> y'' + p(x) y' + q(x)y = f(x). </mrow>
+          </md>
+          If <m>f(x) \equiv 0</m>, the equation is called <term>homogeneous</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <theorem xml:id="thm-superposition">
+      <title>Superposition</title>
+
+      <statement>
+        <p>
+          If <m>y_1, y_2</m> are solutions to a homogeneous equation, then so are:
+          <md>
+            <mrow> y = C_1 y_1 + C_2 y_2 </mrow>
+          </md>
+          for any constants <m>C_1, C_2.</m>
+        </p>
+      </statement>
+    </theorem>
+
+    <definition>
+      <statement>
+        <p>
+          Functions <m>y_1, y_2, \dotsc, y_n</m>  are <term>linearly independent</term> if the only way to have:
+          <md>
+            <mrow> a_1y_1 + a_2y_2 + \dotsb + a_ny_n = 0 </mrow>
+          </md>
+          is <m>a_1 = a_2 = \dotsb = a_n = 0.</m>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      For <m>n = 2</m>, <m>y_1, y_2</m> are linearly independent if and only if they are not constant multiples of each other.
+    </p>
+
+    <theorem>
+      <statement>
+        <p>
+          If <m>y_1, y_2</m> are linearly independent solutions to a second order homogeneous equation, then the general solution is:
+          <md>
+            <mrow> y = C_1y_1 + C_2y_2. </mrow>
+          </md>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      Note that this is a different conclusion from the superposition theorem, which says "these functions are also solutions" but doesn't guarantee that it's a complete list of all solutions.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Consider <m>y'' - 3y' + 2y = 0.</m> Let <m>y_1 = e^x, y_2 = e^{2x}</m>.
+          Then:
+          <md>
+            <mrow> y_1' \amp = e^x \amp y_2' \amp = 2e^{2x} </mrow>
+            <mrow> y_1'' \amp = e^x \amp y_2'' \amp = 4e^{2x} </mrow>
+          </md>
+          We can easily check:
+          <md>
+            <mrow> e^x - 3e^x + 2e^x \amp = 0 \checkmark </mrow>
+            <mrow> 4e^{2x} - 3(2e^{2x}) + 2e^{2x} \amp = 0 \checkmark </mrow>
+          </md>
+          So <m>y_1, y_2</m> are solutions to the equation.
+          They are also linearly independent, since they're not multiples of each other.
+          Therefore the general solution to the equation is:
+          <md>
+            <mrow> y = C_1e^x + C_2e^{2x}. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>
