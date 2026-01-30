@@ -361,6 +361,69 @@ var ptx_lunr_docs = [
   "body": "  Consider Let . Then: We can easily check: So are solutions to the equation. They are also linearly independent, since they're not multiples of each other. Therefore the general solution to the equation is:    "
 },
 {
+  "id": "notes-01-29",
+  "level": "1",
+  "url": "notes-01-29.html",
+  "type": "Section",
+  "number": "",
+  "title": "Thursday, Jan 29",
+  "body": " Thursday, Jan 29   This is an outline of the topics we covered. You should not rely only on my notes. Make sure to take your own notes, and, if you miss a class, get notes from another student in class.    The Constant Coefficient Case  Consider a constant coefficient second order homogeneous linear differential equation: A common idea in solving certain differential equations is: guess-and-check works well for good guessers.    Does have a solution of the form for some ? If so, then: Using the quadratic equation: We'll refer to as the characteristic polynomial of .      Consider the equation: Then the characteristic polynomial is , so both are solutions. Since these are linearly independent, the general solution must be: Suppose we wanted to add initial condition information, such as . Plugging this information into the general solution: This is not enough information to pin down a single solution. For a second order equation, an initial condition must include two pieces of information: If we also suppose that , then , so: Subtracting gives: , so . Plugging back in to either equation gives , so the unique solution satisfying the initial condition is:       Consider , with characteristic polynomial . This has as a repeated root, so we have a solution , but no second solution.  Suppose we guess . We can easily check that this is a solution: Plugging in to the differential equation: Since are linearly independent, we have the general solution:     A quadratic polynomial must have either two real roots, one real repeated root, or a pair of complex conjugate roots. It remains to consider the last case.    The numbers and are called conjugate .     Euler's Formula    A slight variation, by plugging in and using the even\/odd properties of :       Consider the equation , with characteristic polynomial . Using the quadratic equation: So we find two solutions which are complex-valued functions. Using Euler's Formula: Now, we can define new functions: By the Superposition Theorem, these are also solutions to the differential equation. Since they are linearly independent (not constant multiples of each other), then the general solution to the equation is:     To summarize: given , we have three cases.   With distinct real roots , the general solution will be:     With a repeated real root , the general solution will be:     With complex conjugate roots , the general solution will be:       "
+},
+{
+  "id": "notes-01-29-3-3",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-3",
+  "type": "Example",
+  "number": "30",
+  "title": "",
+  "body": "  Does have a solution of the form for some ? If so, then: Using the quadratic equation: We'll refer to as the characteristic polynomial of .   "
+},
+{
+  "id": "notes-01-29-3-4",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-4",
+  "type": "Example",
+  "number": "31",
+  "title": "",
+  "body": "  Consider the equation: Then the characteristic polynomial is , so both are solutions. Since these are linearly independent, the general solution must be: Suppose we wanted to add initial condition information, such as . Plugging this information into the general solution: This is not enough information to pin down a single solution. For a second order equation, an initial condition must include two pieces of information: If we also suppose that , then , so: Subtracting gives: , so . Plugging back in to either equation gives , so the unique solution satisfying the initial condition is:    "
+},
+{
+  "id": "notes-01-29-3-5",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-5",
+  "type": "Example",
+  "number": "32",
+  "title": "",
+  "body": "  Consider , with characteristic polynomial . This has as a repeated root, so we have a solution , but no second solution.  Suppose we guess . We can easily check that this is a solution: Plugging in to the differential equation: Since are linearly independent, we have the general solution:    "
+},
+{
+  "id": "notes-01-29-3-7",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-7",
+  "type": "Definition",
+  "number": "33",
+  "title": "",
+  "body": "  The numbers and are called conjugate .   "
+},
+{
+  "id": "notes-01-29-3-8",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-8",
+  "type": "Fact",
+  "number": "34",
+  "title": "Euler’s Formula.",
+  "body": " Euler's Formula    A slight variation, by plugging in and using the even\/odd properties of :    "
+},
+{
+  "id": "notes-01-29-3-9",
+  "level": "2",
+  "url": "notes-01-29.html#notes-01-29-3-9",
+  "type": "Example",
+  "number": "35",
+  "title": "",
+  "body": "  Consider the equation , with characteristic polynomial . Using the quadratic equation: So we find two solutions which are complex-valued functions. Using Euler's Formula: Now, we can define new functions: By the Superposition Theorem, these are also solutions to the differential equation. Since they are linearly independent (not constant multiples of each other), then the general solution to the equation is:    "
+},
+{
   "id": "quiz-01",
   "level": "1",
   "url": "quiz-01.html",
