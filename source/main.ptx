@@ -53,6 +53,7 @@
       <xi:include href="./recitations/calculus-review.ptx"/>
       <xi:include href="./recitations/recitation-01.ptx"/>
       <xi:include href="./recitations/recitation-02.ptx"/>
+      <xi:include href="./recitations/recitation-03.ptx"/>
     </chapter>
 
     <chapter xml:id="homework">

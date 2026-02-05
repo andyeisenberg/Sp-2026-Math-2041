@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="recitation-Bernoulli">
+  <title>Bernoulli Equations</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Consider the equation:
+      <md>
+        <mrow> y' + p(x) y = q(x) y^n, </mrow>
+      </md>
+      where <m>q(x)</m> is not identically 0 and <m>n \gt 1</m>.
+      This is not separable, linear, or exact.
+      This sort of equation is called a <term>Bernoulli equation</term>, and it can be approached by introducing a substitution:
+      <md>
+        <mrow> v = y^{1 - n}. </mrow>
+      </md>
+    </p>
+  </introduction>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Consider the general equation:
+          <md>
+            <mrow xml:id="eqn" tag="star">y' + p(x) y = q(x) y^n</mrow>
+          </md>
+          Let <m>v = y^{1 - n}</m>.
+        </p>
+      </introduction>
+
+
+      <task workspace="2in">
+        <statement>
+          <p>
+            What is the relationship between <m>y'</m> and <m>v'</m>?
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="3in">
+        <statement>
+          <p>
+            Rewrite <xref ref="eqn"/> in terms of <m>v</m> instead of <m>y</m>.
+            What sort of differential equation are we now looking at, and what method can be used to solve it (for <m>v</m>)?
+          </p>
+        </statement>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Consider the specific equation:
+          <md>
+            <mrow xml:id="eqn2" tag="dstar"> xy' + y = x^2y^2 </mrow>
+          </md>
+        </p>
+      </introduction>
+
+
+      <task workspace="2in">
+        <statement>
+          <p>
+            Rewrite <xref ref="eqn2"/> after applying the appropriate substitution.
+            [Careful! Put it in the standard form for a Bernoulli equation first!]
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="3in">
+        <statement>
+          <p>
+            Solve the new equation for the unknown function <m>v</m>.
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="2in">
+        <statement>
+          <p>
+            Finally, use your solution for <m>v</m> to find a solution for <m>y</m>.
+          </p>
+        </statement>
+      </task>
+    </exercise>
+  </page>
+</worksheet>
