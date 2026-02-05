@@ -37,6 +37,7 @@
       <xi:include href="./notes/1-22.ptx"/>
       <xi:include href="./notes/1-27.ptx"/>
       <xi:include href="./notes/1-29.ptx"/>
+      <!-- <xi:include href="./notes/example.ptx"/> -->
 
     </chapter>
 
@@ -45,6 +46,7 @@
       <title>Quizzes</title>
 
       <xi:include href="./quizzes/quiz-01.ptx"/>
+      <xi:include href="./quizzes/quiz-02.ptx"/>
     </chapter>
 
     <chapter xml:id="recitations">
