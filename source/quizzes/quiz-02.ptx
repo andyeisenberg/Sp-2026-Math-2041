@@ -24,7 +24,7 @@
           Below are three phase lines for differential equations of the form <m>\frac{dy}{dt} = f(y)</m> and three graphs of functions <m>f(y)</m>.
         </p>
 
-        <sidebyside widths="30% 30% 30%">
+        <sidebyside widths="20% 20% 20%">
           <figure xml:id="graph-A">
             <caption>(A)</caption>
             <image>
@@ -35,11 +35,8 @@
                         ]
                         \draw [->] (-1.4, 0) to (1.4, 0) node [right] {$y$};
                         \draw [->] (0, -1.5) to (0, 1.5) node [above] {$f(y)$};
-
                         \draw [thick,domain=-1.1:1.1,samples=100] plot (\x, {3 * \x * (\x - 1) * (\x + 1)});
-
                         \node at (0, -2) {(A)};
-
                         \end{tikzpicture}
               </latex-image>
             </image>
@@ -53,10 +50,8 @@
                             markings,
                             mark=at position 0.65 with {\arrow{Triangle[length=5mm,width=5mm]}}}
                         ]
-
                         \draw [->] (-1.4, 0) to (1.4, 0) node [right] {$y$};
                         \draw [->] (0, -1.5) to (0, 1.5) node [above] {$f(y)$};
-
                         \draw [thick,domain=-0.95:1.1,samples=100] plot (\x, {3 * \x * (\x + 0.8) * (\x - 0.7) * (\x - 0.7)});
                         \node at (0, -2) {(B)};
                         \end{tikzpicture}
@@ -72,10 +67,8 @@
                             markings,
                             mark=at position 0.65 with {\arrow{Triangle[length=5mm,width=5mm]}}}
                         ]
-
                         \draw [->] (-1.4, 0) to (1.4, 0) node [right] {$y$};
                         \draw [->] (0, -1.5) to (0, 1.5) node [above] {$f(y)$};
-
                         \draw [thick,domain=-1:1,samples=100] plot (\x, {-5 * \x * (\x + 0.7) * (\x + 0.7) * (\x - 0.7) * (\x - 0.7)});
                         \node at (0, -2) {(C)};                      
                         \end{tikzpicture}
@@ -84,144 +77,91 @@
           </figure>
         </sidebyside>
 
-        <sidebyside widths="20% 20% 20%">
-          <figure xml:id="phase-A">
-            <caption>(A)</caption>
-            <image>
-              <latex-image>
+        <figure xml:id="phase-diagrams">
+          <caption>Phase Diagrams</caption>
+          <image width="50%">
+            <latex-image>
                         \begin{tikzpicture}[scale=0.3, very thick,decoration={
                             markings,
                             mark=at position 0.65 with {\arrow{Triangle[length=5mm,width=5mm]}}}
                         ]
+                        \begin{scope}
                         \coordinate (b) at (0, 0);
                         \coordinate (t) at (0, 12);
-
                         \coordinate (y1) at ($(b)!0.2!(t)$);
                         \coordinate (y2) at ($(b)!0.5!(t)$);
                         \coordinate (y3) at ($(b)!0.8!(t)$);
-
-
                         \draw [postaction={decorate}] (b) to (y1);
                         \draw [postaction={decorate}] (y1) to (y2);
                         \draw [postaction={decorate}] (y3) to (y2);
                         \draw [postaction={decorate}] (t) to (y3);
-
                         \draw [thin] ($(y1)+(-0.2,0)$) to ($(y1)+(0.2,0)$);
                         \draw [thin] ($(y2)+(-0.2,0)$) to ($(y2)+(0.2,0)$);
                         \draw [thin] ($(y3)+(-0.2,0)$) to ($(y3)+(0.2,0)$);
-
                         \node at (0, 12.5) {$y$};
-                        \end{tikzpicture}
-              </latex-image>
-            </image>
-          </figure>
-
-          <figure xml:id="phase-B">
-            <caption>(B)</caption>
-            <image>
-              <latex-image>
-                        \begin{tikzpicture}[scale=0.3, very thick,decoration={
-                            markings,
-                            mark=at position 0.65 with {\arrow{Triangle[length=5mm,width=5mm]}}}
-                        ]
+                        \node [blue] at (0, -1.5) {\textbf{C}};
+                        \end{scope}
+                        %% Phase line 2
+                        \begin{scope}[xshift=8cm]
                         \coordinate (b) at (0, 0);
                         \coordinate (t) at (0, 12);
-
                         \coordinate (y1) at ($(b)!0.2!(t)$);
                         \coordinate (y2) at ($(b)!0.5!(t)$);
                         \coordinate (y3) at ($(b)!0.8!(t)$);
-
-
                         \draw [postaction={decorate}] (y1) to (b);
                         \draw [postaction={decorate}] (y1) to (y2);
                         \draw [postaction={decorate}] (y3) to (y2);
                         \draw [postaction={decorate}] (y3) to (t);
-
                         \draw [thin] ($(y1)+(-0.2,0)$) to ($(y1)+(0.2,0)$);
                         \draw [thin] ($(y2)+(-0.2,0)$) to ($(y2)+(0.2,0)$);
                         \draw [thin] ($(y3)+(-0.2,0)$) to ($(y3)+(0.2,0)$);
-
                         \node at (0, 12.5) {$y$};
-                        \end{tikzpicture}
-              </latex-image>
-            </image>
-          </figure>
-
-          <figure xml:id="phase-C">
-            <caption>(C)</caption>
-            <image>
-              <latex-image>
-                        \begin{tikzpicture}[scale=0.3, very thick,decoration={
-                            markings,
-                            mark=at position 0.65 with {\arrow{Triangle[length=5mm,width=5mm]}}}
-                        ]
+                        \node [blue] at (0, -1.5) {\textbf{A}};
+                        \end{scope}
+                        %% Phase line 3
+                        \begin{scope}[xshift=16cm]
                         \coordinate (b) at (0, 0);
                         \coordinate (t) at (0, 12);
-
                         \coordinate (y1) at ($(b)!0.2!(t)$);
                         \coordinate (y2) at ($(b)!0.5!(t)$);
                         \coordinate (y3) at ($(b)!0.8!(t)$);
-
                         \draw [postaction={decorate}] (b) to (y1);
                         \draw [postaction={decorate}] (y2) to (y1);
                         \draw [postaction={decorate}] (y2) to (y3);
                         \draw [postaction={decorate}] (y3) to (t);
-
                         \draw [thin] ($(y1)+(-0.2,0)$) to ($(y1)+(0.2,0)$) node [right] {$c_1$};
                         \draw [thin] ($(y2)+(-0.2,0)$) to ($(y2)+(0.2,0)$) node [right] {$c_2$};
                         \draw [thin] ($(y3)+(-0.2,0)$) to ($(y3)+(0.2,0)$) node [right] {$c_3$};
-
-                        \node at (0, 12.5) {$y$};     
+                        \node at (0, 12.5) {$y$};
+                        \node [blue, anchor=west] at ($(y3)+(1.4,0.1)$) {semistable};
+                        \node [blue, anchor=west] at ($(y2)+(1.4,0.1)$) {unstable};
+                        \node [blue, anchor=west] at ($(y1)+(1.4,0.1)$) {stable};
+                        \node [blue] at (0, -1.5) {\textbf{B}};
+                        \end{scope}
                         \end{tikzpicture}
-              </latex-image>
-            </image>
-          </figure>
-        </sidebyside>
+            </latex-image>
+          </image>
+        </figure>
       </introduction>
 
 
       <task>
         <statement>
           <p>
-            <m>\frac{dy}{dt} = 5 - y</m>
+            Below each phase line, identify which graph---(A), (B), or (C)---the phase line corresponds to.
+            No justification is necessary.
           </p>
         </statement>
-
-        <solution>
-          <p>
-            A.
-          </p>
-        </solution>
       </task>
 
 
       <task>
         <statement>
           <p>
-            <m>\frac{dy}{dt} = y - 3</m>
+            For the critical points <m>c_1, c_2, c_3</m> labeled on the rightmost phase line, determine whether the critical point corresponds to a stable, unstable, or semistable equilibrium solution.
+            No justification is necessary.
           </p>
         </statement>
-
-        <solution>
-          <p>
-            C.
-          </p>
-        </solution>
-      </task>
-
-
-      <task>
-        <statement>
-          <p>
-            <m>\frac{dy}{dt} = ty</m>
-          </p>
-        </statement>
-
-        <solution>
-          <p>
-            B.
-          </p>
-        </solution>
       </task>
     </exercise>
   </page>
@@ -231,22 +171,59 @@
     <exercise>
       <statement>
         <p>
-          Solve the IVP: <m>\frac{dy}{dx} + y = 2xye^{x^2}</m> with initial condition <m>y(0) = e^3</m>.
+          A tank initially contains 100 L of a dye solution with a concentration of 1 g/L.
+          Clean water flows into the tank at a rate of 4 L/min, and the mixture in the tank flows out through a drain pipe at the same rate.
+          Let <m>Q(t)</m> be the quantity of dye in the tank at time <m>t</m>
+        </p>
+
+        <p>
+          Write a differential equation involving <m>Q(t)</m> and <m>Q'(t)</m>, then solve your differential equation.
         </p>
       </statement>
 
       <solution>
         <p>
-            <md>
-                <mrow> \frac{dy}{dx} \amp = 2xye^{x^2} - y = (2xe^{x^2} - 1)y </mrow>
-                <mrow> \int \frac{dy}{y} \amp = \int (2xe^{x^2} - 1)\ dx </mrow>
-                <mrow> \ln|y| \amp = e^{x^2} - x + C </mrow>
-                <mrow> \ln|e^3| \amp = e^{0} - 0 + C </mrow>
-                <mrow> 3 \amp = 1 + C \quad \Rightarrow \quad C = 2 </mrow>
-                <mrow> \ln|y| \amp = e^{x^2} - x + 2 </mrow>
-                <mrow> y \amp = e^{e^{x^2} - x + 2} </mrow>
-            </md>
-            
+          <m>\frac{dQ}{dt} = \text{rate in} - \text{rate out}</m>. Since clean water is flowing in, the rate in is 0. Therefore:
+          <md>
+            <mrow> \frac{dQ}{dt} \amp = - (4)\left(\frac{Q}{100}\right) = \frac{-Q}{25} </mrow>
+            <mrow> \Rightarrow \quad \int \frac{dQ}{Q} \amp = \int \frac{-dt}{25} </mrow>
+            <mrow> \ln(Q) \amp = \frac{-t}{25} + C,</mrow>
+          </md>
+          so <m>Q = Ce^{-t/25}</m>.
+          With an initial concentration of 1 g/L and 100 L of solution, we have <m>Q(0) = 100 = Ce^0</m>, so <m>C = 100</m>.
+          Therefore the solution is
+          <md>
+            <mrow>Q(t) = 100e^{-t/25}</mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Determine whether the equation <m>\displaystyle{\frac{dy}{dx} = \frac{2xe^y - y + 6x^2}{x - x^2e^y + 3}}</m> is exact, then find an (implicit) solution.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          In standard form:
+          <md>
+            <mrow> (y - 6x^2 - 2xe^y) + (x - x^2e^y + 3) \frac{dy}{dx} = 0. </mrow>
+          </md>
+          Let <m>M(x, y) = y - 6x^2 - 2xe^y</m> and <m>N(x, y) = x - x^2e^y + 3</m>.
+          Then <m>M_y = 1 - 2xe^y = N_x</m>, so the equation is exact.
+          If <m>F_x = M</m>, then:
+          <md>
+            <mrow> F(x, y) \amp = \int y - 6x^2 - 2xe^y\ dx = xy - 2x^3 - x^2e^y + g(y) </mrow>
+            <mrow> \Rightarrow \quad F_y \amp = x - x^2e^y + g'(y) = x - x^2e^y + 3 </mrow>
+            <mrow> \Rightarrow \quad g'(y) \amp = 3 \quad \Rightarrow \quad g(y) = 3y </mrow>
+          </md>
+          So <m>F(x, y) = xy - 2x^3 - x^2e^y + 3y</m>, and the implicit solution to the equation is:
+          <md>
+            <mrow> xy - 2x^3 - x^2e^y + 3y = C </mrow>
+          </md>
         </p>
       </solution>
     </exercise>
