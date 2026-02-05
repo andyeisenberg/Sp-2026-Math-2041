@@ -83,7 +83,7 @@
             <latex-image>
                         \begin{tikzpicture}[scale=0.3, very thick,decoration={
                             markings,
-                            mark=at position 0.65 with {\arrow{Triangle[length=5mm,width=5mm]}}}
+                            mark=at position 0.65 with {\arrow{Triangle[length=3mm,width=3mm]}}}
                         ]
                         \begin{scope}
                         \coordinate (b) at (0, 0);
@@ -133,9 +133,9 @@
                         \draw [thin] ($(y2)+(-0.2,0)$) to ($(y2)+(0.2,0)$) node [right] {$c_2$};
                         \draw [thin] ($(y3)+(-0.2,0)$) to ($(y3)+(0.2,0)$) node [right] {$c_3$};
                         \node at (0, 12.5) {$y$};
-                        \node [blue, anchor=west] at ($(y3)+(1.4,0.1)$) {semistable};
-                        \node [blue, anchor=west] at ($(y2)+(1.4,0.1)$) {unstable};
-                        \node [blue, anchor=west] at ($(y1)+(1.4,0.1)$) {stable};
+                        \node [blue, anchor=west] at ($(y3)+(3.6,0.1)$) {semistable};
+                        \node [blue, anchor=west] at ($(y2)+(3.6,0.1)$) {unstable};
+                        \node [blue, anchor=west] at ($(y1)+(3.6,0.1)$) {stable};
                         \node [blue] at (0, -1.5) {\textbf{B}};
                         \end{scope}
                         \end{tikzpicture}
