@@ -451,6 +451,42 @@ var ptx_lunr_docs = [
   "body": "  Solve the IVP: with initial condition .        "
 },
 {
+  "id": "quiz-02",
+  "level": "1",
+  "url": "quiz-02.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Quiz 2",
+  "body": " Quiz 2    The following work should be completed individually. Use of notes, calculators, or textbooks is not allowed.  Show all work unless instructed otherwise.      Below are three phase lines for differential equations of the form and three graphs of functions .    (A)       (B)       (C)        Phase Diagrams         Below each phase line, identify which graph---(A), (B), or (C)---the phase line corresponds to. No justification is necessary.      For the critical points labeled on the rightmost phase line, determine whether the critical point corresponds to a stable, unstable, or semistable equilibrium solution. No justification is necessary.         A tank initially contains 100 L of a dye solution with a concentration of 1 g\/L. Clean water flows into the tank at a rate of 4 L\/min, and the mixture in the tank flows out through a drain pipe at the same rate. Let be the quantity of dye in the tank at time   Write a differential equation involving and , then solve your differential equation.     . Since clean water is flowing in, the rate in is 0. Therefore: so . With an initial concentration of 1 g\/L and 100 L of solution, we have , so . Therefore the solution is       Determine whether the equation is exact, then find an (implicit) solution.    In standard form: Let and . Then , so the equation is exact. If , then: So , and the implicit solution to the equation is:      "
+},
+{
+  "id": "quiz-02-3-1",
+  "level": "2",
+  "url": "quiz-02.html#quiz-02-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Below are three phase lines for differential equations of the form and three graphs of functions .    (A)       (B)       (C)        Phase Diagrams         Below each phase line, identify which graph---(A), (B), or (C)---the phase line corresponds to. No justification is necessary.      For the critical points labeled on the rightmost phase line, determine whether the critical point corresponds to a stable, unstable, or semistable equilibrium solution. No justification is necessary.    "
+},
+{
+  "id": "quiz-02-4-1",
+  "level": "2",
+  "url": "quiz-02.html#quiz-02-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  A tank initially contains 100 L of a dye solution with a concentration of 1 g\/L. Clean water flows into the tank at a rate of 4 L\/min, and the mixture in the tank flows out through a drain pipe at the same rate. Let be the quantity of dye in the tank at time   Write a differential equation involving and , then solve your differential equation.     . Since clean water is flowing in, the rate in is 0. Therefore: so . With an initial concentration of 1 g\/L and 100 L of solution, we have , so . Therefore the solution is    "
+},
+{
+  "id": "quiz-02-4-2",
+  "level": "2",
+  "url": "quiz-02.html#quiz-02-4-2",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Determine whether the equation is exact, then find an (implicit) solution.    In standard form: Let and . Then , so the equation is exact. If , then: So , and the implicit solution to the equation is:    "
+},
+{
   "id": "recitation-calculus-review",
   "level": "1",
   "url": "recitation-calculus-review.html",
@@ -548,6 +584,42 @@ var ptx_lunr_docs = [
   "number": "2",
   "title": "",
   "body": "  One model of population growth is: where are positive constants with . This model is meant to capture the idea that there is some threshold below which the population can't sustain itself, and there is a carrying capacity above which the environment doesn't have sufficient resources for the population.     Sketch a graph of . Without drawing a phase diagram, identify the equilibrium solutions to the differential equation and classify them as stable, unstable, or semistable.      Draw the phase diagram and compare to your graph of .    "
+},
+{
+  "id": "recitation-Bernoulli",
+  "level": "1",
+  "url": "recitation-Bernoulli.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Bernoulli Equations",
+  "body": " Bernoulli Equations    Consider the equation: where is not identically 0 and . This is not separable, linear, or exact. This sort of equation is called a Bernoulli equation , and it can be approached by introducing a substitution:       Consider the general equation: Let .     What is the relationship between and ?      Rewrite in terms of instead of . What sort of differential equation are we now looking at, and what method can be used to solve it (for )?         Consider the specific equation:      Rewrite after applying the appropriate substitution. [Careful! Put it in the standard form for a Bernoulli equation first!]      Solve the new equation for the unknown function .      Finally, use your solution for to find a solution for .      "
+},
+{
+  "id": "recitation-Bernoulli-2-1",
+  "level": "2",
+  "url": "recitation-Bernoulli.html#recitation-Bernoulli-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Bernoulli equation "
+},
+{
+  "id": "recitation-Bernoulli-3-1",
+  "level": "2",
+  "url": "recitation-Bernoulli.html#recitation-Bernoulli-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider the general equation: Let .     What is the relationship between and ?      Rewrite in terms of instead of . What sort of differential equation are we now looking at, and what method can be used to solve it (for )?    "
+},
+{
+  "id": "recitation-Bernoulli-4-1",
+  "level": "2",
+  "url": "recitation-Bernoulli.html#recitation-Bernoulli-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider the specific equation:      Rewrite after applying the appropriate substitution. [Careful! Put it in the standard form for a Bernoulli equation first!]      Solve the new equation for the unknown function .      Finally, use your solution for to find a solution for .    "
 },
 {
   "id": "homework-list",
