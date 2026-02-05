@@ -1,0 +1,245 @@
+<section xml:id="sec-Example">
+  <title>Example</title>
+
+  <p>
+    Welcome to <pretext />.
+    Let's type up some math.
+    According to Pythagoras, <m>a^2 + b^2 = c^2</m>.
+    But he also thought <m>\sqrt{2}</m> was rational, so maybe we shouldn't take his word for it.
+  </p>
+
+  <p>
+    Let's collect some info about squares to explore whether this is really true.
+  </p>
+
+  <table>
+    <title>Perfect Squares</title>
+
+    <tabular halign="center">
+      <row bottom="minor" header="yes">
+        <cell><m>n</m></cell>
+        <cell><m>n^2</m></cell>
+      </row>
+
+      <row>
+        <cell>1</cell>
+        <cell>1</cell>
+      </row>
+
+      <row>
+        <cell>2</cell>
+        <cell>4</cell>
+      </row>
+
+      <row>
+        <cell>3</cell>
+        <cell>9</cell>
+      </row>
+
+      <row>
+        <cell>4</cell>
+        <cell>16</cell>
+      </row>
+
+      <row>
+        <cell>5</cell>
+        <cell>25</cell>
+      </row>
+
+      <row>
+        <cell><m>\vdots</m></cell>
+        <cell><m>\vdots</m></cell>
+      </row>
+    </tabular>
+  </table>
+
+  <theorem xml:id="thm-Pythagorean">
+    <title>Pythagorean Theorem</title>
+
+    <statement>
+      <p>
+        Suppose a triangle has side lengths <m>a, b</m> and hypotenuse length <m>c</m>.
+        Then
+        <md>
+          <mrow> a^2 + b^2 = c^2. </mrow>
+        </md>
+      </p>
+    </statement>
+
+
+    <proof>
+      <image source="example.png" width="50%">
+        <shortdescription>
+          Right triangle with squares appended to each side.
+        </shortdescription>
+
+        <description>
+          <p>
+            Right triangle with legs labeled <m>a</m> and <m>b</m> and hypotenuse labeled <m>c</m>.
+            Squares are appended to each side of the triangle.
+          </p>
+        </description>
+      </image>
+
+      <p>
+        As we can see in the image...
+      </p>
+    </proof>
+  </theorem>
+
+  <p>
+    We can also draw the picture ourselves:
+  </p>
+
+  <figure xml:id="triangle">
+    <caption>Triangle</caption>
+    <image width="50%">
+      <shortdescription>
+        Triangle
+      </shortdescription>
+
+      <description>
+        <p>
+          Longer description that can include structure like <m>\alpha</m>.
+        </p>
+      </description>
+      <latex-image>
+        \begin{tikzpicture}
+            \draw (0,0) to (0, 2) to (2, 0) to (0, 0);
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+
+  <definition xml:id="def-rational">
+    <statement>
+      <p>
+        A real number <m>x \in \R</m> is called <term>rational</term> if there are integers <m>a, b</m> so that <m>x = \frac{a}{b}</m>.
+        Otherwise, <m>x</m> is called <term>irrational</term>, no matter what Pythagoras says.
+      </p>
+    </statement>
+  </definition>
+
+  <example>
+    <p>
+      <m>\frac{1}{2}</m> is rational.
+    </p>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Is <m>\sqrt{2}</m> rational?
+      </p>
+    </statement>
+
+    <hint>
+      <p>
+        Why does <m>\pi = \frac{\sqrt{2}}{1}</m> <em>not</em> show that <m>\sqrt{2}</m> is rational?
+      </p>
+    </hint>
+
+    <hint>
+      <p>
+        What would happen if you assumed <m>\sqrt{2}</m> is rational?
+      </p>
+    </hint>
+
+    <answer>
+      <p>
+        No!
+      </p>
+    </answer>
+
+    <solution>
+      <p>
+        Let <m>\sqrt{2} = \frac{a}{b}</m> for relatively prime integers <m>a, b</m>.
+        Then:
+        <md>
+          <mrow>2 \amp = \frac{a^2}{b^2}</mrow>
+          <mrow>2b^2 \amp = a^2</mrow>
+        </md>
+        But, after taking the prime factorization of both sides, the left side has an odd number of prime factors and the right side has an even number.
+        This is a contradiction, so <m>\sqrt{2}</m> is irrational.
+      </p>
+    </solution>
+  </example>
+
+  <exercise>
+    <statement>
+      <p>
+        Prove that <m>\sqrt{p}</m> is irrational for any prime <m>p</m>.
+      </p>
+    </statement>
+  </exercise>
+
+  <p>
+    Before trying the following exercises, review <xref ref="thm-Pythagorean"/>.
+  </p>
+
+  <exercises>
+  <exercise>
+    <statement>
+      <p>
+        An exercise.
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        An exercise.
+      </p>
+    </statement>
+
+    <answer>
+      <p>
+      </p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        An exercise.
+      </p>
+    </introduction>
+
+
+    <task>
+      <statement>
+        <p>
+          First part.
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          TODO.
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          Second part.
+        </p>
+      </statement>
+
+      <answer>
+        <p>
+          TODO.
+        </p>
+      </answer>
+    </task>
+  </exercise>
+  </exercises>
+</section>
