@@ -66,6 +66,14 @@
     </chapter>
 
     
+    <chapter xml:id="review">
+      <title>Exam Review</title>
+
+      <xi:include href="./review/Exam-1-Review.ptx"/>
+
+    </chapter>
+
+    
     <!-- Include additional chapters for other categories -->
 
     </book>
