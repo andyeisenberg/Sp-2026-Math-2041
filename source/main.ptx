@@ -39,6 +39,7 @@
       <xi:include href="./notes/1-29.ptx"/>
       <xi:include href="./notes/2-3.ptx"/>
       <xi:include href="./notes/2-5.ptx"/>
+      <xi:include href="./notes/2-10.ptx"/>
       <!-- <xi:include href="./notes/example.ptx"/> -->
 
     </chapter>

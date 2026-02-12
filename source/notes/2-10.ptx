@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-02-10">
+  <title>Tuesday, Feb 10</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered.
+      You should not rely only on my notes.
+      Make sure to take your own notes, and, if you miss a class, get notes from another student in class.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Method of Undetermined Coefficients</title>
+
+    <p>
+      Consider the equation:
+      <md>
+        <mrow> y'' + 2y' + 3y = e^{4x} + \sin(2x) + x^3 + x^2 - y </mrow>
+      </md>
+      For a particular solution <m>y_p</m>, the method we learned last time would suggest:
+      <md>
+        <mrow> y_p = Ae^{4x} + B\sin(2x) + C\cos(2x) + Dx^3 + Ex^2 + Fx + G. </mrow>
+      </md>
+      Gross.
+    </p>
+
+    <theorem>
+      <statement>
+        <p>
+          If <m>y_1</m> is a solution to:
+          <md>
+            <mrow> y'' + p(t) y' + q(t) y \amp = g_1(t) </mrow>
+          </md>
+          and <m>y_2</m> is a solution to:
+          <md>
+            <mrow> y'' + p(t) y' + q(t) y \amp = g_2(t) </mrow>
+          </md>
+          then <m>y_1 + y_2</m> is a solution to
+          <md>
+            <mrow> y'' + p(t) y' + q(t) y \amp = g_1(t) + g_2(t) </mrow>
+          </md>
+        </p>
+      </statement>
+    </theorem>
+
+    <example>
+      <statement>
+        <p>
+          Consider:
+          <md number="yes">
+            <mrow xml:id="ex4-nonhom"> y'' - y \amp = e^{2t} + \sin(t) </mrow>
+            <mrow xml:id="ex4-AHE"> y'' - y \amp = 0 </mrow>
+          </md>
+          For <xref ref="ex4-AHE"/>:
+          <md>
+            <mrow> r^2 - 1 \amp = 0 </mrow>
+            <mrow> (r - 1)(r + 1) \amp = 0 </mrow>
+            <mrow> r \amp = \pm 1 </mrow>
+            <mrow> y_c \amp = C_1e^t + C_2e^{-t} </mrow>
+          </md>
+          Now, consider:
+          <md number="yes">
+            <mrow xml:id="ex4-part1"> y'' - y \amp = e^{2t} </mrow>
+            <mrow xml:id="ex4-part2"> y'' - y \amp = \sin(t) </mrow>
+          </md>
+          For <xref ref="ex4-part1"/>, we would take the guess:
+          <md>
+            <mrow> y_p \amp = Ae^{2t} </mrow>
+            <mrow> y_p' \amp = 2Ae^{2t} </mrow>
+            <mrow> y_p'' \amp = 4Ae^{2t} </mrow>
+            <mrow> 4Ae^{2t} - Ae^{2t} \amp = e^{2t} </mrow>
+            <mrow> 3Ae^{2t} \amp = e^{2t} </mrow>
+            <mrow> 3A \amp = 1 </mrow>
+            <mrow> A \amp = \frac{1}{3} </mrow>
+          </md>
+          So:
+          <md>
+            <mrow> y_p \amp = \frac{e^{2t}}{3} </mrow>
+          </md>
+          is a solution of <xref ref="ex4-part1"/>.
+          For <xref ref="ex4-part2"/>, we would take the guess:
+          <md>
+            <mrow> y_p \amp = A\sin(t) + B\cos(t) </mrow>
+            <mrow> y_p' \amp = A\cos(t) - B\sin(t) </mrow>
+            <mrow> y_p'' \amp = -A\sin(t) - B\cos(t) </mrow>
+          </md>
+          Plugging in to the differential equation:
+          <md>
+            <mrow> (-A\sin(t) - B\cos(t)) - (A\sin(t) + B\cos(t)) \amp = \sin(t) </mrow>
+            <mrow> -2A\sin(t) - 2B\cos(t) \amp = \sin(t) </mrow>
+          </md>
+          Now <m>B = 0</m> and <m>A = \frac{-1}{2}</m>, so:
+          <md>
+            <mrow> y_p = \frac{-\sin(t)}{2} </mrow>
+          </md>
+          is a particular solution of <xref ref="ex4-part2"/>.
+          Using the theorem to put the parts together, we have the general solution to <xref ref="ex4-nonhom"/>:
+          <md>
+            <mrow> y = C_1e^t + C_2e^{-t} + \frac{e^{2t}}{3} - \frac{\sin(t)}{2}. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <p>
+        TODO: Variation of Parameters.
+    </p>
+  </subsection>
+</section>
