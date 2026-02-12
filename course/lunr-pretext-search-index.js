@@ -532,6 +532,33 @@ var ptx_lunr_docs = [
   "body": "  Consider: We first solve the AHE: The right hand side of is an exponential, so we might make the guess: However, this is already part of , so we adjust: However, this is still part of , so we adjust again: Then: So the general solution to is:    "
 },
 {
+  "id": "notes-02-10",
+  "level": "1",
+  "url": "notes-02-10.html",
+  "type": "Section",
+  "number": "",
+  "title": "Tuesday, Feb 10",
+  "body": " Tuesday, Feb 10   This is an outline of the topics we covered. You should not rely only on my notes. Make sure to take your own notes, and, if you miss a class, get notes from another student in class.    Method of Undetermined Coefficients  Consider the equation: For a particular solution , the method we learned last time would suggest: Gross.    If is a solution to: and is a solution to: then is a solution to       Consider: For : Now, consider: For , we would take the guess: So: is a solution of . For , we would take the guess: Plugging in to the differential equation: Now and , so: is a particular solution of . Using the theorem to put the parts together, we have the general solution to :     TODO: Variation of Parameters.   "
+},
+{
+  "id": "notes-02-10-3-3",
+  "level": "2",
+  "url": "notes-02-10.html#notes-02-10-3-3",
+  "type": "Theorem",
+  "number": "44",
+  "title": "",
+  "body": "  If is a solution to: and is a solution to: then is a solution to    "
+},
+{
+  "id": "notes-02-10-3-4",
+  "level": "2",
+  "url": "notes-02-10.html#notes-02-10-3-4",
+  "type": "Example",
+  "number": "45",
+  "title": "",
+  "body": "  Consider: For : Now, consider: For , we would take the guess: So: is a solution of . For , we would take the guess: Plugging in to the differential equation: Now and , so: is a particular solution of . Using the theorem to put the parts together, we have the general solution to :    "
+},
+{
   "id": "quiz-01",
   "level": "1",
   "url": "quiz-01.html",
