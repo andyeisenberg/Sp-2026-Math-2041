@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-02-03">
+  <title>Tuesday, Feb 3</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered.
+      You should not rely only on my notes.
+      Make sure to take your own notes, and, if you miss a class, get notes from another student in class.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Mechanical Vibrations</title>
+
+    <!-- TODO figure -->
+    <p>
+      Consider a mass attached to a spring, displaced from its resting position by <m>x(t)</m> at time <m>t</m>.
+      The force acting on the mass is modeled by the differential equation:
+      <md>
+        <mrow> mx'' \amp = -c x' - kx +F(t). </mrow>
+      </md>
+      The constant <m>m</m> is the mass of the object.
+      The term <m>-cx'</m> represents the contribution of friction, with a nonnegative constant <m>c</m>.
+      The term <m>-kx</m>, with positive constant <m>k</m>, comes from Hooke's Law.
+      The term <m>F(t)</m> represents an external force that may be applied.
+      The system is called <term>forced</term> if <m>F(t)</m> is not identically zero.
+      Otherwise, the system is called <term>unforced</term>.
+    </p>
+
+    <example>
+      <title>Free undapmed motion</title>
+
+      <statement>
+        <p>
+          Suppose <m>F(t) = 0, c = 0</m>.
+          Then:
+          <md>
+            <mrow> mx'' + kx \amp = 0 </mrow>
+            <mrow> x'' + \frac{k}{m} x \amp = 0 </mrow>
+            <mrow> x'' + \omega_0^2 x \amp = 0, \quad \omega_0 = \sqrt{\frac{k}{m}} </mrow>
+          </md>
+          The roots of the characteristic polynomial are <m>\pm i \omega_0</m>, so the general solution is:
+          <md>
+            <mrow> x(t) \amp = A \cos(\omega_0 t) + B\sin(\omega_0 t) </mrow>
+          </md>
+          After applying trig identities, this can be rewritten:
+          <md>
+            <mrow> x(t) \amp = C \so(\omega_0 t - \gamma), </mrow>
+          </md>
+          where <m>C</m> is the <term>amplitude</term> of the wave, <m>\omega_0</m> is the <term>angular frequency</term>, and <m>\gamma</m> is the <term>phase shift</term>.
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>
