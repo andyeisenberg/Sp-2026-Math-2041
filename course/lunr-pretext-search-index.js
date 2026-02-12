@@ -424,6 +424,114 @@ var ptx_lunr_docs = [
   "body": "  Consider the equation , with characteristic polynomial . Using the quadratic equation: So we find two solutions which are complex-valued functions. Using Euler's Formula: Now, we can define new functions: By the Superposition Theorem, these are also solutions to the differential equation. Since they are linearly independent (not constant multiples of each other), then the general solution to the equation is:    "
 },
 {
+  "id": "notes-02-03",
+  "level": "1",
+  "url": "notes-02-03.html",
+  "type": "Section",
+  "number": "",
+  "title": "Tuesday, Feb 3",
+  "body": " Tuesday, Feb 3   This is an outline of the topics we covered. You should not rely only on my notes. Make sure to take your own notes, and, if you miss a class, get notes from another student in class.    Mechanical Vibrations   Consider a mass attached to a spring, displaced from its resting position by at time . The force acting on the mass is modeled by the differential equation: The constant is the mass of the object. The term represents the contribution of friction, with a nonnegative constant . The term , with positive constant , comes from Hooke's Law. The term represents an external force that may be applied. The system is called forced if is not identically zero. Otherwise, the system is called unforced .   Free undapmed motion   Suppose . Then: The roots of the characteristic polynomial are , so the general solution is: After applying trig identities, this can be rewritten: where is the amplitude of the wave, is the angular frequency , and is the phase shift .     Free damped motion   Consider Then the roots of the characteristic equation are: We consider 3 cases.  Case 1: if , the system is overdamped . The differential equation has 2 real roots , so the general solution is: The solutions have no oscillation behavior, and as .  Case 2: if , the system is critically damped . The differential equation has a repeated real root , so the general solution is: Again, the solutions have no oscillation behavior, and as .  Case 3: if , the system is underdamped . The differential equation has complex conjugate roots , where so the general solution is: The solutions show oscillation behavior, and as .    What if is not identically zero? Then the differential equation is not homogeneous.   "
+},
+{
+  "id": "notes-02-03-3-2",
+  "level": "2",
+  "url": "notes-02-03.html#notes-02-03-3-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "forced unforced "
+},
+{
+  "id": "notes-02-03-3-3",
+  "level": "2",
+  "url": "notes-02-03.html#notes-02-03-3-3",
+  "type": "Example",
+  "number": "36",
+  "title": "Free undapmed motion.",
+  "body": " Free undapmed motion   Suppose . Then: The roots of the characteristic polynomial are , so the general solution is: After applying trig identities, this can be rewritten: where is the amplitude of the wave, is the angular frequency , and is the phase shift .   "
+},
+{
+  "id": "notes-02-03-3-4",
+  "level": "2",
+  "url": "notes-02-03.html#notes-02-03-3-4",
+  "type": "Example",
+  "number": "37",
+  "title": "Free damped motion.",
+  "body": " Free damped motion   Consider Then the roots of the characteristic equation are: We consider 3 cases.  Case 1: if , the system is overdamped . The differential equation has 2 real roots , so the general solution is: The solutions have no oscillation behavior, and as .  Case 2: if , the system is critically damped . The differential equation has a repeated real root , so the general solution is: Again, the solutions have no oscillation behavior, and as .  Case 3: if , the system is underdamped . The differential equation has complex conjugate roots , where so the general solution is: The solutions show oscillation behavior, and as .   "
+},
+{
+  "id": "notes-02-05",
+  "level": "1",
+  "url": "notes-02-05.html",
+  "type": "Section",
+  "number": "",
+  "title": "Thursday, Feb 5",
+  "body": " Thursday, Feb 5   This is an outline of the topics we covered. You should not rely only on my notes. Make sure to take your own notes, and, if you miss a class, get notes from another student in class.    Nonhomogeneous Equations  Consider the nonhomogeneous equation where is not identically 0. Then the associated homogeneous equation (AHE) is:     Let be the general solution to and let be a particular solution to . Then, the general solution to is:       Consider: To find the general solution to : Let . Then: so is a solution to . Therefore the general solution to is:     It remains to see how to find candidate solutions . To start, we'll use the Method of Undetermined Coefficients.    Still referring to , since the right hand side is a polynomial of degree 1, we might suspect that a solution is also a polynomial of degree 1. We write the most general such polynomial, leaving some coefficients undtermined. Then, try to determine the coefficients by plugging into the differential equation: Therefore , hence , and . Plugging in , , so . Therefore:     This method will work reliably for certain types of functions that appear on the right hand side of the nonhomogeneous equation:   Undetermined Coefficient Guesses    if is...  then a guess for is...    polynomial  polynomial (same degree)    or         sum of types  sum of guesses    product of types  product of types       Consider: We first solve the AHE: The right hand side of is an exponential, so we might make the guess: However, we can immediately see this guess won't be a solution of , since it's already a solution of ! So we adjust our guess by multiplying by : Plugging these formulas into the original differential equation: Now, the general solution to is:       Consider: We first solve the AHE: The right hand side of is an exponential, so we might make the guess: However, this is already part of , so we adjust: However, this is still part of , so we adjust again: Then: So the general solution to is:      "
+},
+{
+  "id": "notes-02-05-3-2",
+  "level": "2",
+  "url": "notes-02-05.html#notes-02-05-3-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "associated homogeneous equation "
+},
+{
+  "id": "notes-02-05-3-3",
+  "level": "2",
+  "url": "notes-02-05.html#notes-02-05-3-3",
+  "type": "Theorem",
+  "number": "38",
+  "title": "",
+  "body": "  Let be the general solution to and let be a particular solution to . Then, the general solution to is:    "
+},
+{
+  "id": "notes-02-05-3-4",
+  "level": "2",
+  "url": "notes-02-05.html#notes-02-05-3-4",
+  "type": "Example",
+  "number": "39",
+  "title": "",
+  "body": "  Consider: To find the general solution to : Let . Then: so is a solution to . Therefore the general solution to is:    "
+},
+{
+  "id": "notes-02-05-3-6",
+  "level": "2",
+  "url": "notes-02-05.html#notes-02-05-3-6",
+  "type": "Example",
+  "number": "40",
+  "title": "",
+  "body": "  Still referring to , since the right hand side is a polynomial of degree 1, we might suspect that a solution is also a polynomial of degree 1. We write the most general such polynomial, leaving some coefficients undtermined. Then, try to determine the coefficients by plugging into the differential equation: Therefore , hence , and . Plugging in , , so . Therefore:    "
+},
+{
+  "id": "notes-02-05-3-8",
+  "level": "2",
+  "url": "notes-02-05.html#notes-02-05-3-8",
+  "type": "Table",
+  "number": "41",
+  "title": "Undetermined Coefficient Guesses",
+  "body": " Undetermined Coefficient Guesses    if is...  then a guess for is...    polynomial  polynomial (same degree)    or         sum of types  sum of guesses    product of types  product of types    "
+},
+{
+  "id": "notes-02-05-3-9",
+  "level": "2",
+  "url": "notes-02-05.html#notes-02-05-3-9",
+  "type": "Example",
+  "number": "42",
+  "title": "",
+  "body": "  Consider: We first solve the AHE: The right hand side of is an exponential, so we might make the guess: However, we can immediately see this guess won't be a solution of , since it's already a solution of ! So we adjust our guess by multiplying by : Plugging these formulas into the original differential equation: Now, the general solution to is:    "
+},
+{
+  "id": "notes-02-05-3-10",
+  "level": "2",
+  "url": "notes-02-05.html#notes-02-05-3-10",
+  "type": "Example",
+  "number": "43",
+  "title": "",
+  "body": "  Consider: We first solve the AHE: The right hand side of is an exponential, so we might make the guess: However, this is already part of , so we adjust: However, this is still part of , so we adjust again: Then: So the general solution to is:    "
+},
+{
   "id": "quiz-01",
   "level": "1",
   "url": "quiz-01.html",
