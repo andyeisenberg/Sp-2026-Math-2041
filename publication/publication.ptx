@@ -67,14 +67,14 @@
     <!-- numbering should appear.                                     -->
     <!-- For use with a book organized by part, you can set the -->
     <!--  @part-structure to "decorative" or "structural" -->
-      <divisions level="0"/>
+      <divisions level="1"/>
 
     <!-- The next elements say how the levels deep to break up the    -->
     <!-- numbering of the respective elements. Can't be more than the -->
     <!-- @level on divisions above.                                   -->
       <blocks level="0" />
       <projects level="0" />
-      <equations level="0" />
+      <equations level="1" />
       <footnotes level="0" />
   </numbering>
 

@@ -54,5 +54,63 @@
         </p>
       </statement>
     </example>
+
+    <example>
+      <title>Free damped motion</title>
+
+      <statement>
+        <p>
+          Consider
+          <md>
+            <mrow> mx'' + cx' + kx \amp = 0 </mrow>
+            <mrow> x'' + \frac{c}{m}x' + \frac{k}{m}x \amp = 0 </mrow>
+            <mrow> x'' + 2p x' + \omega_0^2 x \amp = 0, \quad \omega_0 = \sqrt{\frac{k}{m}}, p = \frac{c}{2m} </mrow>
+          </md>
+          Then the roots of the characteristic equation are:
+          <md>
+            <mrow> r \amp = \frac{-2p \pm \sqrt{4p^2 - 4\omega_0^2}}{2} </mrow>
+            <mrow> \amp = -p \pm \sqrt{p^2 - \omega_0^2} </mrow>
+            <mrow> \amp = -p \pm \sqrt{\frac{c^2}{4m^2} - \frac{k}{m}} </mrow>
+            <mrow> \amp = -p \pm \sqrt{\frac{c^2 - 4km}{4m^2}} </mrow>
+          </md>
+          We consider 3 cases.
+        </p>
+
+        <p>
+          Case 1: if <m>c^2- 4km \gt 0</m>, the system is <term>overdamped</term>.
+          The differential equation has 2 real roots <m>r_1, r_2 \lt 0</m>, so the general solution is:
+          <md>
+            <mrow> x(t) = C_1e^{r_1t} + C_2e^{r_2t} </mrow>
+          </md>
+          The solutions have no oscillation behavior, and <m>x(t) \to 0</m> as <m>t \to \infty</m>.
+        </p>
+
+        <p>
+          Case 2: if <m>c^2- 4km = 0</m>, the system is <term>critically damped</term>.
+          The differential equation has a repeated real root <m>-p</m>, so the general solution is:
+          <md>
+            <mrow> x(t) = C_1e^{-pt} + C_2te^{-pt} </mrow>
+          </md>
+          Again, the solutions have no oscillation behavior, and <m>x(t) \to 0</m> as <m>t \to \infty</m>.
+        </p>
+
+        <p>
+          Case 3: if <m>c^2- 4km \lt 0</m>, the system is <term>underdamped</term>.
+          The differential equation has complex conjugate roots <m>-p \pm i\omega_1</m>, where <m>\omega_1 = \sqrt{\omega_0^2 - p^2}</m> so the general solution is:
+          <md>
+            <mrow> x(t) = Ae^{-pt} \cos(\omega_1 t) + B e^{-pt} \sin(\omega_1 t) </mrow>
+          </md>
+          The solutions show oscillation behavior, and <m>x(t) \to 0</m> as <m>t \to \infty</m>.
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      What if <m>F(t)</m> is not identically zero? Then the differential equation
+      <md>
+        <mrow> mx'' + cx' + kx = F(t) </mrow>
+      </md>
+      is not homogeneous.
+    </p>
   </subsection>
 </section>

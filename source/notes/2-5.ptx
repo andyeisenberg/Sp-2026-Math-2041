@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-02-05">
+  <title>Thursday, Feb 5</title>
+
+  <introduction>
+    <p>
+      This is an outline of the topics we covered.
+      You should not rely only on my notes.
+      Make sure to take your own notes, and, if you miss a class, get notes from another student in class.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Nonhomogeneous Equations</title>
+
+    <p>
+      Consider the nonhomogeneous equation
+      <md number="yes">
+        <mrow xml:id="eqn-nonhom"> y'' + p(t) y' + q(t) y \amp = g(t) </mrow>
+      </md>
+      where <m>g(t)</m> is not identically 0.
+      Then the <term>associated homogeneous equation</term> (AHE) is:
+      <md number="yes">
+        <mrow xml:id="eqn-AHE"> y'' + p(t) y' + q(t) y \amp = 0 </mrow>
+      </md>
+    </p>
+
+    <theorem>
+      <statement>
+        <p>
+          Let <m>y_c</m> be the general solution to <xref ref="eqn-AHE"/> and let <m>y_p</m> be a particular solution to <xref ref="eqn-nonhom"/>.
+          Then, the general solution to <xref ref="eqn-nonhom"/> is:
+          <md>
+            <mrow> y = y_c + y_p. </mrow>
+          </md>
+        </p>
+      </statement>
+    </theorem>
+
+    <example>
+      <statement>
+        <p>
+          Consider:
+          <md number="yes">
+            <mrow xml:id="ex1-nonhom"> y'' + 5y' + 6y \amp = 6t - 1 </mrow>
+            <mrow xml:id="ex1-AHE"> y'' + 5y' + 6y \amp = 0 </mrow>
+          </md>
+          To find the general solution to <xref ref="ex1-AHE"/>:
+          <md>
+            <mrow> r^2 + 5r + 6 \amp = 0 </mrow>
+            <mrow> (r+2)(r+3) \amp = 0 </mrow>
+            <mrow> r \amp = -2, -3 </mrow>
+            <mrow> y_c \amp = C_1e^{-2t} + C_2e^{-3t} </mrow>
+          </md>
+          Let <m>y_p = t - 1</m>.
+          Then:
+          <md>
+            <mrow> y_p' \amp = 1 </mrow>
+            <mrow> y_p'' \amp = 0 </mrow>
+            <mrow> 0 + 5(1) + 6(t - 1) \amp = 5 + 6t - 6 </mrow>
+            <mrow> \amp = 6t - 1, </mrow>
+          </md>
+          so <m>y_p</m> is a solution to <xref ref="ex1-nonhom"/>.
+          Therefore the general solution to <xref ref="ex1-nonhom"/> is:
+          <md>
+            <mrow> y = y_c + y_p = C_1e^{-2t} + C_2e^{-3t} + t - 1. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      It remains to see how to find candidate solutions <m>y_p</m>.
+      To start, we'll use the Method of Undetermined Coefficients.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Still referring to <xref ref="ex1-nonhom"/>, since the right hand side is a polynomial of degree 1, we might suspect that a solution is also a polynomial of degree 1.
+          We write the most general such polynomial, leaving some coefficients undtermined.
+          Then, try to determine the coefficients by plugging into the differential equation:
+          <md>
+            <mrow> y_p \amp = At + B </mrow>
+            <mrow> y_p' \amp = A </mrow>
+            <mrow> y_p'' \amp = 0 </mrow>
+            <mrow> 0 + 5(A) + 6(At + B) \amp = 6t - 1 </mrow>
+            <mrow> 6At + (5A + 6B) \amp = 6t - 1 </mrow>
+          </md>
+          Therefore <m>6A = 6</m>, hence <m>A = 1</m>, and <m>5A + 6B = -1</m>.
+          Plugging in <m>A = 1</m>, <m>5 + 6B = -1</m>, so <m>B = -1</m>.
+          Therefore:
+          <md>
+            <mrow> y_p = t - 1. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      This method will work reliably for certain types of functions that appear on the right hand side of the nonhomogeneous equation:
+    </p>
+
+    <table>
+      <title>Undetermined Coefficient Guesses</title>
+
+      <tabular halign="center">
+        <row bottom="minor">
+          <cell>if <m>g(t)</m> is...</cell>
+          <cell>then a guess for <m>y_p</m> is...</cell>
+        </row>
+
+        <row>
+          <cell>polynomial</cell>
+          <cell>polynomial (same degree)</cell>
+        </row>
+
+        <row>
+          <cell><m>\sin(kt)</m> or <m>\cos(kt)</m></cell>
+          <cell><m>A\sin(kt) + B\cos(kt)</m></cell>
+        </row>
+
+        <row>
+          <cell><m>e^{kt}</m></cell>
+          <cell><m>Ae^{kt}</m></cell>
+        </row>
+
+        <row>
+          <cell>sum of types</cell>
+          <cell>sum of guesses</cell>
+        </row>
+
+        <row>
+          <cell>product of types</cell>
+          <cell>product of types</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <example>
+      <statement>
+        <p>
+          Consider:
+          <md number="yes">
+            <mrow xml:id="ex2-nonhom"> y'' - 4y \amp = 2e^{2x} </mrow>
+            <mrow xml:id="ex2-AHE"> y'' - 4y \amp = 0 </mrow>
+          </md>
+          We first solve the AHE:
+          <md>
+            <mrow> r^2 - 4 \amp = 0 </mrow>
+            <mrow> (r - 2)(r + 2) \amp = 0 </mrow>
+            <mrow> r \amp = 2, -2 </mrow>
+            <mrow> y_c \amp = C_1e^{-2x} + C_2e^{2x} </mrow>
+          </md>
+          The right hand side of <xref ref="ex2-nonhom"/> is an exponential, so we might make the guess:
+          <md>
+            <mrow> y_p = Ae^{2x}. </mrow>
+          </md>
+          However, we can immediately see this guess won't be a solution of <xref ref="ex2-nonhom"/>, since it's already a solution of <xref ref="ex2-AHE"/>! So we adjust our guess by multiplying by <m>x</m>:
+          <md>
+            <mrow> y_p \amp = Axe^{2x} </mrow>
+            <mrow> y_p' \amp = Ae^{2x} + 2Axe^{2x} = (A + 2Ax)e^{2x} </mrow>
+            <mrow> y_p'' \amp = 2Ae^{2x} + 2(A + 2Ax)e^{2x} = (4A + 4Ax)e^{2x} </mrow>
+          </md>
+          Plugging these formulas into the original differential equation:
+          <md>
+            <mrow> (4A + 4Ax)e^{2x} - 4Axe^{2x} \amp = 2e^{2x} </mrow>
+            <mrow> 4Ae^{2x} \amp = 2e^{2x} </mrow>
+            <mrow> 4A \amp = 2 </mrow>
+            <mrow> A \amp = \frac{1}{2} </mrow>
+            <mrow> y_p \amp = \frac{xe^{2x}}{2} </mrow>
+          </md>
+          Now, the general solution to <xref ref="ex2-nonhom"/> is:
+          <md>
+            <mrow> y = C_1e^{-2x} + C_2e^{2x} + \frac{xe^{2x}}{2} </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Consider:
+          <md number="yes">
+            <mrow xml:id="ex3-nonhom"> y'' + 2y' + y \amp = e^{-x} </mrow>
+            <mrow xml:id="ex3-AHE"> y'' + 2y' + y \amp = 0 </mrow>
+          </md>
+          We first solve the AHE:
+          <md>
+            <mrow> r^2 + 2y + 1 \amp = 0 </mrow>
+            <mrow> (r +1)^2 \amp = 0 </mrow>
+            <mrow> r \amp = -1 </mrow>
+            <mrow> y_c \amp = C_1e^{-x} + C_2xe^{-x} </mrow>
+          </md>
+          The right hand side of <xref ref="ex3-nonhom"/> is an exponential, so we might make the guess:
+          <md>
+            <mrow> y_p = Ae^{-x} </mrow>
+          </md>
+          However, this is already part of <m>y_c</m>, so we adjust:
+          <md>
+            <mrow> y_p = Axe^{-x} </mrow>
+          </md>
+          However, this is <em>still</em> part of <m>y_c</m>, so we adjust again:
+          <md>
+            <mrow> y_p \amp = Ax^2e^{-x} </mrow>
+            <mrow> y_p' \amp = 2Axe^{-x} - Ax^2e^{-x} = (2Ax - Ax^2)e^{-x} </mrow>
+            <mrow> y_p'' \amp = (2A - 2Ax)e^{-x} - (2Ax - Ax^2)e^{-x} = (2A - 4Ax + Ax^2)e^{-x} </mrow>
+          </md>
+          Then:
+          <md>
+            <mrow> (2A - 4Ax + Ax^2)e^{-x} + 2(2Ax - Ax^2)e^{-x} + Ax^2e^{-x} \amp = e^{-x} </mrow>
+            <mrow> 2Ae^{-x} \amp = e^{-x} </mrow>
+            <mrow> 2A \amp = 1 </mrow>
+            <mrow> A \amp = \frac{1}{2} </mrow>
+          </md>
+          So the general solution to <xref ref="ex2-nonhom"/> is:
+          <md>
+            <mrow> y = C_1e^{-x} + C_2xe^{-x} + \frac{x^2e^{-x}}{2}. </mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>
