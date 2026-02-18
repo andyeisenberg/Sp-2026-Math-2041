@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="recitation-Intervals-of-Validity">
+  <title>Intervals of Validity</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Consider the two following theorems about existence and uniqueness of solutions:
+    </p>
+
+    <theorem xml:id="thm-Picard">
+      <title>Picard's Theorem</title>
+
+      <statement>
+        <p>
+          Given an IVP <m>y' = f(x, y), y(x_0) = y_0</m>, if <m>f</m> and <m>f_y</m> are continuous near <m>(x_0, y_0)</m>, then there exists a unique solution to the IVP valied in an interval around <m>x_0</m>.
+        </p>
+      </statement>
+    </theorem>
+
+    <theorem xml:id="thm-2nd-order">
+      <title>Second Order E+U</title>
+
+      <statement>
+        <p>
+          Suppose <m>y'' + p(x) y' + q(x) y = f(x)</m>, with <m>p, q, f</m> continuous on an interval <m>I</m> which contains a point <m>x_0</m>.
+          Then the IVP with initial condition <m>y(x_0) = y_0, y'(x_0) = y_0'</m> has a unique solution which is valid on <m>I</m>.
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      The obvious difference between these theorems is the distinction between first and second order equations.
+      Less obvious is the difference in the conclusions: valid on <em>some</em> interval containing the initial condition, versus valid on the <em>entire</em> interval on which <m>p, q, f</m> are continuous.
+    </p>
+  </introduction>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Consider the IVP:
+          <md>
+            <mrow xml:id="eqn" tag="star">y' = y^2, \quad y(0) = 2</mrow>
+          </md>
+        </p>
+      </introduction>
+
+
+      <task workspace="2in">
+        <statement>
+          <p>
+            Verify that <xref ref="eqn"/> satisfies the conditions of <xref ref="thm-Picard"/>.
+            On what part of the plane are the functions <m>f, f_y</m> continuous?
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="3in">
+        <statement>
+          <p>
+            Solve <xref ref="eqn"/>.
+            On what interval is the solution valid?
+          </p>
+        </statement>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Consider the specific equation:
+          <md>
+            <mrow xml:id="eqn2" tag="dstar"> xy' + y = x^2y^2 </mrow>
+          </md>
+        </p>
+      </introduction>
+
+
+      <task workspace="2in">
+        <statement>
+          <p>
+            Rewrite <xref ref="eqn2"/> after applying the appropriate substitution.
+            [Careful! Put it in the standard form for a Bernoulli equation first!]
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="3in">
+        <statement>
+          <p>
+            Solve the new equation for the unknown function <m>v</m>.
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="2in">
+        <statement>
+          <p>
+            Finally, use your solution for <m>v</m> to find a solution for <m>y</m>.
+          </p>
+        </statement>
+      </task>
+    </exercise>
+  </page>
+</worksheet>
