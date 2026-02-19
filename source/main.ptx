@@ -9,10 +9,8 @@
     <title>Differential Equations I</title>
 
     <subtitle>MATH 2041 Spring 2026</subtitle>
-
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
-
     <chapter xml:id="course-documents">
       <title>Course Documents</title>
 
@@ -20,6 +18,7 @@
       <xi:include href="./syllabus/syllabus.ptx" />
       <!-- Other documents could go here, like a schedule, project description, etc. -->
     </chapter>
+
 
     <chapter xml:id="course-notes">
       <title>Course Notes</title>
@@ -40,8 +39,9 @@
       <xi:include href="./notes/2-3.ptx"/>
       <xi:include href="./notes/2-5.ptx"/>
       <xi:include href="./notes/2-10.ptx"/>
-      <!-- <xi:include href="./notes/example.ptx"/> -->
-
+      <!--
+      <xi:include href="./notes/example.ptx"/>
+      -->
     </chapter>
 
 
@@ -51,6 +51,14 @@
       <xi:include href="./quizzes/quiz-01.ptx"/>
       <xi:include href="./quizzes/quiz-02.ptx"/>
     </chapter>
+
+
+    <chapter xml:id="exams">
+      <title>Exams</title>
+
+      <xi:include href="./exams/exam-01.ptx"/>
+    </chapter>
+
 
     <chapter xml:id="recitations">
       <title>Recitations</title>
@@ -62,23 +70,19 @@
       <xi:include href="./recitations/recitation-04.ptx"/>
     </chapter>
 
+
     <chapter xml:id="homework">
       <title>Homework</title>
 
       <xi:include href="./homework/homework-list.ptx"/>
-
     </chapter>
 
-    
+
     <chapter xml:id="review">
       <title>Exam Review</title>
 
       <xi:include href="./review/Exam-1-Review.ptx"/>
-
     </chapter>
-
-    
     <!-- Include additional chapters for other categories -->
-
-    </book>
-  </pretext>
+  </book>
+</pretext>

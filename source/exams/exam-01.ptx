@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="exam-01">
+  <title>Exam 1</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Show all relevant work.
+    </p>
+  </introduction>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          For each of the following questions, circle one answer A<ndash />E.
+          No justification is necessary.
+        </p>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            Consider the differential equation <m>\frac{dy}{dx} = \sqrt{xy}</m>.
+            For which of the following initial conditions does the existence and uniqueness theorem guarantee that there is a solution to this equation satisfying the initial condition?
+          </p>
+
+          <sidebyside widths="50% 50%">
+            <p>
+              <ol marker="A.">
+                <li>
+                  <p>
+                    I and II
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    I and III
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    II and III
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    II only
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    None
+                  </p>
+                </li>
+              </ol>
+            </p>
+
+            <p>
+              <ol marker="I.">
+                <li>
+                  <p>
+                    <m>y(0) = 2</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>y(1) = 1</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>y(2) = 0</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </sidebyside>
+        </statement>
+
+        <solution>
+          <p>
+            D.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Consider an unforced mass and spring system with mass <m>m</m>, damping constant <m>c</m>, and spring constant <m>k</m>.
+            Which of the following <m>m, c, k</m> values indicate an underdamped system?
+            <ol marker="A.">
+              <li>
+                <p>
+                  <m>m = 2, c = 3, k = 1</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>m = 2, c = 3, k = 4</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>m = 1, c = 4, k = 2</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>m = 1, c = 4, k = 4</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>m = 1, c = 3, k = 1</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            B.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Which of the following are equilibrium solutions of <m>\displaystyle{y' = y^3 - 2y^2 + y}</m>?
+          </p>
+
+          <sidebyside widths="50% 50%">
+            <p>
+              <ol marker="A.">
+                <li>
+                  <p>
+                    I and III
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    II only
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    II and III
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    I, II, and III
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    None
+                  </p>
+                </li>
+              </ol>
+            </p>
+
+            <p>
+              <ol marker="I.">
+                <li>
+                  <p>
+                    <m>y(t) = -1</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>y(t) = 0</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>y(t) = 1</m>
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </sidebyside>
+        </statement>
+
+        <solution>
+          <p>
+            C.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <statement>
+        <p>
+          Find the equilibrium solutions of the differential equation <m>y' = y^3 - 2y^2 + y</m>, and classify them as stable, unstable, or semistable.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          Factor: <m>y' = y(y^2 - 2y + 1) = y(y - 1)^2 = f(y)</m>.
+          The equlibrium solutions are <m>y = 0</m> and <m>y = 1</m>.
+        </p>
+
+        <p>
+          <m>f(y)</m> is negative on <m>(-\infty, 0)</m> and positive on <m>(0, 1)</m> and <m>(1, \infty)</m>, so <m>y = 0</m> is an <em>unstable equilibrium</em> and <m>y = 1</m> is a <em>semistable equilibrium</em>.
+        </p>
+      </solution>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Find general solutions for each of the following differential equations.
+          (Implicit solutions are okay.)
+        </p>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle{xe^{y^2} \frac{dy}{dx} = \frac{(x+1)^2}{y}}</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            By separating variables:
+            <md>
+              <mrow> \int ye^{y^2}\ dy \amp = \int \frac{(x+1)^2}{x}\ dx </mrow>
+              <mrow> \frac{e^{y^2}}{2} \amp = \int \frac{x^2 + 2x + 1}{x}\ dx = \int x + 2 + \frac{1}{x}\ dx </mrow>
+              <mrow> \frac{e^{y^2}}{2} \amp = \frac{x^2}{2} + 2x + \ln|x| + C </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle{\left(2y^2 + 3x\right) + \left(2xy\right) \frac{dy}{dx} = 0}</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            Let <m>M = 2y^2 + 3x, N = 2xy</m>.
+            Then <m>M_y = 4y \neq 2y = N_x</m>, so the equation isn't exact.
+            <md>
+              <mrow> \frac{M_y - N_x}{N} \amp = \frac{4y - 2y}{2xy} = \frac{1}{x} \quad \Rightarrow \quad \frac{d\mu}{dx} = \frac{1}{x}\cdot \mu </mrow>
+              <mrow> \int \frac{d\mu}{\mu} \amp = \int \frac{dx}{x} \quad \Rightarrow \quad \ln|\mu| = \ln|x| \quad \Rightarrow \quad \mu = x </mrow>
+              <mrow> \left(2xy^2 + 3x^2\right) \amp + \left(2x^2y\right) \frac{dy}{dx} = 0 </mrow>
+            </md>
+            Let <m>A = 2xy^2 + 3x^2, B = 2x^2y</m>.
+            Then <m>A_y = 4xy = B_x</m>, so this equation is exact.
+            <md>
+              <mrow> F(x, y) \amp = \int 2xy^2 + 3x^2\ dx = x^2y^2 + x^3 + g(y) </mrow>
+              <mrow> F_y \amp = 2x^2y + g'(y) = 2x^2y </mrow>
+              <mrow> \Rightarrow \quad g'(y) \amp = 0 \quad \Rightarrow \quad g(y) = k </mrow>
+            </md>
+            So the solution is:
+            <md>
+              <mrow> x^2y^2 + x^3 = C. </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle{xy' + y = e^x}</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            In standard form: <m>\displaystyle{y' + \frac{1}{x} y = \frac{e^x}{x}}</m>.
+            Then:
+            <md>
+              <mrow> r(x) \amp = e^{\int \frac{1}{x}\ dx} = e^{\ln(x)} = x </mrow>
+              <mrow> \int (xy)'\ dx \amp = \int e^x\ dx </mrow>
+              <mrow> xy \amp = e^x + C </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Find general solutions for each of the following differential equations.
+        </p>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle{y'' + 6y' + 5y = 0}</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <m>r^2 + 6r + 5 = (r + 1)(r + 5) = 0</m>, so <m>r = -1, -5</m>, so the general solution is:
+            <md>
+              <mrow> y = C_1 e^{-x} + C_2 e^{-5x}. </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle{y'' - 2y' + 5y = 0}</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <m>r^2 - 2r + 5 = 0</m>, so
+            <md>
+              <mrow> r = \frac{2 \pm \sqrt{4 - 20}}{2} = \frac{2 \pm 4i}{2} = 1 \pm 2i </mrow>
+            </md>
+            So the general solution is:
+            <md>
+              <mrow> y = C_1 e^{x}\cos(2x) + C_2 e^{x}\sin(2x). </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle{y'' - 4y' + 4y = 0}</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <m>r^2 - 4r + 4 = (r - 2)^2 = 0</m>, so <m>r = 2</m> is a repeated root. Then, the general solution is:
+            <md>
+              <mrow> y = C_1 e^{2x} + C_2 xe^{2x}. </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle{y'' + 6y' + 5y = 8e^{-x}}</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            The solution to the associated homogeneous equation is <m>y_c = C_1 e^{-x} + C_2 e^{-5x}</m>.
+            So a guess for a particular solution would be:
+            <md>
+              <mrow> y_p \amp = Axe^{-x} </mrow>
+              <mrow> y_p' \amp = Ae^{-x} - Axe^{-x} = (A - Ax)e^{-x} </mrow>
+              <mrow> y_p'' \amp = -Ae^{-x} - (A - Ax)e^{-x} = (-2A + Ax)e^{-x} </mrow>
+              <mrow> 8e^{-x} \amp = (-2A + Ax)e^{-x} + 6(A - Ax)e^{-x} + 5Axe^{-x} </mrow>
+              <mrow> 8 \amp = (-2A + Ax) + 6(A - Ax) + 5Ax </mrow>
+              <mrow> 8 \amp = 4A \quad \Rightarrow \quad A = 2 </mrow>
+            </md>
+            So the general solution is:
+            <md>
+              <mrow> y = C_1 e^{-x} + C_2 e^{-5x} + 2xe^{-x} </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          A tank initially contains 100 L of brine with a salt concentration of 3 g/L.
+          A 2 g/L brine solution flows into the tank at a rate of 5 L/min, and the mixture in the tank flows out through a drain pipe at the same rate.
+          Let <m>Q(t)</m> be the quantity (g) of salt in the tank at time <m>t</m> (min).
+        </p>
+      </introduction>
+
+
+      <task>
+        <statement>
+          <p>
+            Write a formula for the volume of brine in the tank at time <m>t</m>.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            Since the flow rates in and out of the tank are equal, the volume is constant at 100 L.
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            What is the quantity <m>Q(0)</m> of salt in the tank at time <m>t = 0</m>?
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <m>(100 \text{L})(3 \text{g/L}) = 300 \text{g}</m>
+          </p>
+        </solution>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            Write a differential equation involving <m>Q(t)</m> and <m>Q'(t)</m>, then solve your differential equation.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <md>
+              <mrow> \frac{dQ}{dt} \amp = (2)(5) - \left(\frac{Q}{100}\right)(5) = 10 - \frac{Q}{20} </mrow>
+              <mrow> Q' + \frac{1}{20} Q \amp = 10 </mrow>
+              <mrow> r(t) \amp = e^{\int \frac{1}{20}\ dt} = e^{t/20} </mrow>
+              <mrow> \int \left(Q e^{t/20}\right)'\ dt \amp = \int 10e^{t/20}\ dt </mrow>
+              <mrow> Q e^{t/20} \amp = 200e^{t/20} + C </mrow>
+              <mrow> Q \amp = 200 + Ce^{-t/20} </mrow>
+            </md>
+            With <m>Q(0) = 300</m>:
+            <md>
+              <mrow> 300 = 200 + C \quad \Rightarrow \quad C = 100 </mrow>
+            </md>
+            So the solution is:
+            <md>
+              <mrow> Q \amp = 200 + 100e^{-t/20} </mrow>
+            </md>
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+</worksheet>
