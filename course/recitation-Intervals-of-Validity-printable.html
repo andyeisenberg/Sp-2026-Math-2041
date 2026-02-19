@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Bernoulli Equations</title>
+<title>Intervals of Validity</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -136,7 +136,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="recitation-phase-diagrams.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="recitations.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="recitation-Intervals-of-Validity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="recitation-Bernoulli.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="recitations.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="homework.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -233,8 +233,8 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="recitation-calculus-review.html" class="internal"><span class="title">Calculus Review</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="recitation-finance.html" class="internal"><span class="title">Modeling Investment Return</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="recitation-phase-diagrams.html" class="internal"><span class="title">Autonomous Equations</span></a></div></li>
-<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="recitation-Bernoulli.html" class="internal"><span class="title">Bernoulli Equations</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="recitation-Intervals-of-Validity.html" class="internal"><span class="title">Intervals of Validity</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="recitation-Bernoulli.html" class="internal"><span class="title">Bernoulli Equations</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="recitation-Intervals-of-Validity.html" class="internal"><span class="title">Intervals of Validity</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -277,69 +277,64 @@ eBookConfig.enable_chatcodes =  false;
 <button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
 </div>
 </div>
-<section class="worksheet" id="recitation-Bernoulli" data-margins="0.75in 0.75in 0.75in 0.75in"><h1 class="heading hide-type">
-<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Bernoulli Equations</span><div class="print-links"><a href="recitation-Bernoulli-printable.html" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+<section class="worksheet" id="recitation-Intervals-of-Validity" data-margins="0.75in 0.75in 0.75in 0.75in"><h1 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Intervals of Validity</span><div class="print-links"><a href="recitation-Intervals-of-Validity-printable.html" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h1>
-<section class="introduction" id="recitation-Bernoulli-2"><div class="para logical" id="recitation-Bernoulli-2-1">
-<div class="para">Consider the equation:</div>
-<div class="displaymath process-math" id="recitation-Bernoulli-2-1-1">
-\begin{gather*}
-y' + p(x) y = q(x) y^n, 
-\end{gather*}
+<section class="introduction" id="recitation-Intervals-of-Validity-2"><article class="theorem theorem-like" id="Picard"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">53</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Picard’s Theorem.</span>
+</h3>
+<div class="para" id="Picard-2-1">Given an inintial value problem <span class="process-math">\(y' = f(x, y), y(x_0) = y_0\text{,}\)</span> if <span class="process-math">\(f\)</span> and <span class="process-math">\(f_y\)</span> are continuous near <span class="process-math">\((x_0, y_0)\text{,}\)</span> then there exists a unique solution to the IVP valied in an interval around <span class="process-math">\(x_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Picard-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">where <span class="process-math">\(q(x)\)</span> is not identically 0 and <span class="process-math">\(n \gt 1\text{.}\)</span> This is not separable, linear, or exact. This sort of equation is called a <dfn class="terminology">Bernoulli equation</dfn>, and it can be approached by introducing a substitution:</div>
-<div class="displaymath process-math" id="recitation-Bernoulli-2-1-5">
-\begin{gather*}
-v = y^{1 - n}. 
-\end{gather*}
+<div class="autopermalink" data-description="Theorem 53: Picard’s Theorem"><a href="#Picard" title="Copy heading and permalink for Theorem 53: Picard’s Theorem" aria-label="Copy heading and permalink for Theorem 53: Picard’s Theorem">🔗</a></div></article><article class="theorem theorem-like" id="thm-2nd-order"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">54</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Second Order E+U.</span>
+</h3>
+<div class="para" id="thm-2nd-order-2-1">Suppose <span class="process-math">\(y'' + p(x) y' + q(x) y = f(x)\text{,}\)</span> with <span class="process-math">\(p, q, f\)</span> continuous on an interval <span class="process-math">\(I\)</span> which contains a point <span class="process-math">\(x_0\text{.}\)</span> Then the initial value problem with initial condition <span class="process-math">\(y(x_0) = y_0, y'(x_0) = y_0'\)</span> has a unique solution which is valid on <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#thm-2nd-order-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#recitation-Bernoulli-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><section class="onepage" id="recitation-Bernoulli-3"><article class="exercise exercise-like" id="recitation-Bernoulli-3-1"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="recitation-Bernoulli-3-1-1"><div class="para logical" id="recitation-Bernoulli-3-1-1-1">
-<div class="para">Consider the general equation:</div>
-<div class="displaymath process-math" id="recitation-Bernoulli-3-1-1-1-1">
+<div class="autopermalink" data-description="Theorem 54: Second Order E+U"><a href="#thm-2nd-order" title="Copy heading and permalink for Theorem 54: Second Order E+U" aria-label="Copy heading and permalink for Theorem 54: Second Order E+U">🔗</a></div></article><div class="para" id="recitation-Intervals-of-Validity-2-3">The obvious difference between these theorems is the distinction between first and second order equations. Less obvious is the difference in the conclusions: valid on <em class="emphasis">some</em> interval containing the initial condition, versus valid on the <em class="emphasis">entire</em> interval on which <span class="process-math">\(p, q, f\)</span> are continuous.<div class="autopermalink" data-description="Paragraph"><a href="#recitation-Intervals-of-Validity-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="onepage" id="recitation-Intervals-of-Validity-3"><article class="exercise exercise-like" id="recitation-Intervals-of-Validity-3-1"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="recitation-Intervals-of-Validity-3-1-1"><div class="para logical" id="recitation-Intervals-of-Validity-3-1-1-1">
+<div class="para">Consider the initial value problem:</div>
+<div class="displaymath process-math" id="recitation-Intervals-of-Validity-3-1-1-1-1">
 \begin{gather}
-y' + p(x) y = q(x) y^n\tag{✶}
+y' = y^2, \quad y(0) = 3\tag{✶}
 \end{gather}
 </div>
-<div class="para">Let <span class="process-math">\(v = y^{1 - n}\text{.}\)</span>
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#recitation-Bernoulli-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#recitation-Intervals-of-Validity-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
-<article class="task exercise-like" id="recitation-Bernoulli-3-1-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="recitation-Bernoulli-3-1-2-1-1">What is the relationship between <span class="process-math">\(y'\)</span> and <span class="process-math">\(v'\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#recitation-Bernoulli-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="recitation-Intervals-of-Validity-3-1-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="recitation-Intervals-of-Validity-3-1-2-1-1">Verify that <a href="recitation-Intervals-of-Validity.html#recitation-Intervals-of-Validity-3-1-1-1-1" class="xref" data-knowl="./knowl/xref/rec4-eqn2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation">(✶)</a> satisfies the conditions of <a href="recitation-Intervals-of-Validity.html#Picard" class="xref" data-knowl="./knowl/xref/Picard.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 53: Picard’s Theorem">Theorem 53</a>. On what part of the plane are the functions <span class="process-math">\(f, f_y\)</span> continuous?<div class="autopermalink" data-description="Paragraph"><a href="#recitation-Intervals-of-Validity-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Task 1.a"><a href="#recitation-Bernoulli-3-1-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="recitation-Bernoulli-3-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="recitation-Bernoulli-3-1-3-1-1">Rewrite <a href="recitation-Bernoulli.html#recitation-Bernoulli-3-1-1-1-1" class="xref" data-knowl="./knowl/xref/eqn.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation">(✶)</a> in terms of <span class="process-math">\(v\)</span> instead of <span class="process-math">\(y\text{.}\)</span> What sort of differential equation are we now looking at, and what method can be used to solve it (for <span class="process-math">\(v\)</span>)?<div class="autopermalink" data-description="Paragraph"><a href="#recitation-Bernoulli-3-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 1.a"><a href="#recitation-Intervals-of-Validity-3-1-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div></article><article class="task exercise-like" id="recitation-Intervals-of-Validity-3-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="recitation-Intervals-of-Validity-3-1-3-1-1">Solve <a href="recitation-Intervals-of-Validity.html#recitation-Intervals-of-Validity-3-1-1-1-1" class="xref" data-knowl="./knowl/xref/rec4-eqn2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation">(✶)</a>. On what interval is the solution valid?<div class="autopermalink" data-description="Paragraph"><a href="#recitation-Intervals-of-Validity-3-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="3in"></div>
-<div class="autopermalink" data-description="Task 1.b"><a href="#recitation-Bernoulli-3-1-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#recitation-Bernoulli-3-1" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article></section><section class="onepage" id="recitation-Bernoulli-4"><article class="exercise exercise-like" id="recitation-Bernoulli-4-1"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="recitation-Bernoulli-4-1-1"><div class="para logical" id="recitation-Bernoulli-4-1-1-1">
-<div class="para">Consider the specific equation:</div>
-<div class="displaymath process-math" id="recitation-Bernoulli-4-1-1-1-1">
+<div class="workspace" data-space="4in"></div>
+<div class="autopermalink" data-description="Task 1.b"><a href="#recitation-Intervals-of-Validity-3-1-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#recitation-Intervals-of-Validity-3-1" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div></article></section><section class="onepage" id="recitation-Intervals-of-Validity-4"><article class="exercise exercise-like" id="recitation-Intervals-of-Validity-4-1"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="recitation-Intervals-of-Validity-4-1-1"><div class="para logical" id="recitation-Intervals-of-Validity-4-1-1-1">
+<div class="para">Consider the equation</div>
+<div class="displaymath process-math" id="recitation-Intervals-of-Validity-4-1-1-1-1">
 \begin{gather}
-xy' + y = x^2y^2 \tag{✶✶}
+y'' + y' - 2y = 4x - 4.\tag{✶✶}
 \end{gather}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#recitation-Bernoulli-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#recitation-Intervals-of-Validity-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
-<article class="task exercise-like" id="recitation-Bernoulli-4-1-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="recitation-Bernoulli-4-1-2-1-1">Rewrite <a href="recitation-Bernoulli.html#recitation-Bernoulli-4-1-1-1-1" class="xref" data-knowl="./knowl/xref/eqn2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation">(✶✶)</a> after applying the appropriate substitution. [Careful! Put it in the standard form for a Bernoulli equation first!]<div class="autopermalink" data-description="Paragraph"><a href="#recitation-Bernoulli-4-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="recitation-Intervals-of-Validity-4-1-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="recitation-Intervals-of-Validity-4-1-2-1-1">What are the functions <span class="process-math">\(p(x), q(x), f(x)\)</span> from <a href="recitation-Intervals-of-Validity.html#thm-2nd-order" class="xref" data-knowl="./knowl/xref/thm-2nd-order.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 54: Second Order E+U">Theorem 54</a>? On what intervals are they continuous?<div class="autopermalink" data-description="Paragraph"><a href="#recitation-Intervals-of-Validity-4-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Task 2.a"><a href="#recitation-Bernoulli-4-1-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="recitation-Bernoulli-4-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="recitation-Bernoulli-4-1-3-1-1">Solve the new equation for the unknown function <span class="process-math">\(v\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#recitation-Bernoulli-4-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Task 2.a"><a href="#recitation-Intervals-of-Validity-4-1-2" title="Copy heading and permalink for Task 2.a" aria-label="Copy heading and permalink for Task 2.a">🔗</a></div></article><article class="task exercise-like" id="recitation-Intervals-of-Validity-4-1-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="recitation-Intervals-of-Validity-4-1-3-1-1">Given that <span class="process-math">\(y_c = C_1 e^x + C_2e^{-2x}\text{,}\)</span> find the general solution to <a href="recitation-Intervals-of-Validity.html#recitation-Intervals-of-Validity-4-1-1-1-1" class="xref" data-knowl="./knowl/xref/rec4-eqn1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation">(✶✶)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#recitation-Intervals-of-Validity-4-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="3in"></div>
-<div class="autopermalink" data-description="Task 2.b"><a href="#recitation-Bernoulli-4-1-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="recitation-Bernoulli-4-1-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="recitation-Bernoulli-4-1-4-1-1">Finally, use your solution for <span class="process-math">\(v\)</span> to find a solution for <span class="process-math">\(y\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#recitation-Bernoulli-4-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Task 2.b"><a href="#recitation-Intervals-of-Validity-4-1-3" title="Copy heading and permalink for Task 2.b" aria-label="Copy heading and permalink for Task 2.b">🔗</a></div></article><article class="task exercise-like" id="recitation-Intervals-of-Validity-4-1-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="recitation-Intervals-of-Validity-4-1-4-1-1">Find the particular solution satisfying the initial condition: <span class="process-math">\(y(0) = 1, y'(0) = 1\text{.}\)</span> On what interval is your solution valid?<div class="autopermalink" data-description="Paragraph"><a href="#recitation-Intervals-of-Validity-4-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Task 2.c"><a href="#recitation-Bernoulli-4-1-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#recitation-Bernoulli-4-1" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet: Bernoulli Equations"><a href="#recitation-Bernoulli" title="Copy heading and permalink for Worksheet: Bernoulli Equations" aria-label="Copy heading and permalink for Worksheet: Bernoulli Equations">🔗</a></div></section>
+<div class="autopermalink" data-description="Task 2.c"><a href="#recitation-Intervals-of-Validity-4-1-4" title="Copy heading and permalink for Task 2.c" aria-label="Copy heading and permalink for Task 2.c">🔗</a></div></article><div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#recitation-Intervals-of-Validity-4-1" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div></article></section><div class="autopermalink" data-description="Worksheet: Intervals of Validity"><a href="#recitation-Intervals-of-Validity" title="Copy heading and permalink for Worksheet: Intervals of Validity" aria-label="Copy heading and permalink for Worksheet: Intervals of Validity">🔗</a></div></section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="recitation-phase-diagrams.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="recitation-Intervals-of-Validity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="recitation-Bernoulli.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="homework.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

@@ -622,6 +622,60 @@ var ptx_lunr_docs = [
   "body": "  Determine whether the equation is exact, then find an (implicit) solution.    In standard form: Let and . Then , so the equation is exact. If , then: So , and the implicit solution to the equation is:    "
 },
 {
+  "id": "exam-01",
+  "level": "1",
+  "url": "exam-01.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Exam 1",
+  "body": " Exam 1    Show all relevant work.      For each of the following questions, circle one answer A E. No justification is necessary.     Consider the differential equation . For which of the following initial conditions does the existence and uniqueness theorem guarantee that there is a solution to this equation satisfying the initial condition?      I and II    I and III    II and III    II only    None                           D.      Consider an unforced mass and spring system with mass , damping constant , and spring constant . Which of the following values indicate an underdamped system?                               B.      Which of the following are equilibrium solutions of ?      I and III    II only    II and III    I, II, and III    None                           C.         Find the equilibrium solutions of the differential equation , and classify them as stable, unstable, or semistable.    Factor: . The equlibrium solutions are and .   is negative on and positive on and , so is an unstable equilibrium and is a semistable equilibrium .        Find general solutions for each of the following differential equations. (Implicit solutions are okay.)          By separating variables:            Let . Then , so the equation isn't exact. Let . Then , so this equation is exact. So the solution is:            In standard form: . Then:          Find general solutions for each of the following differential equations.           , so , so the general solution is:             , so So the general solution is:             , so is a repeated root. Then, the general solution is:            The solution to the associated homogeneous equation is . So a guess for a particular solution would be: So the general solution is:          A tank initially contains 100 L of brine with a salt concentration of 3 g\/L. A 2 g\/L brine solution flows into the tank at a rate of 5 L\/min, and the mixture in the tank flows out through a drain pipe at the same rate. Let be the quantity (g) of salt in the tank at time (min).     Write a formula for the volume of brine in the tank at time .    Since the flow rates in and out of the tank are equal, the volume is constant at 100 L.      What is the quantity of salt in the tank at time ?           Write a differential equation involving and , then solve your differential equation.     With : So the solution is:       "
+},
+{
+  "id": "exam-01-3-1",
+  "level": "2",
+  "url": "exam-01.html#exam-01-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  For each of the following questions, circle one answer A E. No justification is necessary.     Consider the differential equation . For which of the following initial conditions does the existence and uniqueness theorem guarantee that there is a solution to this equation satisfying the initial condition?      I and II    I and III    II and III    II only    None                           D.      Consider an unforced mass and spring system with mass , damping constant , and spring constant . Which of the following values indicate an underdamped system?                               B.      Which of the following are equilibrium solutions of ?      I and III    II only    II and III    I, II, and III    None                           C.    "
+},
+{
+  "id": "exam-01-4-1",
+  "level": "2",
+  "url": "exam-01.html#exam-01-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Find the equilibrium solutions of the differential equation , and classify them as stable, unstable, or semistable.    Factor: . The equlibrium solutions are and .   is negative on and positive on and , so is an unstable equilibrium and is a semistable equilibrium .   "
+},
+{
+  "id": "exam-01-5-1",
+  "level": "2",
+  "url": "exam-01.html#exam-01-5-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Find general solutions for each of the following differential equations. (Implicit solutions are okay.)          By separating variables:            Let . Then , so the equation isn't exact. Let . Then , so this equation is exact. So the solution is:            In standard form: . Then:     "
+},
+{
+  "id": "exam-01-6-1",
+  "level": "2",
+  "url": "exam-01.html#exam-01-6-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Find general solutions for each of the following differential equations.           , so , so the general solution is:             , so So the general solution is:             , so is a repeated root. Then, the general solution is:            The solution to the associated homogeneous equation is . So a guess for a particular solution would be: So the general solution is:     "
+},
+{
+  "id": "exam-01-7-1",
+  "level": "2",
+  "url": "exam-01.html#exam-01-7-1",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  A tank initially contains 100 L of brine with a salt concentration of 3 g\/L. A 2 g\/L brine solution flows into the tank at a rate of 5 L\/min, and the mixture in the tank flows out through a drain pipe at the same rate. Let be the quantity (g) of salt in the tank at time (min).     Write a formula for the volume of brine in the tank at time .    Since the flow rates in and out of the tank are equal, the volume is constant at 100 L.      What is the quantity of salt in the tank at time ?           Write a differential equation involving and , then solve your differential equation.     With : So the solution is:     "
+},
+{
   "id": "recitation-calculus-review",
   "level": "1",
   "url": "recitation-calculus-review.html",
@@ -755,6 +809,51 @@ var ptx_lunr_docs = [
   "number": "2",
   "title": "",
   "body": "  Consider the specific equation:      Rewrite after applying the appropriate substitution. [Careful! Put it in the standard form for a Bernoulli equation first!]      Solve the new equation for the unknown function .      Finally, use your solution for to find a solution for .    "
+},
+{
+  "id": "recitation-Intervals-of-Validity",
+  "level": "1",
+  "url": "recitation-Intervals-of-Validity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Intervals of Validity",
+  "body": " Intervals of Validity     Picard's Theorem   Given an inintial value problem , if and are continuous near , then there exists a unique solution to the IVP valied in an interval around .     Second Order E+U   Suppose , with continuous on an interval which contains a point . Then the initial value problem with initial condition has a unique solution which is valid on .    The obvious difference between these theorems is the distinction between first and second order equations. Less obvious is the difference in the conclusions: valid on some interval containing the initial condition, versus valid on the entire interval on which are continuous.      Consider the initial value problem:      Verify that satisfies the conditions of . On what part of the plane are the functions continuous?      Solve . On what interval is the solution valid?         Consider the equation      What are the functions from ? On what intervals are they continuous?      Given that , find the general solution to .      Find the particular solution satisfying the initial condition: . On what interval is your solution valid?      "
+},
+{
+  "id": "Picard",
+  "level": "2",
+  "url": "recitation-Intervals-of-Validity.html#Picard",
+  "type": "Theorem",
+  "number": "53",
+  "title": "Picard’s Theorem.",
+  "body": " Picard's Theorem   Given an inintial value problem , if and are continuous near , then there exists a unique solution to the IVP valied in an interval around .   "
+},
+{
+  "id": "thm-2nd-order",
+  "level": "2",
+  "url": "recitation-Intervals-of-Validity.html#thm-2nd-order",
+  "type": "Theorem",
+  "number": "54",
+  "title": "Second Order E+U.",
+  "body": " Second Order E+U   Suppose , with continuous on an interval which contains a point . Then the initial value problem with initial condition has a unique solution which is valid on .   "
+},
+{
+  "id": "recitation-Intervals-of-Validity-3-1",
+  "level": "2",
+  "url": "recitation-Intervals-of-Validity.html#recitation-Intervals-of-Validity-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider the initial value problem:      Verify that satisfies the conditions of . On what part of the plane are the functions continuous?      Solve . On what interval is the solution valid?    "
+},
+{
+  "id": "recitation-Intervals-of-Validity-4-1",
+  "level": "2",
+  "url": "recitation-Intervals-of-Validity.html#recitation-Intervals-of-Validity-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider the equation      What are the functions from ? On what intervals are they continuous?      Given that , find the general solution to .      Find the particular solution satisfying the initial condition: . On what interval is your solution valid?    "
 },
 {
   "id": "homework-list",
