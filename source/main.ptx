@@ -67,7 +67,8 @@
       <xi:include href="./recitations/recitation-01.ptx"/>
       <xi:include href="./recitations/recitation-02.ptx"/>
       <xi:include href="./recitations/recitation-03.ptx"/>
-      <!-- <xi:include href="./recitations/recitation-04.ptx"/> -->
+      <xi:include href="./recitations/recitation-04.ptx"/>
+      <xi:include href="./recitations/recitation-05.ptx"/>
     </chapter>
 
 
