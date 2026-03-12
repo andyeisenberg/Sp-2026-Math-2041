@@ -622,6 +622,33 @@ var ptx_lunr_docs = [
   "body": "  Determine whether the equation is exact, then find an (implicit) solution.    In standard form: Let and . Then , so the equation is exact. If , then: So , and the implicit solution to the equation is:    "
 },
 {
+  "id": "quiz-03",
+  "level": "1",
+  "url": "quiz-03.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Quiz 3",
+  "body": " Quiz 3    The following work should be completed individually. Use of notes, calculators, or textbooks is not allowed.  Show all work unless instructed otherwise.      For each function below, find the Laplace transform .                                                                                 Use variation of parameters to find the general solution of .    The associated homogenous equation is: which has characteristic equation , so . Therefore, the general solution is: Let . The Wronskian is: Now: Now, the general solution to the nonhomogeneous equation is:      "
+},
+{
+  "id": "quiz-03-3-1",
+  "level": "2",
+  "url": "quiz-03.html#quiz-03-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  For each function below, find the Laplace transform .                           "
+},
+{
+  "id": "quiz-03-4-2",
+  "level": "2",
+  "url": "quiz-03.html#quiz-03-4-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Use variation of parameters to find the general solution of .    The associated homogenous equation is: which has characteristic equation , so . Therefore, the general solution is: Let . The Wronskian is: Now: Now, the general solution to the nonhomogeneous equation is:    "
+},
+{
   "id": "exam-01",
   "level": "1",
   "url": "exam-01.html",
@@ -809,6 +836,51 @@ var ptx_lunr_docs = [
   "number": "2",
   "title": "",
   "body": "  Consider the specific equation:      Rewrite after applying the appropriate substitution. [Careful! Put it in the standard form for a Bernoulli equation first!]      Solve the new equation for the unknown function .      Finally, use your solution for to find a solution for .    "
+},
+{
+  "id": "recitation-Intervals-of-Validity",
+  "level": "1",
+  "url": "recitation-Intervals-of-Validity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Intervals of Validity",
+  "body": " Intervals of Validity     Picard's Theorem   Given an inintial value problem , if and are continuous near , then there exists a unique solution to the IVP valied in an interval around .     Second Order E+U   Suppose , with continuous on an interval which contains a point . Then the initial value problem with initial condition has a unique solution which is valid on .    The obvious difference between these theorems is the distinction between first and second order equations. Less obvious is the difference in the conclusions: valid on some interval containing the initial condition, versus valid on the entire interval on which are continuous.      Consider the initial value problem:      Verify that satisfies the conditions of . On what part of the plane are the functions continuous?      Solve . On what interval is the solution valid?         Consider the equation      What are the functions from ? On what intervals are they continuous?      Given that , find the general solution to .      Find the particular solution satisfying the initial condition: . On what interval is your solution valid?      "
+},
+{
+  "id": "Picard",
+  "level": "2",
+  "url": "recitation-Intervals-of-Validity.html#Picard",
+  "type": "Theorem",
+  "number": "53",
+  "title": "Picard’s Theorem.",
+  "body": " Picard's Theorem   Given an inintial value problem , if and are continuous near , then there exists a unique solution to the IVP valied in an interval around .   "
+},
+{
+  "id": "thm-2nd-order",
+  "level": "2",
+  "url": "recitation-Intervals-of-Validity.html#thm-2nd-order",
+  "type": "Theorem",
+  "number": "54",
+  "title": "Second Order E+U.",
+  "body": " Second Order E+U   Suppose , with continuous on an interval which contains a point . Then the initial value problem with initial condition has a unique solution which is valid on .   "
+},
+{
+  "id": "recitation-Intervals-of-Validity-3-1",
+  "level": "2",
+  "url": "recitation-Intervals-of-Validity.html#recitation-Intervals-of-Validity-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider the initial value problem:      Verify that satisfies the conditions of . On what part of the plane are the functions continuous?      Solve . On what interval is the solution valid?    "
+},
+{
+  "id": "recitation-Intervals-of-Validity-4-1",
+  "level": "2",
+  "url": "recitation-Intervals-of-Validity.html#recitation-Intervals-of-Validity-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider the equation      What are the functions from ? On what intervals are they continuous?      Given that , find the general solution to .      Find the particular solution satisfying the initial condition: . On what interval is your solution valid?    "
 },
 {
   "id": "homework-list",
