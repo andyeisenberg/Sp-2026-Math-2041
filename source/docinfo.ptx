@@ -13,7 +13,7 @@
     \newcommand{\Z}{\mathbb Z}
     \newcommand{\Q}{\mathbb Q}
     \newcommand{\R}{\mathbb R}
-    \newcommand{\L}{\mathcal{L}}
+    \renewcommand{\L}{\mathcal{L}}
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->
