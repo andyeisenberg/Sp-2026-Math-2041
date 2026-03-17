@@ -883,6 +883,42 @@ var ptx_lunr_docs = [
   "body": "  Consider the equation      What are the functions from ? On what intervals are they continuous?      Given that , find the general solution to .      Find the particular solution satisfying the initial condition: . On what interval is your solution valid?    "
 },
 {
+  "id": "recitation-Not-Exponential-Order",
+  "level": "1",
+  "url": "recitation-Not-Exponential-Order.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Not of Exponential Order",
+  "body": " Not of Exponential Order      If is a piecewise continuous function of exponential order, then exists.    But the theorem doesn't say one way or the other whether a function not of exponential order could still have a Laplace transform.      Consider the function: This function is not of exponential order, essentially since grows faster than for any constant .     Find . (Don't work too hard.)      Set up the Laplace transform of as an improper integral, then a limit of proper integrals. Then, apply Integration by Parts. This will leave you with a large limit expression involving a portion that's not an integral and another portion that is an integral.      Go ahead and deal with the portion of the limit that's not an integral to get it out of the way.       Recall the following facts:   For any function , .    If and converges, then so does .       We still need to deal with the integral portion of the limit representing . Unfortunately, it's impossible. Can you use the facts above to show the limit converges, even without knowing the value?     "
+},
+{
+  "id": "recitation-Not-Exponential-Order-2-1",
+  "level": "2",
+  "url": "recitation-Not-Exponential-Order.html#recitation-Not-Exponential-Order-2-1",
+  "type": "Theorem",
+  "number": "55",
+  "title": "",
+  "body": "  If is a piecewise continuous function of exponential order, then exists.   "
+},
+{
+  "id": "recitation-Not-Exponential-Order-3-1",
+  "level": "2",
+  "url": "recitation-Not-Exponential-Order.html#recitation-Not-Exponential-Order-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider the function: This function is not of exponential order, essentially since grows faster than for any constant .     Find . (Don't work too hard.)      Set up the Laplace transform of as an improper integral, then a limit of proper integrals. Then, apply Integration by Parts. This will leave you with a large limit expression involving a portion that's not an integral and another portion that is an integral.      Go ahead and deal with the portion of the limit that's not an integral to get it out of the way.    "
+},
+{
+  "id": "recitation-Not-Exponential-Order-4-2",
+  "level": "2",
+  "url": "recitation-Not-Exponential-Order.html#recitation-Not-Exponential-Order-4-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  We still need to deal with the integral portion of the limit representing . Unfortunately, it's impossible. Can you use the facts above to show the limit converges, even without knowing the value?   "
+},
+{
   "id": "homework-list",
   "level": "1",
   "url": "homework-list.html",
@@ -899,6 +935,24 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "Exam 1 Review",
   "body": " Exam 1 Review   Use the following problems to prepare for the exam. There will be in-class review on Thursday, February 12. Your recitation this week will also be exam review.  You may bring a standard 3 in x 5 in index card with prepared notes. You may use both sides of the notecard. You must put your full name in the top right corner of the card, and turn it in along with your exam.    Chapter 0: Introduction to Differential Equations     Section 0.2  6, 102, 103       Chapter 1: First Order Equations     Section 1.2  1, 2, 6, 102 104    Section 1.3  1 10, 102, 104, 105    Section 1.4  4 7, 101, 103.    Section 1.6  1 (page 53), 3, 5, 7, 101    Section 1.8  2, 4, 101, 102.       Chapter 2: Higher Order Linear ODEs     Section 2.1  5, 102, 104, 105    Section 2.2  6 12, 101 107    Section 2.4  2, 3, 104    Section 2.5  2 4, 9, 101 103       "
+},
+{
+  "id": "boxes",
+  "level": "1",
+  "url": "boxes.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Boxes",
+  "body": " Boxes    The following is not for credit and will not be covered on any quiz or exam. This is just for fun.       A superintelligent robot named Bob waits in a room with two boxes. Box 1 contains $1000. Box 2 is a mystery box containing a secret amount of money. Bob will offer you the choice:   You can take the mystery box alone, or    You can take both boxes.   Bob is very accurate at predicting ahead of time what people will do. If Bob thinks that you'll choose to take only the mystery box, he'll put $1 million dollars in the mystery box. If Bob thinks that you'll choose to take both boxes, he'll put nothing in the mystery box. Bob made his prediction and placed either $1 million or $0 in the mystery box before you entered the room. Would you take just the mystery box? Or would you take both boxes?     Let be the probability that Bob accurately predicts your choice. Write an expected value formula for the strategy of choosing just the mystery box in terms of . Write an expected value formula for the strategy of choosing both boxes in terms of . Which strategy has a higher expected value?      Let be the probability that Bob predicts that you'll take both boxes. Write an expected value formula for the strategy of choosing just the mystery box in terms of . Write an expected value formula for the strategy of choosing both boxes in terms of . Which strategy has a higher expected value?      "
+},
+{
+  "id": "boxes-3-1",
+  "level": "2",
+  "url": "boxes.html#boxes-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  A superintelligent robot named Bob waits in a room with two boxes. Box 1 contains $1000. Box 2 is a mystery box containing a secret amount of money. Bob will offer you the choice:   You can take the mystery box alone, or    You can take both boxes.   Bob is very accurate at predicting ahead of time what people will do. If Bob thinks that you'll choose to take only the mystery box, he'll put $1 million dollars in the mystery box. If Bob thinks that you'll choose to take both boxes, he'll put nothing in the mystery box. Bob made his prediction and placed either $1 million or $0 in the mystery box before you entered the room. Would you take just the mystery box? Or would you take both boxes?     Let be the probability that Bob accurately predicts your choice. Write an expected value formula for the strategy of choosing just the mystery box in terms of . Write an expected value formula for the strategy of choosing both boxes in terms of . Which strategy has a higher expected value?      Let be the probability that Bob predicts that you'll take both boxes. Write an expected value formula for the strategy of choosing just the mystery box in terms of . Write an expected value formula for the strategy of choosing both boxes in terms of . Which strategy has a higher expected value?    "
 }
 ]
 
