@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="recitation-Laplace-Periodic">
+  <title>Transforms of Periodic Functions</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      Many functions that arise naturally when modeling various systems are periodic, so it's useful to see how the Laplace transform applies to such functions.
+    </p>
+
+    <theorem>
+      <statement>
+        <p>
+          If <m>f(t)</m> is a function which is periodic with period <m>T</m>, then:
+          <md>
+            <mrow> \L\{f(t)\} = \frac{1}{1 - e^{-sT}} \int_0^T e^{-st}f(t)\ dt. </mrow>
+          </md>
+        </p>
+      </statement>
+    </theorem>
+  </introduction>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Consider the function:
+          <md>
+            <mrow> f(t) = 2te^{t^2}\cos\left(e^{t^2}\right) </mrow>
+          </md>
+          This function is <em>not</em> of exponential order, essentially since <m>e^{t^2}</m> grows faster than <m>e^{Ct}</m> for any constant <m>C</m>.
+        </p>
+      </introduction>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Find <m>\int f(t)\ dt</m>.
+            (Don't work too hard.)
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="3in">
+        <statement>
+          <p>
+            Set up the Laplace transform <m>\L\{f(t)\}</m> of <m>f(t)</m> as an improper integral, then a limit of proper integrals.
+            Then, apply Integration by Parts.
+            This will leave you with a large limit expression involving a portion that's not an integral and another portion that is an integral.
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Go ahead and deal with the portion of the limit that's not an integral to get it out of the way.
+          </p>
+        </statement>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <p>
+      Recall the following facts:
+      <ul>
+        <li>
+          <p>
+            For any function <m>g(x)</m>, <m>\displaystyle{\int_a^b g(x)\ dx \leq \int_a^b |g(x)|\ dx}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>0 \leq g(x) \leq f(x)</m> and <m>\displaystyle{\int_0^{\infty} f(x)\ dx}</m> converges, then so does <m>\displaystyle{\int_0^{\infty} g(x)\ dx}</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <exercise>
+      <statement>
+        <p>
+          We still need to deal with the integral portion of the limit representing <m>\L\{f(t)\}</m>.
+          Unfortunately, it's impossible.
+          Can you use the facts above to show the limit converges, even without knowing the value?
+        </p>
+      </statement>
+    </exercise>
+  </page>
+</worksheet>

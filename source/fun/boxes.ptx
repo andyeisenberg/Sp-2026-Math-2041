@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="boxes">
+  <title>Boxes</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      The following is not for credit and will not be covered on any quiz or exam.
+      This is just for fun.
+    </p>
+  </introduction>
+
+
+  <page>
+    <!-- Exercises start here. -->
+    <exercise>
+      <introduction>
+        <p>
+          A superintelligent robot named Bob waits in a room with two boxes.
+          Box 1 contains $1000.
+          Box 2 is a mystery box containing a secret amount of money.
+          Bob will offer you the choice:
+          <ul>
+            <li>
+              <p>
+                You can take the mystery box alone, or
+              </p>
+            </li>
+
+            <li>
+              <p>
+                You can take both boxes.
+              </p>
+            </li>
+          </ul>
+          Bob is very accurate at predicting ahead of time what people will do.
+          If Bob thinks that you'll choose to take only the mystery box, he'll put $1 million dollars in the mystery box.
+          If Bob thinks that you'll choose to take both boxes, he'll put nothing in the mystery box.
+          Bob made his prediction and placed either $1 million or $0 in the mystery box before you entered the room.
+          Would you take just the mystery box? Or would you take both boxes?
+        </p>
+      </introduction>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Let <m>\alpha</m> be the probability that Bob accurately predicts your choice.
+            Write an expected value formula for the strategy of choosing just the mystery box in terms of <m>\alpha</m>.
+            Write an expected value formula for the strategy of choosing both boxes in terms of <m>\alpha</m>.
+            Which strategy has a higher expected value?
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Let <m>\beta</m> be the probability that Bob predicts that you'll take both boxes.
+            Write an expected value formula for the strategy of choosing just the mystery box in terms of <m>\beta</m>.
+            Write an expected value formula for the strategy of choosing both boxes in terms of <m>\beta</m>.
+            Which strategy has a higher expected value?
+          </p>
+        </statement>
+      </task>
+    </exercise>
+  </page>
+</worksheet>

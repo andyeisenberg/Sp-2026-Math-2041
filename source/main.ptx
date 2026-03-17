@@ -69,7 +69,8 @@
       <xi:include href="./recitations/recitation-02.ptx"/>
       <xi:include href="./recitations/recitation-03.ptx"/>
       <xi:include href="./recitations/recitation-04.ptx"/>
-      <!-- <xi:include href="./recitations/recitation-05.ptx"/> -->
+      <xi:include href="./recitations/recitation-05.ptx"/>
+      <!-- <xi:include href="./recitations/recitation-06.ptx"/> -->
     </chapter>
 
 
@@ -86,5 +87,13 @@
       <xi:include href="./review/Exam-1-Review.ptx"/>
     </chapter>
     <!-- Include additional chapters for other categories -->
+
+    <chapter xml:id="fun">
+      <title>Just for Fun</title>
+
+      <xi:include href="./fun/boxes.ptx"/>
+
+    </chapter>
+
   </book>
 </pretext>
