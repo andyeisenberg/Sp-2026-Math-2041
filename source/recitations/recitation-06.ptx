@@ -25,73 +25,24 @@
 
   <page>
     <exercise>
-      <introduction>
+      <statement>
         <p>
-          Consider the function:
-          <md>
-            <mrow> f(t) = 2te^{t^2}\cos\left(e^{t^2}\right) </mrow>
-          </md>
-          This function is <em>not</em> of exponential order, essentially since <m>e^{t^2}</m> grows faster than <m>e^{Ct}</m> for any constant <m>C</m>.
+          Use the theorem (rather than the definition of <m>\L</m>) to calculate <m>\L\{\sin(t)\}</m>.
         </p>
-      </introduction>
-
-
-      <task workspace="1in">
-        <statement>
-          <p>
-            Find <m>\int f(t)\ dt</m>.
-            (Don't work too hard.)
-          </p>
-        </statement>
-      </task>
-
-
-      <task workspace="3in">
-        <statement>
-          <p>
-            Set up the Laplace transform <m>\L\{f(t)\}</m> of <m>f(t)</m> as an improper integral, then a limit of proper integrals.
-            Then, apply Integration by Parts.
-            This will leave you with a large limit expression involving a portion that's not an integral and another portion that is an integral.
-          </p>
-        </statement>
-      </task>
-
-
-      <task workspace="1in">
-        <statement>
-          <p>
-            Go ahead and deal with the portion of the limit that's not an integral to get it out of the way.
-          </p>
-        </statement>
-      </task>
+      </statement>
     </exercise>
   </page>
 
 
   <page>
-    <p>
-      Recall the following facts:
-      <ul>
-        <li>
-          <p>
-            For any function <m>g(x)</m>, <m>\displaystyle{\int_a^b g(x)\ dx \leq \int_a^b |g(x)|\ dx}</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            If <m>0 \leq g(x) \leq f(x)</m> and <m>\displaystyle{\int_0^{\infty} f(x)\ dx}</m> converges, then so does <m>\displaystyle{\int_0^{\infty} g(x)\ dx}</m>.
-          </p>
-        </li>
-      </ul>
-    </p>
-
     <exercise>
       <statement>
         <p>
-          We still need to deal with the integral portion of the limit representing <m>\L\{f(t)\}</m>.
-          Unfortunately, it's impossible.
-          Can you use the facts above to show the limit converges, even without knowing the value?
+          A <term>square wave</term> is a function which displays periodic behavior by switching back and forth between a fixed maximum and minimum value, such as:
+          <md>
+            <mrow> f(t) = \begin{cases} 1 \amp 2n \leq t \lt 2n + 1 \\ 0 \amp 2n + 1 \leq t \lt 2n + 2 \end{cases}  </mrow>
+          </md>
+          Find <m>\L\{f(t)\}</m>.
         </p>
       </statement>
     </exercise>
