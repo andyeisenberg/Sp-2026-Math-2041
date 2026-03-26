@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="quiz-04">
+  <title>Quiz 4</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      The following work should be completed individually.
+      Use of notes, calculators, or textbooks is not allowed.
+    </p>
+
+    <p>
+      Show all work unless instructed otherwise.
+    </p>
+  </introduction>
+
+
+  <page>
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          Evaluate the Laplace transform: <m>\displaystyle{\L\left\{ e^{-2t} \ast e^{-3t}\sin(4t)\right\}}.</m>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <md>
+            <mrow> \L\left\{ e^{-2t} \ast e^{-3t}\sin(4t)\right\} \amp = \L\left\{e^{-2t}\right\} \L\left\{e^{-3t}\sin(4t)\right\} </mrow>
+            <mrow> \amp = \left(\frac{1}{s - (-2)}\right)\left( \frac{4}{(s + 3)^2 + 4^2} \right)  </mrow>
+            <mrow> \amp = \left(\frac{1}{s + 2}\right)\left( \frac{4}{(s + 3)^2 + 16} \right)  </mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+
+    <sidebyside widths="20% 40%">
+      <tabular halign="center">
+        <row header="yes" bottom="minor">
+          <cell><m>f(t)</m></cell>
+          <cell><m>F(s)</m></cell>
+        </row>
+
+        <row>
+          <cell><m>1</m></cell>
+          <cell><m>\frac{1}{s}</m></cell>
+        </row>
+
+        <row>
+          <cell><m>e^{at}</m></cell>
+          <cell><m>\frac{1}{s-a}</m></cell>
+        </row>
+
+        <row>
+          <cell><m>t^n</m></cell>
+          <cell><m>\frac{n!}{s^{n+1}}</m></cell>
+        </row>
+
+        <row>
+          <cell><m>\sin(at)</m></cell>
+          <cell><m>\frac{a}{s^2 + a^2}</m></cell>
+        </row>
+
+        <row>
+          <cell><m>\cos(at)</m></cell>
+          <cell><m>\frac{s}{s^2 + a^2}</m></cell>
+        </row>
+      </tabular>
+
+      <tabular halign="center">
+        <row header="yes" bottom="minor">
+          <cell><m>f(t)</m></cell>
+          <cell><m>F(s)</m></cell>
+        </row>
+
+        <row>
+          <cell><m>e^{-at}f(t)</m></cell>
+          <cell><m>F(s + a)</m></cell>
+        </row>
+
+        <row>
+          <cell><m>u(t-a)f(t-a)</m></cell>
+          <cell><m>e^{-as}F(s)</m></cell>
+        </row>
+
+        <row>
+          <cell><m>\delta(t - a)</m></cell>
+          <cell><m>e^{-as}</m></cell>
+        </row>
+
+        <row>
+          <cell><m>f'(t)</m></cell>
+          <cell><m>sF(s) - f(0)</m></cell>
+        </row>
+
+        <row>
+          <cell><m>f''(t)</m></cell>
+          <cell><m>s^2 F(s) - sf(0) - f'(0)</m></cell>
+        </row>
+      </tabular>
+    </sidebyside>
+  </page>
+
+
+  <page>
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          Solve the initial value problem:
+          <md>
+            <mrow> y'' - y = 4 \delta(t - 3), \quad y(0) = 0, y'(0) = 2. </mrow>
+          </md>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          Applying the Laplace transform:
+          <md>
+            <mrow> \left(s^2Y - s\underbrace{y(0)}_{=0} - \underbrace{y'(0)}_{=2}\right) - Y \amp = 4e^{-3s} </mrow>
+            <mrow> (s^2 - 1)Y \amp = 2 + 4e^{-3s} </mrow>
+            <mrow> Y = \frac{2}{(s - 1)(s + 1)} \amp + 4e^{-3s}\cdot \frac{1}{(s - 1)(s + 1)} </mrow>
+          </md>
+          Now we need PFD:
+          <md>
+            <mrow> \frac{1}{(s - 1)(s + 1)} \amp = \frac{A}{s - 1} + \frac{B}{s + 1} </mrow>
+            <mrow> 1 \amp = A(s+1) + B(s - 1) </mrow>
+            <mrow> (s = 1:) \qquad 1 \amp 2A \quad \Rightarrow \quad A = \frac{1}{2} </mrow>
+            <mrow> (s = -1:) \qquad 1 \amp -2B \quad \Rightarrow \quad B = \frac{-1}{2} </mrow>
+          </md>
+          Now:
+          <md>
+            <mrow> \L^{-1}\left\{ \frac{2}{(s - 1)(s + 1)} \right\} \amp = \L^{-1}\left\{ \frac{1}{s - 1}  - \frac{1}{s + 1}\right\} = e^t - e^{-t} </mrow>
+            <mrow> \L^{-1}\left\{ \frac{4e^{-3s}}{(s - 1)(s + 1)} \right\} \amp = \L^{-1}\left\{ \frac{2e^{-3s}}{s - 1}  - \frac{2e^{-3s}}{s + 1}\right\} </mrow>
+            <mrow> \amp = 2u(t - 3)e^{t - 3} - 2u(t - 3)e^{-(t - 3)} </mrow>
+          </md>
+          Therefore the solution is:
+          <md>
+            <mrow> y(t) = e^t - e^{-t} + 2u(t - 3)e^{t - 3} - 2u(t - 3)e^{-(t - 3)} </mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+  </page>
+</worksheet>
