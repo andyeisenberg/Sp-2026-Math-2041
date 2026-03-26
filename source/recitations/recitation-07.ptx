@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="recitation-Laplace-derivative">
+  <title>Derivative of the Transform</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      We've seen a rule showing how the Laplace transform interacts with a derivative of the input function:
+      <md>
+        <mrow> \L\{f'(t)\} = sF(s) - f(0) </mrow>
+      </md>
+      But what's the interaction with a derivative of the transform? It turns out there is a nice formula:
+    </p>
+
+    <theorem>
+      <statement>
+        <p>
+          <m> F'(s) = -\L\{t f(t)\}. </m>
+        </p>
+      </statement>
+    </theorem>
+  </introduction>
+
+
+  <page>
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          For any function <m>g(s, t)</m>, it is a fact (part of the <term>Leibniz integral rule</term>) that:
+          <md>
+            <mrow> \frac{d}{ds} \int_a^b g(s, t)\ dt = \int_a^b \frac{\partial}{\partial s}(g(s, t))\ dt. </mrow>
+          </md>
+          Use this fact to prove the theorem.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          Use the theorem to find a formula for <m>F''(s)</m>.
+          What about <m>F'''(s)</m>? What about <m>F^{(n)}(s)</m>?
+        </p>
+      </statement>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <task workspace="1in">
+        <statement>
+          <p>
+            Find the first several derivatives of <m>\frac{1}{s + 1}</m>.
+            Write a formula for the <m>n</m>th derivative.
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Find <m>\L^{-1}\left\{\frac{1}{(s + 1)^4}\right\}.</m>
+          </p>
+        </statement>
+      </task>
+    </exercise>
+  </page>
+</worksheet>
