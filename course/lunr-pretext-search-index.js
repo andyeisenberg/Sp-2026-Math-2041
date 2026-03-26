@@ -649,6 +649,33 @@ var ptx_lunr_docs = [
   "body": "  Use variation of parameters to find the general solution of .    The associated homogenous equation is: which has characteristic equation , so . Therefore, the general solution is: Let . The Wronskian is: Now: Now, the general solution to the nonhomogeneous equation is:    "
 },
 {
+  "id": "quiz-04",
+  "level": "1",
+  "url": "quiz-04.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Quiz 4",
+  "body": " Quiz 4    The following work should be completed individually. Use of notes, calculators, or textbooks is not allowed.  Show all work unless instructed otherwise.      Evaluate the Laplace transform:                                                                    Solve the initial value problem:     Applying the Laplace transform: Now we need PFD: Now: Therefore the solution is:      "
+},
+{
+  "id": "quiz-04-3-1",
+  "level": "2",
+  "url": "quiz-04.html#quiz-04-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Evaluate the Laplace transform:         "
+},
+{
+  "id": "quiz-04-4-1",
+  "level": "2",
+  "url": "quiz-04.html#quiz-04-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Solve the initial value problem:     Applying the Laplace transform: Now we need PFD: Now: Therefore the solution is:    "
+},
+{
   "id": "exam-01",
   "level": "1",
   "url": "exam-01.html",
