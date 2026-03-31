@@ -87,6 +87,7 @@
       <title>Exam Review</title>
 
       <xi:include href="./review/Exam-1-Review.ptx"/>
+      <xi:include href="./review/Exam-2-Review.ptx"/>
     </chapter>
     <!-- Include additional chapters for other categories -->
 

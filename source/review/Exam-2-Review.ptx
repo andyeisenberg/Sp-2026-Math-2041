@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="Exam-2-Review">
+  <title>Exam 2 Review</title>
+
+  <introduction>
+    <p>
+      Use the following problems to prepare for the exam.
+      There will be in-class review on Thursday, April 2.
+      Your recitation this week will also be exam review.
+    </p>
+
+    <p>
+      You may bring a standard 3 in x 5 in index card with prepared notes.
+      You may use both sides of the notecard.
+      You must put your full name in the top right corner of the card, and turn it in along with your exam.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Chapter 2: Higher Order Linear ODEs</title>
+
+    <p>
+      <dl>
+      <li>
+        <title>Section 2.5</title>
+
+        <p>
+          2<ndash />4, 7, 9, 101<ndash />104 <!-- 7, 104 are VoP -->
+        </p>
+      </li>
+      </dl>
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Chapter 6: The Laplace Transform</title>
+
+    <p>
+      <dl>
+      <li>
+        <title>Section 6.1</title>
+
+        <p>
+          1 (page 295), 4 (page 298), 5<ndash />7, 9<ndash />11, 101<ndash />104
+        </p>
+      </li>
+
+      <li>
+        <title>Section 6.2</title>
+
+        <p>
+          2<ndash />6, 11, 102
+        </p>
+      </li>
+
+      <li>
+        <title>Section 6.3</title>
+
+        <p>
+          1, 2, 8, 101<ndash />103
+        </p>
+      </li>
+
+      <li>
+        <title>Section 6.4</title>
+
+        <p>
+          1<ndash />3, 6, 8, 101, 102, 104, 105
+        </p>
+      </li>
+      </dl>
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Chapter 3: Systems of ODEs</title>
+
+    <p>
+      <dl>
+      <li>
+        <title>Section 3.2</title>
+
+        <p>
+          3, 7, 11, 101<ndash />103
+        </p>
+      </li>
+      </dl>
+    </p>
+  </subsection>
+</section>
