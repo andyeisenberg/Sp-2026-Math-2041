@@ -946,6 +946,87 @@ var ptx_lunr_docs = [
   "body": "  We still need to deal with the integral portion of the limit representing . Unfortunately, it's impossible. Can you use the facts above to show the limit converges, even without knowing the value?   "
 },
 {
+  "id": "recitation-Laplace-Periodic",
+  "level": "1",
+  "url": "recitation-Laplace-Periodic.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Transforms of Periodic Functions",
+  "body": " Transforms of Periodic Functions    Many functions that arise naturally when modeling various systems are periodic, so it's useful to see how the Laplace transform applies to such functions.    If is a function which is periodic with period , then:         Use the theorem (rather than the definition of ) to calculate .        A square wave is a function which displays periodic behavior by switching back and forth between a fixed maximum and minimum value, such as: Find .     "
+},
+{
+  "id": "recitation-Laplace-Periodic-2-2",
+  "level": "2",
+  "url": "recitation-Laplace-Periodic.html#recitation-Laplace-Periodic-2-2",
+  "type": "Theorem",
+  "number": "56",
+  "title": "",
+  "body": "  If is a function which is periodic with period , then:    "
+},
+{
+  "id": "recitation-Laplace-Periodic-3-1",
+  "level": "2",
+  "url": "recitation-Laplace-Periodic.html#recitation-Laplace-Periodic-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Use the theorem (rather than the definition of ) to calculate .   "
+},
+{
+  "id": "recitation-Laplace-Periodic-4-1",
+  "level": "2",
+  "url": "recitation-Laplace-Periodic.html#recitation-Laplace-Periodic-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  A square wave is a function which displays periodic behavior by switching back and forth between a fixed maximum and minimum value, such as: Find .   "
+},
+{
+  "id": "recitation-Laplace-derivative",
+  "level": "1",
+  "url": "recitation-Laplace-derivative.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Derivative of the Transform",
+  "body": " Derivative of the Transform    We've seen a rule showing how the Laplace transform interacts with a derivative of the input function: But what's the interaction with a derivative of the transform? It turns out there is a nice formula:             For any function , it is a fact (part of the Leibniz integral rule ) that: Use this fact to prove the theorem.      Use the theorem to find a formula for . What about ? What about ?         Find the first several derivatives of . Write a formula for the th derivative.      Find       "
+},
+{
+  "id": "recitation-Laplace-derivative-2-2",
+  "level": "2",
+  "url": "recitation-Laplace-derivative.html#recitation-Laplace-derivative-2-2",
+  "type": "Theorem",
+  "number": "57",
+  "title": "",
+  "body": "      "
+},
+{
+  "id": "recitation-Laplace-derivative-3-1",
+  "level": "2",
+  "url": "recitation-Laplace-derivative.html#recitation-Laplace-derivative-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  For any function , it is a fact (part of the Leibniz integral rule ) that: Use this fact to prove the theorem.   "
+},
+{
+  "id": "recitation-Laplace-derivative-3-2",
+  "level": "2",
+  "url": "recitation-Laplace-derivative.html#recitation-Laplace-derivative-3-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Use the theorem to find a formula for . What about ? What about ?   "
+},
+{
+  "id": "recitation-Laplace-derivative-4-1",
+  "level": "2",
+  "url": "recitation-Laplace-derivative.html#recitation-Laplace-derivative-4-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "   Find the first several derivatives of . Write a formula for the th derivative.      Find     "
+},
+{
   "id": "homework-list",
   "level": "1",
   "url": "homework-list.html",
@@ -962,6 +1043,15 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "Exam 1 Review",
   "body": " Exam 1 Review   Use the following problems to prepare for the exam. There will be in-class review on Thursday, February 12. Your recitation this week will also be exam review.  You may bring a standard 3 in x 5 in index card with prepared notes. You may use both sides of the notecard. You must put your full name in the top right corner of the card, and turn it in along with your exam.    Chapter 0: Introduction to Differential Equations     Section 0.2  6, 102, 103       Chapter 1: First Order Equations     Section 1.2  1, 2, 6, 102 104    Section 1.3  1 10, 102, 104, 105    Section 1.4  4 7, 101, 103.    Section 1.6  1 (page 53), 3, 5, 7, 101    Section 1.8  2, 4, 101, 102.       Chapter 2: Higher Order Linear ODEs     Section 2.1  5, 102, 104, 105    Section 2.2  6 12, 101 107    Section 2.4  2, 3, 104    Section 2.5  2 4, 9, 101 103       "
+},
+{
+  "id": "Exam-2-Review",
+  "level": "1",
+  "url": "Exam-2-Review.html",
+  "type": "Section",
+  "number": "",
+  "title": "Exam 2 Review",
+  "body": " Exam 2 Review   Use the following problems to prepare for the exam. There will be in-class review on Thursday, April 2. Your recitation this week will also be exam review.  You may bring a standard 3 in x 5 in index card with prepared notes. You may use both sides of the notecard. You must put your full name in the top right corner of the card, and turn it in along with your exam.    Chapter 2: Higher Order Linear ODEs     Section 2.5  2 4, 7, 9, 101 104        Chapter 6: The Laplace Transform     Section 6.1  1 (page 295), 4 (page 298), 5 7, 9 11, 101 104    Section 6.2  2 6, 11, 102    Section 6.3  1, 2, 8, 101 103    Section 6.4  1 3, 6, 8, 101, 102, 104, 105       Chapter 3: Systems of ODEs     Section 3.2  3, 7, 11, 101 103      "
 },
 {
   "id": "boxes",
