@@ -59,6 +59,7 @@
       <title>Exams</title>
 
       <xi:include href="./exams/exam-01.ptx"/>
+      <xi:include href="./exams/exam-02.ptx"/>
     </chapter>
 
 
@@ -73,6 +74,7 @@
       <xi:include href="./recitations/recitation-05.ptx"/>
       <xi:include href="./recitations/recitation-06.ptx"/>
       <xi:include href="./recitations/recitation-07.ptx"/>
+      <!-- <xi:include href="./recitations/recitation-08.ptx"/> -->
     </chapter>
 
 

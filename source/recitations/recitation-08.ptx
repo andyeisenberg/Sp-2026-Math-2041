@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="recitation-Vector-Spaces">
+  <title>Vector Spaces</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      A <term>vector space</term> is a set of objects (called <term>vectors</term>) which can be added together and scaled (i.e., multiplied by a real number, called a <term>scalar</term>) while remaining the same type of object.
+      Vector spaces are a mathematical structure of study in Linear Algebra (in which you would learn a more general definition, but this will suffice for us).
+    </p>
+  </introduction>
+
+
+  <page>
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          Consider the set <m>\mathcal{M}_{m\times n}</m> consisting of all <m>m\times n</m> matrices with real number entries.
+          If <m>A, B</m> are two such matrices, is <m>A + B</m> also? What about <m>\alpha A</m> for some value <m>\alpha \in \R</m>? Is <m>\mathcal{M}_{m\times n}</m> a vector space?
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          Let <m>\mathcal{P}</m> be the set of all polynomials with real number coefficients.
+          Is <m>\mathcal{P}</m> a vector space? What about <m>\mathcal{P}_n</m>, the subset consisting only of polynomials of degree up to <m>n</m>? (What about <m>\mathcal{P}_n'</m>, the subset consisting only of polynomials of <em>exactly</em> degree <m>n</m>?)
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          Is the set <m>\Q</m> of rational numbers a vector space? What about the set <m>\mathbb{I}</m> of irrational numbers?
+        </p>
+      </statement>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Consider a homogeneous differential equation of the form <m>y'' + p(x) y' + q(x) = 0</m>.
+        </p>
+      </introduction>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Is the set <m>S</m>, consisting of all functions <m>y(x)</m> which are solutions to the differential equation, a vector space?
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            What about solution set <m>T</m> for the nonhomogeneous equation <m>y'' + p(x) y' + q(x) = f(x)</m>?
+          </p>
+        </statement>
+      </task>
+    </exercise>
+
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          Let <m>A</m> be a given <m>n \times n</m> matrix and <m>\lambda</m> a given real number.
+          Consider the equation <m>A \vec{x} = \lambda \vec{x}</m>, and the set <m>\mathcal{E}(A)</m> consisting of all vectors <m>\vec{x}</m> which satisfy this equation.
+          Is <m>\mathcal{E}(A)</m> a vector space?
+        </p>
+
+        <p>
+          [Note: *foreshadowing*.]
+        </p>
+      </statement>
+    </exercise>
+  </page>
+</worksheet>
