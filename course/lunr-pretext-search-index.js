@@ -730,6 +730,78 @@ var ptx_lunr_docs = [
   "body": "  A tank initially contains 100 L of brine with a salt concentration of 3 g\/L. A 2 g\/L brine solution flows into the tank at a rate of 5 L\/min, and the mixture in the tank flows out through a drain pipe at the same rate. Let be the quantity (g) of salt in the tank at time (min).     Write a formula for the volume of brine in the tank at time .    Since the flow rates in and out of the tank are equal, the volume is constant at 100 L.      What is the quantity of salt in the tank at time ?           Write a differential equation involving and , then solve your differential equation.     With : So the solution is:     "
 },
 {
+  "id": "exam-02",
+  "level": "1",
+  "url": "exam-02.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Exam 2",
+  "body": " Exam 2    Show all relevant work.      For each of the following questions, circle one answer A E. No justification is necessary.     Which of the following is ?                                 C.      Which of the following is the Laplace transform of ?                               D.      For what value of does the matrix  not have an inverse?                                 E.         Evaluate the Laplace transforms of the following functions:                                            Solve the differential equation: .    The associatd homogeneous equation has characteristic equation , so the general solution is: The Wronskian is: Now: Finally, the general solution is:         Evaluate using a convolution integral.  (Work involving partial fractions decomposition will not receive credit for this problem.)             Solve , , using the Laplace transform.             Find the inverse Laplace transform: .    First, PFD: So:         Calculate the determinants of the following matrices, and find the inverse of . (You do not need to find the inverse of .)           "
+},
+{
+  "id": "exam-02-3-1",
+  "level": "2",
+  "url": "exam-02.html#exam-02-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  For each of the following questions, circle one answer A E. No justification is necessary.     Which of the following is ?                                 C.      Which of the following is the Laplace transform of ?                               D.      For what value of does the matrix  not have an inverse?                                 E.    "
+},
+{
+  "id": "exam-02-4-1",
+  "level": "2",
+  "url": "exam-02.html#exam-02-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Evaluate the Laplace transforms of the following functions:                                       "
+},
+{
+  "id": "exam-02-5-1",
+  "level": "2",
+  "url": "exam-02.html#exam-02-5-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Solve the differential equation: .    The associatd homogeneous equation has characteristic equation , so the general solution is: The Wronskian is: Now: Finally, the general solution is:    "
+},
+{
+  "id": "exam-02-6-1",
+  "level": "2",
+  "url": "exam-02.html#exam-02-6-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Evaluate using a convolution integral.  (Work involving partial fractions decomposition will not receive credit for this problem.)        "
+},
+{
+  "id": "exam-02-7-1",
+  "level": "2",
+  "url": "exam-02.html#exam-02-7-1",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Solve , , using the Laplace transform.        "
+},
+{
+  "id": "exam-02-8-1",
+  "level": "2",
+  "url": "exam-02.html#exam-02-8-1",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Find the inverse Laplace transform: .    First, PFD: So:    "
+},
+{
+  "id": "exam-02-9-1",
+  "level": "2",
+  "url": "exam-02.html#exam-02-9-1",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  Calculate the determinants of the following matrices, and find the inverse of . (You do not need to find the inverse of .)         "
+},
+{
   "id": "recitation-calculus-review",
   "level": "1",
   "url": "recitation-calculus-review.html",
@@ -1025,6 +1097,69 @@ var ptx_lunr_docs = [
   "number": "3",
   "title": "",
   "body": "   Find the first several derivatives of . Write a formula for the th derivative.      Find     "
+},
+{
+  "id": "recitation-Vector-Spaces",
+  "level": "1",
+  "url": "recitation-Vector-Spaces.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Vector Spaces",
+  "body": " Vector Spaces    A vector space is a set of objects (called vectors ) which can be added together and scaled (i.e., multiplied by a real number, called a scalar ) while remaining the same type of object. Vector spaces are a mathematical structure of study in Linear Algebra (in which you would learn a more general definition, but this will suffice for us).      Consider the set consisting of all matrices with real number entries. If are two such matrices, is also? What about for some value ? Is a vector space?      Let be the set of all polynomials with real number coefficients. Is a vector space? What about , the subset consisting only of polynomials of degree up to ? (What about , the subset consisting only of polynomials of exactly degree ?)      Is the set of rational numbers a vector space? What about the set of irrational numbers?        Consider a homogeneous differential equation of the form .     Is the set , consisting of all functions which are solutions to the differential equation, a vector space?      What about solution set for the nonhomogeneous equation ?       Let be a given matrix and a given real number. Consider the equation , and the set consisting of all vectors which satisfy this equation. Is a vector space?  [Note: *foreshadowing*.]     "
+},
+{
+  "id": "recitation-Vector-Spaces-2-1",
+  "level": "2",
+  "url": "recitation-Vector-Spaces.html#recitation-Vector-Spaces-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "vector space vectors scalar "
+},
+{
+  "id": "recitation-Vector-Spaces-3-1",
+  "level": "2",
+  "url": "recitation-Vector-Spaces.html#recitation-Vector-Spaces-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider the set consisting of all matrices with real number entries. If are two such matrices, is also? What about for some value ? Is a vector space?   "
+},
+{
+  "id": "recitation-Vector-Spaces-3-2",
+  "level": "2",
+  "url": "recitation-Vector-Spaces.html#recitation-Vector-Spaces-3-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Let be the set of all polynomials with real number coefficients. Is a vector space? What about , the subset consisting only of polynomials of degree up to ? (What about , the subset consisting only of polynomials of exactly degree ?)   "
+},
+{
+  "id": "recitation-Vector-Spaces-3-3",
+  "level": "2",
+  "url": "recitation-Vector-Spaces.html#recitation-Vector-Spaces-3-3",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Is the set of rational numbers a vector space? What about the set of irrational numbers?   "
+},
+{
+  "id": "recitation-Vector-Spaces-4-1",
+  "level": "2",
+  "url": "recitation-Vector-Spaces.html#recitation-Vector-Spaces-4-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Consider a homogeneous differential equation of the form .     Is the set , consisting of all functions which are solutions to the differential equation, a vector space?      What about solution set for the nonhomogeneous equation ?    "
+},
+{
+  "id": "recitation-Vector-Spaces-4-2",
+  "level": "2",
+  "url": "recitation-Vector-Spaces.html#recitation-Vector-Spaces-4-2",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Let be a given matrix and a given real number. Consider the equation , and the set consisting of all vectors which satisfy this equation. Is a vector space?  [Note: *foreshadowing*.]   "
 },
 {
   "id": "homework-list",
