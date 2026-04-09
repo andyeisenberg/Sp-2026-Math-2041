@@ -280,7 +280,7 @@
             <mrow> \amp = \int_0^t (t - \tau)e^{-\tau}\ d\tau \amp u = t - \tau, v = -e^{-\tau} </mrow>
             <mrow> \amp = -(t - \tau)e^{-\tau}\bigg|_0^t - \int_0^t e^{-\tau}\ d\tau \amp du = -d\tau, dv = e^{-\tau}\ d\tau </mrow>
             <mrow> \amp = 0 - t - (-e^{-\tau})\bigg|_0^t</mrow>
-            <mrow> \amp = 0 - t + e^{-t} + 1. </mrow>
+            <mrow> \amp = 0 + t + e^{-t} - 1. </mrow>
           </md>
         </p>
       </solution>
