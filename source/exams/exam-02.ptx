@@ -160,7 +160,7 @@
 
         <solution>
           <p>
-            E.
+            A.
           </p>
         </solution>
       </task>
@@ -234,7 +234,7 @@
 
       <solution>
         <p>
-          The associatd homogeneous equation has characteristic equation <m>r^2 + 9 = 0</m>, so the general solution is:
+          The associated homogeneous equation has characteristic equation <m>r^2 + 9 = 0</m>, so the general solution is:
           <md>
             <mrow> y_c = C_1 \underbrace{\sin(3t)}_{y_1} + C_2 \underbrace{\cos(3t)}_{y_2} </mrow>
           </md>
@@ -280,7 +280,7 @@
             <mrow> \amp = \int_0^t (t - \tau)e^{-\tau}\ d\tau \amp u = t - \tau, v = -e^{-\tau} </mrow>
             <mrow> \amp = -(t - \tau)e^{-\tau}\bigg|_0^t - \int_0^t e^{-\tau}\ d\tau \amp du = -d\tau, dv = e^{-\tau}\ d\tau </mrow>
             <mrow> \amp = 0 - t - (-e^{-\tau})\bigg|_0^t</mrow>
-            <mrow> \amp = 0 - t + e^t - 1. </mrow>
+            <mrow> \amp = 0 - t + e^{-t} + 1. </mrow>
           </md>
         </p>
       </solution>
@@ -354,7 +354,7 @@
         <p>
           <md>
             <mrow> \begin{vmatrix} 3 \amp 1 \\ -1 \amp -4 \end{vmatrix} \amp = (3)(-4) - (1)(-1) = -11 </mrow>
-            <mrow>  A^{-1} \amp = \frac{1}{-13} \begin{bmatrix} -4 \amp -1 \\ 1 \amp 3 \end{bmatrix} </mrow>
+            <mrow>  A^{-1} \amp = \frac{1}{-11} \begin{bmatrix} -4 \amp -1 \\ 1 \amp 3 \end{bmatrix} </mrow>
             <mrow> \begin{vmatrix} 2 \amp 1 \amp 3 \\ 1 \amp 3 \amp 4 \\ -2 \amp 1 \amp 1 \end{vmatrix} \amp = (2)(3)(1) + (1)(4)(-2) + (3)(1)(1)</mrow>
             <mrow> \amp \quad -(2)(4)(1) - (1)(1)(1) - (3)(3)(-2) </mrow>
             <mrow> \amp = 6 - 8 + 3 - 8 - 1 + 18 </mrow>
