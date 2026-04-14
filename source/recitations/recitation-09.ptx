@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="recitation-Matrix-Exponential">
+  <title>Matrix Exponential</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      In Calculus II, you saw the series expansion of the exponential function:
+      <md>
+        <mrow> e^{at} \amp = 1 + at + \frac{a^2t^2}{2!} + \frac{a^3t^3}{3!} \dotsb = \sum_{k = 0}^{\infty} \frac{a^kt^k}{k!} </mrow>
+      </md>
+      We can use this formula to expand the definition of <m>e^{ax}</m> to involve matrices.
+      For an <m>n\times n</m> matrix <m>A</m>:
+      <md>
+        <mrow> e^{At} \amp = 1 + at + \frac{A^2t^2}{2!} + \frac{A^3t^3}{3!} \dotsb = \sum_{k = 0}^{\infty} \frac{A^kt^k}{k!} </mrow>
+      </md>
+      The result of calculating <m>e^{At}</m> should be an <m>n\times n</m> matrix, and, by taking the derivative term-by-term in the series above:
+      <md>
+        <mrow> \frac{d}{dt}\left( e^{At}\right) = A e^{At}. </mrow>
+      </md>
+    </p>
+  </introduction>
+
+
+  <page>
+    <exercise>
+      <introduction>
+        <p>
+          Let <m>A = \begin{bmatrix} a \amp 0 \\ 0 \amp b \end{bmatrix}</m>.
+        </p>
+      </introduction>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Calculate <m>A^2</m>.
+            Calculate <m>A^3</m>.
+            Find a nice formula for <m>A^n</m>.
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Calculate <m>e^{At}</m>.
+          </p>
+        </statement>
+      </task>
+    </exercise>
+  </page>
+</worksheet>
