@@ -11,15 +11,12 @@
       <md>
         <mrow> e^{at} \amp = 1 + at + \frac{a^2t^2}{2!} + \frac{a^3t^3}{3!} \dotsb = \sum_{k = 0}^{\infty} \frac{a^kt^k}{k!} </mrow>
       </md>
-      We can use this formula to expand the definition of <m>e^{ax}</m> to involve matrices.
+      We can use this formula to expand the definition of <m>e^{at}</m> to involve matrices.
       For an <m>n\times n</m> matrix <m>A</m>:
       <md>
-        <mrow> e^{At} \amp = 1 + at + \frac{A^2t^2}{2!} + \frac{A^3t^3}{3!} \dotsb = \sum_{k = 0}^{\infty} \frac{A^kt^k}{k!} </mrow>
+        <mrow> e^{At} \amp = 1 + At + \frac{A^2t^2}{2!} + \frac{A^3t^3}{3!} \dotsb = \sum_{k = 0}^{\infty} \frac{A^kt^k}{k!} </mrow>
       </md>
-      The result of calculating <m>e^{At}</m> should be an <m>n\times n</m> matrix, and, by taking the derivative term-by-term in the series above:
-      <md>
-        <mrow> \frac{d}{dt}\left( e^{At}\right) = A e^{At}. </mrow>
-      </md>
+      Some facts that will feel familiar (although they require justification): (1) <m>\frac{d}{dt}\left( e^{At}\right) = A e^{At}</m>, and (2) the general solution of <m>\vec{x}' = A \vec{x}</m> is <m> \vec{x}(t) = e^{At}\vec{C}, </m> where <m>\vec{C}</m> is a constant column vector.
     </p>
   </introduction>
 
@@ -48,6 +45,62 @@
         <statement>
           <p>
             Calculate <m>e^{At}</m>.
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Verify that <m>e^{At}\vec{C}</m> is a solution to the system <m>\vec{x}' = A \vec{x}</m>.
+          </p>
+        </statement>
+      </task>
+    </exercise>
+  </page>
+
+
+  <page>
+    <p>
+      The Laplace transform applies to matrix functions, with the rules you're familiar with transferring pretty directly.
+      For example, if <m>\vec{x}(t)</m> is a vector function with Laplace transform <m>\L\{\vec{x}(t)\} = X(s)</m>, then consider the initial value problem:
+      <md>
+        <mrow> \vec{x}' = A \vec{x}, \quad \vec{x}(0) = I </mrow>
+      </md>
+      Then the solution should be of the form <m>e^{At}\vec{C}</m> for some constant matrix <m>\vec{C}</m>, but <m>e^{At}</m> may be hard to calculate if <m>A</m> is not a diagonal matrix.
+      Applying the Laplace transform:
+      <md>
+        <mrow> s X(s) - \vec{x}(0) = A X(s) \quad \Rightarrow \quad X(s) = (sI - A)^{-1}. </mrow>
+      </md>
+    </p>
+
+    <exercise>
+      <introduction>
+        <p>
+          Consider the matrix <m>A = \begin{bmatrix} 2 \amp 1 \\ 3 \amp 4 \end{bmatrix}</m>.
+        </p>
+      </introduction>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Find <m>X(s) = (sI - A)^{-1}</m>.
+          </p>
+        </statement>
+      </task>
+
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            Taking the inverse Laplace transform <m>\L^{-1}\{X(s)\}</m> will involve multiple partial fraction decompositions.
+            Find <m>\L^{-1}\{X(s)\}</m>.
+          </p>
+
+          <p>
+            (Feel free to use something like WolframAlpha to save you some tedious work here.)
           </p>
         </statement>
       </task>
