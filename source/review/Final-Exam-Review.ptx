@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="Final-Exam-Review">
+  <title>Final Exam Review</title>
+
+  <introduction>
+    <p>
+      Use the following problems to prepare for the exam.
+      There will be in-class review on Thursday, April 23.
+      Your recitation this week will also be exam review.
+    </p>
+
+    <p>
+      You may bring a standard 3 in x 5 in index card with prepared notes.
+      You may use both sides of the notecard.
+      You must put your full name in the top right corner of the card, and turn it in along with your exam.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Chapter 0: Introduction to Differential Equations</title>
+
+    <p>
+      <dl>
+      <li>
+        <title>Section 0.2</title>
+
+        <p>
+          6, 102, 103
+        </p>
+      </li>
+      </dl>
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Chapter 1: First Order Equations</title>
+
+    <p>
+      <dl>
+      <li>
+        <title>Section 1.2</title>
+
+        <p>
+          1, 2, 6, 102<ndash />104
+        </p>
+      </li>
+
+      <li>
+        <title>Section 1.3</title>
+
+        <p>
+          1<ndash />10, 102, 104, 105
+        </p>
+      </li>
+
+      <li>
+        <title>Section 1.4</title>
+
+        <p>
+          4<ndash />7, 101, 103.
+        </p>
+      </li>
+
+      <li>
+        <title>Section 1.6</title>
+
+        <p>
+          1 (page 53), 3, 5, 7, 101
+        </p>
+      </li>
+
+      <li>
+        <title>Section 1.8</title>
+
+        <p>
+          2, 4, 101, 102.
+        </p>
+      </li>
+      </dl>
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Chapter 2: Higher Order Linear ODEs</title>
+
+    <p>
+      <dl>
+      <li>
+        <title>Section 2.1</title>
+
+        <p>
+          5, 102, 104, 105
+        </p>
+      </li>
+
+      <li>
+        <title>Section 2.2</title>
+
+        <p>
+          6<ndash />12, 101<ndash />107
+        </p>
+      </li>
+
+      <li>
+        <title>Section 2.4</title>
+
+        <p>
+          2, 3, 104
+        </p>
+      </li>
+
+      <li>
+        <title>Section 2.5</title>
+
+        <p>
+          2<ndash />4, 7, 9, 101<ndash />104 <!-- 7, 104 are VoP -->
+        </p>
+      </li>
+      </dl>
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Chapter 6: The Laplace Transform</title>
+
+    <p>
+      <dl>
+      <li>
+        <title>Section 6.1</title>
+
+        <p>
+          1 (page 295), 4 (page 298), 5<ndash />7, 9<ndash />11, 101<ndash />104
+        </p>
+      </li>
+
+      <li>
+        <title>Section 6.2</title>
+
+        <p>
+          2<ndash />6, 11, 102
+        </p>
+      </li>
+
+      <li>
+        <title>Section 6.3</title>
+
+        <p>
+          1, 2, 8, 101<ndash />103
+        </p>
+      </li>
+
+      <li>
+        <title>Section 6.4</title>
+
+        <p>
+          1<ndash />3, 6, 8, 101, 102, 104, 105
+        </p>
+      </li>
+      </dl>
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Chapter 3: Systems of ODEs</title>
+
+    <p>
+      <dl>
+      <li>
+        <title>Section 3.2</title>
+
+        <p>
+          3, 7, 11, 101<ndash />103
+        </p>
+      </li>
+
+      <li>
+        <title>Section 3.3</title>
+
+        <p>
+          1, 2, 101, 102
+        </p>
+      </li>
+
+      <li>
+        <title>Section 3.4</title>
+
+        <p>
+          5, 6a, 7, 8, 9, 102<ndash />104
+        </p>
+      </li>
+
+      <li>
+        <title>Section 3.7</title>
+
+        <p>
+          2, 3, 101, 102, 104
+        </p>
+      </li>
+
+    </dl>
+    </p>
+  </subsection>
+</section>
