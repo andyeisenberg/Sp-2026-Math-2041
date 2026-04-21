@@ -1099,6 +1099,96 @@ var ptx_lunr_docs = [
   "body": "   Find the first several derivatives of . Write a formula for the th derivative.      Find     "
 },
 {
+  "id": "recitation-Vector-Spaces",
+  "level": "1",
+  "url": "recitation-Vector-Spaces.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Vector Spaces",
+  "body": " Vector Spaces    A vector space is a set of objects (called vectors ) which can be added together and scaled (i.e., multiplied by a real number, called a scalar ) while remaining the same type of object. Vector spaces are a mathematical structure of study in Linear Algebra (in which you would learn a more general definition, but this will suffice for us).      Consider the set consisting of all matrices with real number entries. If are two such matrices, is also? What about for some value ? Is a vector space?      Let be the set of all polynomials with real number coefficients. Is a vector space? What about , the subset consisting only of polynomials of degree up to ? (What about , the subset consisting only of polynomials of exactly degree ?)      Is the set of rational numbers a vector space? What about the set of irrational numbers?        Consider a homogeneous differential equation of the form .     Is the set , consisting of all functions which are solutions to the differential equation, a vector space?      What about solution set for the nonhomogeneous equation ?       Let be a given matrix and a given real number. Consider the equation , and the set consisting of all vectors which satisfy this equation. Is a vector space?  [Note: *foreshadowing*.]     "
+},
+{
+  "id": "recitation-Vector-Spaces-2-1",
+  "level": "2",
+  "url": "recitation-Vector-Spaces.html#recitation-Vector-Spaces-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "vector space vectors scalar "
+},
+{
+  "id": "recitation-Vector-Spaces-3-1",
+  "level": "2",
+  "url": "recitation-Vector-Spaces.html#recitation-Vector-Spaces-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Consider the set consisting of all matrices with real number entries. If are two such matrices, is also? What about for some value ? Is a vector space?   "
+},
+{
+  "id": "recitation-Vector-Spaces-3-2",
+  "level": "2",
+  "url": "recitation-Vector-Spaces.html#recitation-Vector-Spaces-3-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Let be the set of all polynomials with real number coefficients. Is a vector space? What about , the subset consisting only of polynomials of degree up to ? (What about , the subset consisting only of polynomials of exactly degree ?)   "
+},
+{
+  "id": "recitation-Vector-Spaces-3-3",
+  "level": "2",
+  "url": "recitation-Vector-Spaces.html#recitation-Vector-Spaces-3-3",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Is the set of rational numbers a vector space? What about the set of irrational numbers?   "
+},
+{
+  "id": "recitation-Vector-Spaces-4-1",
+  "level": "2",
+  "url": "recitation-Vector-Spaces.html#recitation-Vector-Spaces-4-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Consider a homogeneous differential equation of the form .     Is the set , consisting of all functions which are solutions to the differential equation, a vector space?      What about solution set for the nonhomogeneous equation ?    "
+},
+{
+  "id": "recitation-Vector-Spaces-4-2",
+  "level": "2",
+  "url": "recitation-Vector-Spaces.html#recitation-Vector-Spaces-4-2",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Let be a given matrix and a given real number. Consider the equation , and the set consisting of all vectors which satisfy this equation. Is a vector space?  [Note: *foreshadowing*.]   "
+},
+{
+  "id": "recitation-Matrix-Exponential",
+  "level": "1",
+  "url": "recitation-Matrix-Exponential.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Matrix Exponential",
+  "body": " Matrix Exponential    In Calculus II, you saw the series expansion of the exponential function: We can use this formula to expand the definition of to involve matrices. For an matrix : Some facts that will feel familiar (although they require justification): (1) , and (2) the general solution of is where is a constant column vector.      Let .     Calculate . Calculate . Find a nice formula for .      Calculate .      Verify that is a solution to the system .       The Laplace transform applies to matrix functions, with the rules you're familiar with transferring pretty directly. For example, if is a vector function with Laplace transform , then consider the initial value problem: Then the solution should be of the form for some constant matrix , but may be hard to calculate if is not a diagonal matrix. Applying the Laplace transform:     Consider the matrix .     Find .      Taking the inverse Laplace transform will involve multiple partial fraction decompositions. Find .  (Feel free to use something like WolframAlpha to save you some tedious work here.)      "
+},
+{
+  "id": "recitation-Matrix-Exponential-3-1",
+  "level": "2",
+  "url": "recitation-Matrix-Exponential.html#recitation-Matrix-Exponential-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Let .     Calculate . Calculate . Find a nice formula for .      Calculate .      Verify that is a solution to the system .    "
+},
+{
+  "id": "recitation-Matrix-Exponential-4-2",
+  "level": "2",
+  "url": "recitation-Matrix-Exponential.html#recitation-Matrix-Exponential-4-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider the matrix .     Find .      Taking the inverse Laplace transform will involve multiple partial fraction decompositions. Find .  (Feel free to use something like WolframAlpha to save you some tedious work here.)    "
+},
+{
   "id": "homework-list",
   "level": "1",
   "url": "homework-list.html",
@@ -1124,6 +1214,15 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "Exam 2 Review",
   "body": " Exam 2 Review   Use the following problems to prepare for the exam. There will be in-class review on Thursday, April 2. Your recitation this week will also be exam review.  You may bring a standard 3 in x 5 in index card with prepared notes. You may use both sides of the notecard. You must put your full name in the top right corner of the card, and turn it in along with your exam.    Chapter 2: Higher Order Linear ODEs     Section 2.5  2 4, 7, 9, 101 104        Chapter 6: The Laplace Transform     Section 6.1  1 (page 295), 4 (page 298), 5 7, 9 11, 101 104    Section 6.2  2 6, 11, 102    Section 6.3  1, 2, 8, 101 103    Section 6.4  1 3, 6, 8, 101, 102, 104, 105       Chapter 3: Systems of ODEs     Section 3.2  3, 7, 11, 101 103      "
+},
+{
+  "id": "Final-Exam-Review",
+  "level": "1",
+  "url": "Final-Exam-Review.html",
+  "type": "Section",
+  "number": "",
+  "title": "Final Exam Review",
+  "body": " Final Exam Review   Use the following problems to prepare for the exam. There will be in-class review on Thursday, April 23. Your recitation this week will also be exam review.  You may bring a standard 3 in x 5 in index card with prepared notes. You may use both sides of the notecard. You must put your full name in the top right corner of the card, and turn it in along with your exam.    Chapter 0: Introduction to Differential Equations     Section 0.2  6, 102, 103       Chapter 1: First Order Equations     Section 1.2  1, 2, 6, 102 104    Section 1.3  1 10, 102, 104, 105    Section 1.4  4 7, 101, 103.    Section 1.6  1 (page 53), 3, 5, 7, 101    Section 1.8  2, 4, 101, 102.       Chapter 2: Higher Order Linear ODEs     Section 2.1  5, 102, 104, 105    Section 2.2  6 12, 101 107    Section 2.4  2, 3, 104    Section 2.5  2 4, 7, 9, 101 104        Chapter 6: The Laplace Transform     Section 6.1  1 (page 295), 4 (page 298), 5 7, 9 11, 101 104    Section 6.2  2 6, 11, 102    Section 6.3  1, 2, 8, 101 103    Section 6.4  1 3, 6, 8, 101, 102, 104, 105       Chapter 3: Systems of ODEs     Section 3.2  3, 7, 11, 101 103    Section 3.3  1, 2, 101, 102    Section 3.4  5, 6a, 7, 8, 9, 102 104    Section 3.7  2, 3, 101, 102, 104      "
 },
 {
   "id": "boxes",
