@@ -676,6 +676,33 @@ var ptx_lunr_docs = [
   "body": "  Solve the initial value problem:     Applying the Laplace transform: Now we need PFD: Now: Therefore the solution is:    "
 },
 {
+  "id": "quiz-05",
+  "level": "1",
+  "url": "quiz-05.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Quiz 5",
+  "body": " Quiz 5    The following work should be completed individually. Use of notes, calculators, or textbooks is not allowed.  Show all work unless instructed otherwise.      Find the eigenvalues of the matrix below. Then, for the largest eigenvalue, find a corresponding eigenvector.      So the eigenvalues are . For : So an example eigenvector would be:         Find the general solution of , where     First, the eigenvalues: So the eigenvalues are . For eigenvectors: Now the general solution to the system is:      "
+},
+{
+  "id": "quiz-05-3-1",
+  "level": "2",
+  "url": "quiz-05.html#quiz-05-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Find the eigenvalues of the matrix below. Then, for the largest eigenvalue, find a corresponding eigenvector.      So the eigenvalues are . For : So an example eigenvector would be:    "
+},
+{
+  "id": "quiz-05-4-1",
+  "level": "2",
+  "url": "quiz-05.html#quiz-05-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Find the general solution of , where     First, the eigenvalues: So the eigenvalues are . For eigenvectors: Now the general solution to the system is:    "
+},
+{
   "id": "exam-01",
   "level": "1",
   "url": "exam-01.html",
