@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="quiz-05">
+  <title>Quiz 5</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      The following work should be completed individually.
+      Use of notes, calculators, or textbooks is not allowed.
+    </p>
+
+    <p>
+      Show all work unless instructed otherwise.
+    </p>
+  </introduction>
+
+
+  <page>
+    <exercise workspace="1in">
+      <statement>
+        <p>
+          Find the eigenvalues of the matrix <m>A</m> below.
+          Then, for the largest eigenvalue, find a corresponding eigenvector.
+          <md>
+            <mrow> A = \begin{bmatrix} 3 \amp 1 \amp -1 \\ -4 \amp -2 \amp 1 \\ -2 \amp -2 \amp 1 \end{bmatrix} </mrow>
+          </md>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <md>
+            <mrow> \begin{vmatrix} 3 - \lambda \amp 1 \amp -1 \\ -4 \amp -2-\lambda \amp 1 \\ -2 \amp -2 \amp 1- \lambda \end{vmatrix} \amp = (3 - \lambda)(-2 - \lambda)(1 - \lambda) - 2 - 8 </mrow>
+            <mrow> \amp\quad + 2(3 - \lambda) + 4(1-\lambda) - 2(-2 - \lambda) </mrow>
+            <mrow> \amp = (3 - \lambda)(-2 - \lambda)(1 - \lambda) - 10 + 6 - 2 \lambda + 4 - 4\lambda + 4 + 2\lambda </mrow>
+            <mrow> \amp = (3 - \lambda)(-2 - \lambda)(1 - \lambda) + 4 - 4 \lambda </mrow>
+            <mrow> \amp = (3 - \lambda)(-2 - \lambda)(1 - \lambda) + 4(1 - \lambda) </mrow>
+            <mrow> \amp = (1 - \lambda)\left[(3 - \lambda)(-2 - \lambda) + 4\right] </mrow>
+            <mrow> \amp = (1 - \lambda)\left[\lambda^2 - \lambda - 2\right] </mrow>
+            <mrow> \amp = (1 - \lambda)(\lambda - 2)(\lambda + 1) </mrow>
+          </md>
+          So the eigenvalues are <m>\lambda = -1, 1, 2</m>.
+          For <m>\lambda = 2</m>:
+          <md>
+            <mrow> \amp \begin{bmatrix} 1 \amp 1 \amp -1 \\ -4 \amp -4 \amp 1 \\ -2 \amp -2 \amp -1 \end{bmatrix} \xrightarrow{\substack{R_2 + 4R_1 \\ R_3 + 2R_1}} \begin{bmatrix} 1 \amp 1 \amp -1 \\ 0 \amp 0 \amp -3 \\ 0 \amp 0 \amp -3 \end{bmatrix} </mrow>
+            <mrow> \amp \qquad \xrightarrow{\frac{-1}{3} R_2} \begin{bmatrix} 1 \amp 1 \amp -1 \\ 0 \amp 0 \amp 1 \\ 0 \amp 0 \amp -3 \end{bmatrix} \xrightarrow{\substack{R_1 + R_2 \\ R_3 + 3R_2}} \begin{bmatrix} 1 \amp 1 \amp 0 \\ 0 \amp 0 \amp 1 \\ 0 \amp 0 \amp 0 \end{bmatrix} </mrow>
+          </md>
+          So an example eigenvector would be:
+          <md>
+            <mrow> \vec{v} = \begin{bmatrix} 1 \\ -1 \\ 0 \end{bmatrix} </mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+  </page>
+
+
+  <page>
+    <exercise>
+      <statement>
+        <p>
+          Find the general solution of <m>\vec{x}' = P \vec{x}</m>, where
+          <md>
+            <mrow> P = \begin{bmatrix} 5 \amp -3 \\ 6 \amp -4 \end{bmatrix}</mrow>
+          </md>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          First, the eigenvalues:
+          <md>
+            <mrow> \begin{vmatrix} 5 - \lambda \amp -3 \\ 6 \amp -4-\lambda \end{vmatrix} \amp = (5 - \lambda)(-4 - \lambda) + 18 </mrow>
+            <mrow> \amp = \lambda^2 - \lambda -2 = (\lambda -2)(\lambda + 1) </mrow>
+          </md>
+          So the eigenvalues are <m>\lambda = -1, 2</m>.
+          For eigenvectors:
+          <md>
+            <mrow> \begin{bmatrix} 6 \amp -3 \\ 6 \amp -3 \end{bmatrix} \amp \xrightarrow{R_2 - R_1} \begin{bmatrix} 6 \amp -3 \\ 0 \amp 0 \end{bmatrix} \xrightarrow{\frac{1}{6}R_1} \begin{bmatrix} 1 \amp -1/2 \\ 0 \amp 0 \end{bmatrix}  </mrow>
+            <mrow> \amp\quad \vec{v} = \begin{bmatrix} 1 \\ 2 \end{bmatrix} </mrow>
+            <mrow> \begin{bmatrix} 3 \amp -3 \\ 6 \amp -6 \end{bmatrix} \amp \xrightarrow{R_2 + 2R_1} \begin{bmatrix} 3 \amp -3 \\ 0 \amp 0 \end{bmatrix} \xrightarrow{\frac{1}{3}R_1} \begin{bmatrix} 1 \amp -1  \\ 0 \amp 0  \end{bmatrix}  </mrow>
+            <mrow> \amp\quad \vec{w} = \begin{bmatrix} 1 \\ 1 \end{bmatrix} </mrow>
+          </md>
+          Now the general solution to the system is:
+          <md>
+            <mrow> \vec{x}(t) \amp = C_1 \begin{bmatrix} 1 \\ 2 \end{bmatrix} e^{-t} + C_2 \begin{bmatrix} 1 \\ 1 \end{bmatrix} e^{2t} </mrow>
+          </md>
+        </p>
+      </solution>
+    </exercise>
+  </page>
+</worksheet>
